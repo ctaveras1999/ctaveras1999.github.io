@@ -16,9 +16,9 @@ minimal: false            # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "Publications"}
-  - {title: "Teaching"}
-  - {title: "Personal"}
+  - {title: "Publications", file:"pubs.md"}
+  - {title: "Teaching", file:"teaching.md"}
+  - {title: "Personal", file:"personal.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
