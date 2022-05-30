@@ -16,14 +16,15 @@ minimal: false            # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "Publications", file:"pubs.md"}
-  - {title: "Teaching",     file:"teaching.md"}
-  - {title: "Personal",     file:"personal.md"}
+  - {file:"pubs.md",       title: "Publications",  url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+  - {file:"teaching.md",   title: "Teaching",  url: "/teaching"}
+  - {file:"cv.pdf",        title: "CV"}
+  - {file:"personal.pdf",  title: "Personal", url: "/personal"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/ctaveras1999"}
-  - {title: Twitter, icon: twitter, url: "https://twitter.com/ctaveras1999"}
+  - {title: Mail,     icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
+  - {title: Github,   icon: github, url: "https://github.com/ctaveras1999"}
+  - {title: Twitter,  icon: twitter, url: "https://twitter.com/ctaveras1999"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ctaveras1999/"}
 
 comments:
