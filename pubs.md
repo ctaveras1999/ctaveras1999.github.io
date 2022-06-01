@@ -4,4 +4,4 @@ permalink: "/pubs/"
 layout: page
 ---
 
-404 not found... yet!!
+![Meme](/assets/meme.png)
