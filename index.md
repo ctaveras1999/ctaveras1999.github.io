@@ -17,7 +17,7 @@ CMU, I worked with [Prof. Aswin C. Sankaranarayanan][aswin] on problems in
 [photometric stereo][ps] and with [Prof. Richard M. Stern][rich] on 
 a variant of [the cocktail party problem][cpp]. 
 
-I am a proud alumnus of [DeWitt Clinton High School][dwc] whose alumni have 
+I am a proud alumnus of [DeWitt Clinton High School][dwc] in The Bronx, whose alumni have 
 [profoundly affected][copw] just about every facet of American culture. Clinton boasts 
 alumni including [James Baldwin][jb], [Stan Lee][sl], [Ralph Lauren][rl], [Sugar Ray Robinson][srr],
 [The Kid Mero][mero], [A Boogie wit da Hoodie][abg], and many, many more.
