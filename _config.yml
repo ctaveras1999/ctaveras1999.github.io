@@ -1,6 +1,7 @@
 title: "Carlos Taveras"
 author: "Carlos Taveras"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Last updated June 4th, 2022" # Update
+#Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"

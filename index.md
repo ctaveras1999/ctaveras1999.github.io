@@ -8,20 +8,18 @@ further our understanding of [signal processing][sp], [machine learning][ml], an
 other manifestations of applied math.
 
 I am currently an intern at [Adobe Research][adobe] working with [Kalyan Sunkavalli][ks] and 
-[Yannick Hold-Geoffroy][yhg] on extracting fine-grain details of materials 
-for use in rendering.
+[Yannick Hold-Geoffroy][yhg] on photometric stereo.
 
-From 2017 to 2022 I was a student at Carnegie Mellon University (CMU) where I 
+From 2017 to 2022, I was a student at Carnegie Mellon University (CMU) where I 
 received B.S. and M.S. degrees in Electrical and Computer Engineering ([CMU ECE][ece]). While at 
-CMU, I worked with [Prof. Aswin C. Sankaranarayanan][aswin] on problems in 
-[photometric stereo][ps] and with [Prof. Richard M. Stern][rich] on 
+CMU, I was fortunate to have worked with [Aswin C. Sankaranarayanan][aswin] on problems in 
+[photometric stereo][ps] and with [Richard M. Stern][rich] on 
 a variant of [the cocktail party problem][cpp]. 
 
-I am proud to be an alumnus of [DeWitt Clinton High School][dwc] in The Bronx, whose alumni have 
+I am proud to be an alumnus of [DeWitt Clinton High School][dwc] in The Bronx, NYC, whose alumni have 
 [profoundly affected][copw] just about every facet of American culture. Clinton boasts a host of 
 notable alumni including [James Baldwin][jb], [Stan Lee][sl], [Ralph Lauren][rl], [Sugar Ray Robinson][srr],
-[The Kid Mero][mero], [A Boogie wit da Hoodie][abg], and many, many more.
-
+[The Kid Mero][mero], [A Boogie wit da Hoodie][abg], and many, many [more].
 
 [aswin]:    https://users.ece.cmu.edu/~saswin/
 [rich]:     https://users.ece.cmu.edu/~rms/
@@ -35,7 +33,7 @@ notable alumni including [James Baldwin][jb], [Stan Lee][sl], [Ralph Lauren][rl]
 [adobe]:    https://research.adobe.com/
 [sp]:       https://en.wikipedia.org/wiki/Digital_signal_processing
 [ml]:       https://en.wikipedia.org/wiki/Machine_learning
-[dwc]:      https://www.dewittclintonhs.com/
+[dwc]:      https://en.wikipedia.org/wiki/DeWitt_Clinton_High_School
 [dwc_alum]: https://en.wikipedia.org/wiki/DeWitt_Clinton_High_School#Notable_alumni
 [jb]:       https://en.wikipedia.org/wiki/James_Baldwin
 [sl]:       https://en.wikipedia.org/wiki/Stan_Lee
@@ -44,3 +42,5 @@ notable alumni including [James Baldwin][jb], [Stan Lee][sl], [Ralph Lauren][rl]
 [mero]:     https://en.wikipedia.org/wiki/The_Kid_Mero
 [srr]:      https://en.wikipedia.org/wiki/Sugar_Ray_Robinson
 [copw]:     https://www.amazon.com/Castle-Parkway-Extraordinary-Influence-American/dp/188326930X
+[more]:     https://en.wikipedia.org/wiki/DeWitt_Clinton_High_School#Notable_alumni
+
