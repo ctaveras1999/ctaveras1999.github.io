@@ -4,23 +4,23 @@ permalink: "/teaching/"
 layout: page
 ---
 
-# Carnegie Mellon University
+## Carnegie Mellon University
 
-## Spring 2022
-### 18-290: Signals and Systems (TA)
+### Spring 2022
+#### 18-290: Signals and Systems (TA)
 Taught by 
 [Aswin C. Sankaranarayanan][aswin]
 
 
-## Fall 2021
-### 18-290: Signals and Systems (TA)
+### Fall 2021
+#### 18-290: Signals and Systems (TA)
 Taught by 
 [Tom Sullivan][sullivan] and 
 [Jose M.F. Moura][moura]
 
 
-## Spring 2021
-### 18-491: Digital Signal Processing (TA)
+### Spring 2021
+#### 18-491: Digital Signal Processing (TA)
 Taught by  [Richard M. Stern][rich]
 
 [aswin]:    https://users.ece.cmu.edu/~saswin/
