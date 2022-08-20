@@ -2,21 +2,21 @@
 layout: page
 ---
 
-I am an incoming Ph.D. student in the Electrical and Computer 
-Engineering Department at Rice University. Broadly, I aspire to 
-further our understanding of signal processing, machine learning, and
-other manifestations of applied math.
+I am a first year Ph.D. student in the Electrical and Computer 
+Engineering Department at Rice University. Broadly, my areas of interest are
+signal processing, machine learning, and other manifestations of applied math.
 
-Currently, I am an intern at [Adobe Research][adobe] working with [Kalyan Sunkavalli][ks] and 
-[Yannick Hold-Geoffroy][yhg] on practical implementations of photometric stereo.
 
 From 2017 to 2022, I was a student at Carnegie Mellon University (CMU) where I 
-received B.S. and M.S. degrees in Electrical and Computer Engineering. While at 
-CMU, I was fortunate to have worked with [Aswin C. Sankaranarayanan][aswin] on problems in 
-photometric stereo and with [Richard M. Stern][rich] on 
-a variant of the cocktail party problem. 
+received B.S. and M.S. degrees in Electrical and Computer Engineering. There,
+I was fortunate to have worked with [Aswin C. Sankaranarayanan][aswin] and 
+with [Richard M. Stern][rich].
 
-I am also a proud alumnus of [DeWitt Clinton High School][dwc] in The Bronx, NYC, whose alumni have 
+I have interned at [Adobe Research][adobe] (Summer 2022) with 
+guidance from [Kalyan Sunkavalli][ks] and [Yannick Hold-Geoffroy][yhg] on 
+implementing some practical photometric stereo algorithms.
+
+I am a proud alumnus of [DeWitt Clinton High School][dwc] in The Bronx, NYC, whose alumni have 
 [profoundly impacted][copw] just about every facet of American culture. Clinton boasts a host of 
 notable alumni including [James Baldwin][jb], [Stan Lee][sl], [Ralph Lauren][rl], [Sugar Ray Robinson][srr],
 [The Kid Mero][mero], [A Boogie wit da Hoodie][abg], and many, many [more].

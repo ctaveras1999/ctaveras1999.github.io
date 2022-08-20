@@ -1,6 +1,6 @@
 title: "Carlos Taveras"
 author: "Carlos Taveras"
-description: "Last updated June 23rd, 2022" # Update
+description: "Last updated August 20th, 2022" # Update
 #Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
@@ -21,7 +21,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "pubs.md",       title: "Publications",  url: "/pubs"}
   - {file: "teaching.md",   title: "Teaching",      url: "/teaching"}
   - {file: "cv.md",         title: "CV",            url: "https://drive.google.com/file/d/1-JSFSVoLFzdaoaSoITJoogGjy2k_U7bp/view?usp=sharing"}
-  - {file: "personal.md",   title: "Personal",      url: "/personal"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail,     icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
