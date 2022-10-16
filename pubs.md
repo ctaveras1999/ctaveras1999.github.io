@@ -4,4 +4,4 @@ permalink: "/pubs/"
 layout: page
 ---
 
-![Meme](/assets/meme.png)
+Coming soon...
