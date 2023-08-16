@@ -2,28 +2,28 @@
 layout: page
 ---
 
-I am a first year Ph.D. student in the Electrical and Computer 
-Engineering Department at Rice University. Broadly, my areas of interest are
-signal processing, machine learning, and other manifestations of applied math.
+![pic](/assets/personal_pic.jpeg){:.center-image; :height="300px" width="300px"}
 
 
-From 2017 to 2022, I was a student at Carnegie Mellon University where I 
-received B.S. ('21) and M.S. ('22) degrees in Electrical and Computer Engineering. There,
-I was fortunate to have worked with [Aswin C. Sankaranarayanan][aswin] and 
-with [Richard M. Stern][rich].
-
-I have interned at [Adobe Research][adobe] (Summer 2022) with 
-guidance from [Kalyan Sunkavalli][ks] and [Yannick Hold-Geoffroy][yhg] on 
-implementing some near-light and area-light variants of photometric stereo.
-
-I am a proud alumnus of [DeWitt Clinton High School][dwc] in The Bronx, NYC, whose alumni have 
-[profoundly impacted][copw] just about every facet of American culture. Clinton boasts a host of 
-notable alumni including [James Baldwin][jb], [Stan Lee][sl], [Ralph Lauren][rl], [Sugar Ray Robinson][srr],
-[The Kid Mero][mero], [A Boogie wit da Hoodie][abg], and many, many [more].
-
-![pic](/assets/personal_pic.jpeg)
 
 
+Hey! I'm Carlos, a second year Ph.D. student in the Electrical and Computer 
+Engineering (ECE) Department at Rice University ([Rice][rice]) where I am advised by 
+[Santiago Segarra][santi] and [César A. Uribe][cesar] working on topology constrained 
+transport over networks. 
+My interests span signal processing, topology, optimal transport, optimization, and other manifestations of applied math.
+
+From 2017 to 2022, I was a student at Carnegie Mellon University ([CMU][cmu]) where I 
+received B.S. ('21) and M.S. ('22) degrees also in ECE. 
+There, I was fortunate to have worked with [Aswin C. Sankaranarayanan][aswin] 
+on photometric stereo and with [Richard M. Stern][rich] on a variant of the 
+cocktail party problem.
+
+In a previous life, I interned at [Adobe Research][adobe] (Summer 2022) where I worked with with [Kalyan Sunkavalli][ks] and [Yannick Hold-Geoffroy][yhg] on near-light and area-light variants of photometric stereo.
+
+
+[santi]:    https://segarra.rice.edu/
+[cesar]:    https://cauribe.rice.edu/
 [aswin]:    https://users.ece.cmu.edu/~saswin/
 [rich]:     https://users.ece.cmu.edu/~rms/
 [ps]:       https://en.wikipedia.org/wiki/Photometric_stereo

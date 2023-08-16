@@ -1,6 +1,6 @@
-title: "Carlos Taveras"
+title: "Carlos A. Taveras"
 author: "Carlos Taveras"
-description: "Last updated October 16th, 2022" # Update
+description: "Last updated on August 14th 2023" # Update
 #Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
@@ -17,10 +17,13 @@ minimal: false            # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md",      title: "About",         url: "/"}
-  - {file: "pubs.md",       title: "Publications",  url: "/pubs"}
-  - {file: "teaching.md",   title: "Teaching",      url: "/teaching"}
-  - {file: "cv.md",         title: "CV",            url: "https://drive.google.com/file/d/1eCmSB1rlYMrXH3Obu37t-fkmC80YjD-E/view?usp=sharing"}
+  - {file: "index.md",     title: "About",        url: "/"}
+  - {file: "pubs.md",      title: "Publications", url: "/pubs"}
+  - {file: "cv.md",        title: "CV",           url: "https://drive.google.com/file/d/1eCmSB1rlYMrXH3Obu37t-fkmC80YjD-E/view?usp=sharing"}
+  - {file: "teaching.md",  title: "Teaching",     url: "/teaching"}
+  - {file: "service.md",   title: "Service",      url: "/service"}
+  - {file: "personal.md",  title: "Personal",        url: "/personal"}
+
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail,     icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
