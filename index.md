@@ -2,9 +2,7 @@
 layout: page
 ---
 
-![pic](/assets/personal_pic.jpeg){:.center-image; :height="300px" width="300px"}
-
-
+![pic](/assets/personal_pic2.jpeg){:.center-image; :height="300px" width="300px"}
 
 
 Hey! I'm Carlos, a second year Ph.D. student in the Electrical and Computer 
