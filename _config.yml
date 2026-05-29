@@ -17,13 +17,14 @@ minimal: false            # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md",     title: "About",        url: "/"}
-  # - {file: "pubs.md",      title: "Publications", url: "/pubs"}
+  # - {file: "index.md",     title: "About",        url: "/"}
   - {file: "cv.md",        title: "CV",           url: "/cv"}
-  # - {file: "teaching.md",  title: "Teaching",     url: "/teaching"}
-  # - {file: "service.md",   title: "Service",      url: "/service"}
+  - {file: "math.md",      title: "Math",        url: "/math"}
   - {file: "blog.md",      title: "Blog",            url: "/blog"}
   - {file: "personal.md",  title: "Personal",        url: "/personal"}
+  # - {file: "pubs.md",      title: "Publications", url: "/pubs"}
+  # - {file: "teaching.md",  title: "Teaching",     url: "/teaching"}
+  # - {file: "service.md",   title: "Service",      url: "/service"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail,     icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
