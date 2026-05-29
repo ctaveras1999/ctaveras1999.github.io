@@ -1,4 +1,5 @@
 ---
+title: "Homepage"
 layout: page
 ---
 <!-- ![pic](/assets/personal_pic3-small.jpeg){:.center-image} -->
