@@ -4,7 +4,7 @@ layout: page
 ---
 <!-- ![pic](/assets/personal_pic3-small.jpeg){:.center-image} -->
 <div style="text-align: center;">
-  <img src="/assets/personal_pic3.jpeg" alt="Alt text" style="width: 50%;">
+  <img src="/assets/personal_pic3.jpeg" alt="Alt text" style="width: 25%;">
 </div>
 
 Greetings! I'm Carlos, a first-year Ph.D. student in the [Math Department][ricemath] at 
