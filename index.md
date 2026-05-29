@@ -7,8 +7,9 @@ layout: page
   <img src="/assets/personal_pic3.jpeg" alt="Alt text" style="width: 50%;">
 </div>
 
-Greetings! I'm Carlos, a first-year Ph.D. student in the Mathematics Department at 
-Rice University (Rice) planning to work on the analysis of Schrödinger Operators. 
+Greetings! I'm Carlos, a first-year Ph.D. student in the [Math Department][ricemath] at 
+Rice University (Rice) planning to work on the analysis of Schrödinger Operators,
+though I am now focused on studying for quals.
 
 Before this, I received B.S./M.S. and M.S. (w/ thesis) degrees in 
 Electrical and Computer Engineering (ECE) at Carnegie Mellon University (CMU) 
@@ -40,4 +41,4 @@ science using tools from optimal transport and discrete Hodge theory.
 [srr]:      https://en.wikipedia.org/wiki/Sugar_Ray_Robinson
 [copw]:     https://www.amazon.com/Castle-Parkway-Extraordinary-Influence-American/dp/188326930X
 [more]:     https://en.wikipedia.org/wiki/DeWitt_Clinton_High_School#Notable_alumni
-
+[ricemath]: https://math.rice.edu/
