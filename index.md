@@ -11,7 +11,7 @@ Greetings! I'm Carlos, a first-year Ph.D. student in the [Math Department][ricem
 Rice University (Rice) planning to work on the analysis of Schrödinger Operators,
 though I am now focused on studying for quals.
 
-Before this, I received B.S./M.S. and M.S. (w/ thesis) degrees in 
+Before this, I received B.S./M.S. and M.S. (thesis-based) degrees in 
 Electrical and Computer Engineering (ECE) at Carnegie Mellon University (CMU) 
 ('21/'22) and Rice ('25), respectively. At Rice ECE I worked with 
 [César A. Uribe][cesar] and [Santiago Segarra][santi] on problems in graph data 

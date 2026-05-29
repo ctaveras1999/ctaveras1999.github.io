@@ -3,17 +3,13 @@ title: "Blog"
 permalink: "/blog/"
 layout: page
 ---
-## Math
-Coming Soon...
-
-
-## Signal Processing
-Coming Soon...
-
-
 ## (Mostly) Rap Lyrics with Mathematical Interpretations
 Coming Soon...
 
 
-## Lists
+## Useful Academic Resources
+Coming Soon...
+
+
+## Random Lists
 Coming Soon...
