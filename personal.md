@@ -52,14 +52,13 @@ made the legendary song [Planet Rock][pr] which impacted the genre like few othe
 Hip Hop celebrated its [50th Anniversary][hiphop] on August 11th, 2023 at Yankee Stadium. 
 *Did I mention that Hip Hop started in the Bronx?*
 
-The HBO movie [The Bronx, USA][bx] was filmed in part at my high school in my
-senior year where many of friends are featured (I, however, did not make the cut).
+The HBO movie [The Bronx, USA][bx] was filmed in part at my high school during my
+senior year in which several of friends featured (I, however, did not make the cut).
 
 There is a neighborhood in Bogotá, Colombia called [El Bronx][elbx] 
 (not for good reasons); and in Brazil, according to Brazilian UFC fighter 
 [Charles 'do Bronx' Oliveira][dobx], "Bronx" is a slang used for 
 favelas and poor neighborhoods.
-
 
 [ell]: https://www.schools.nyc.gov/learning/multilingual-learners/english-language-learners
 [afrika]:https://en.wikipedia.org/wiki/Afrika_Bambaataa

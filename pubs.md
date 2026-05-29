@@ -4,4 +4,8 @@ permalink: "/pubs/"
 layout: page
 ---
 
-Coming soon...
+[3] C.A. Taveras, Gromov-Wasserstein Graph Coarsening
+
+[2] 
+
+[1] "Efficient Path Planning with Soft Homology Constraints"

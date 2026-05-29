@@ -1,24 +1,19 @@
 ---
 layout: page
 ---
+<!-- ![pic](/assets/personal_pic3-small.jpeg){:.center-image} -->
+<div style="text-align: center;">
+  <img src="/assets/personal_pic3.jpeg" alt="Alt text" style="width: 50%;">
+</div>
 
-![pic](/assets/personal_pic2.jpeg){:.center-image; :height="300px" width="300px"}
+Greetings! I'm Carlos, a first-year Ph.D. student in the Mathematics Department at 
+Rice University (Rice) planning to work on the analysis of Schrödinger Operators. 
 
-
-Hey! I'm Carlos, a second year Ph.D. student in the Electrical and Computer 
-Engineering (ECE) Department at Rice University ([Rice][rice]) where I am advised by 
-[Santiago Segarra][santi] and [César A. Uribe][cesar] working on topology constrained 
-transport over networks. 
-My interests span signal processing, topology, optimal transport, optimization, and other manifestations of applied math.
-
-From 2017 to 2022, I was a student at Carnegie Mellon University ([CMU][cmu]) where I 
-received B.S. ('21) and M.S. ('22) degrees also in ECE. 
-There, I was fortunate to have worked with [Aswin C. Sankaranarayanan][aswin] 
-on photometric stereo and with [Richard M. Stern][rich] on a variant of the 
-cocktail party problem.
-
-In a previous life, I interned at [Adobe Research][adobe] (Summer 2022) where I worked with with [Kalyan Sunkavalli][ks] and [Yannick Hold-Geoffroy][yhg] on near-light and area-light variants of photometric stereo.
-
+Before this, I received B.S./M.S. and M.S. (w/ thesis) degrees in 
+Electrical and Computer Engineering (ECE) at Carnegie Mellon University (CMU) 
+('21/'22) and Rice ('25), respectively. At Rice ECE I worked with 
+[César A. Uribe][cesar] and [Santiago Segarra][santi] on problems in graph data 
+science using tools from optimal transport and discrete Hodge theory.
 
 [santi]:    https://segarra.rice.edu/
 [cesar]:    https://cauribe.rice.edu/

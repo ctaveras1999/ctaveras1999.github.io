@@ -1,6 +1,6 @@
 title: "Carlos A. Taveras"
 author: "Carlos Taveras"
-description: "Last updated on August 14th 2023" # Update
+description: "Last updated on May 29th, 2026" # Update
 #Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
@@ -18,17 +18,16 @@ minimal: false            # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md",     title: "About",        url: "/"}
-  - {file: "pubs.md",      title: "Publications", url: "/pubs"}
-  - {file: "cv.md",        title: "CV",           url: "https://drive.google.com/file/d/1eCmSB1rlYMrXH3Obu37t-fkmC80YjD-E/view?usp=sharing"}
-  - {file: "teaching.md",  title: "Teaching",     url: "/teaching"}
-  - {file: "service.md",   title: "Service",      url: "/service"}
+  # - {file: "pubs.md",      title: "Publications", url: "/pubs"}
+  - {file: "cv.md",        title: "CV",           url: "/cv"}
+  # - {file: "teaching.md",  title: "Teaching",     url: "/teaching"}
+  # - {file: "service.md",   title: "Service",      url: "/service"}
+  - {file: "blog.md",      title: "Blog",            url: "/blog"}
   - {file: "personal.md",  title: "Personal",        url: "/personal"}
-
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail,     icon: envelope, url: "mailto:ctaveras1999@gmail.com"}
   - {title: Github,   icon: github, url: "https://github.com/ctaveras1999"}
-  - {title: Twitter,  icon: twitter, url: "https://twitter.com/ctaveras1999"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ctaveras1999/"}
 
 comments:
