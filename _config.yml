@@ -1,6 +1,6 @@
 title: "Carlos A. Taveras"
 author: "Carlos Taveras"
-description: "Last updated on May 29th, 2026" # Update
+description: "Last updated on July 23rd, 2026" # Update
 #Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
@@ -18,13 +18,15 @@ minimal: false            # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   # - {file: "index.md",     title: "About",        url: "/"}
-  - {file: "cv.md",        title: "CV",           url: "/cv"}
-  - {file: "math.md",      title: "Math",        url: "/math"}
-  - {file: "blog.md",      title: "Blog",            url: "/blog"}
-  - {file: "personal.md",  title: "Personal",        url: "/personal"}
+  - {file: "math_tab/math.md",   title: "Math",        url: "/math"}
+  - {file: "academic.md",        title: "Academic",    url: "/academic"}
+  - {file: "teaching.md",        title: "Teaching",    url: "/teaching"}
+  - {file: "resources.md",       title: "Resources",    url: "/resources"}
+  - {file: "blog.md",            title: "Blog",        url: "/blog"}
+  # - {file: "personal.md",  title: "Personal",      url: "/personal"}
   # - {file: "pubs.md",      title: "Publications", url: "/pubs"}
-  # - {file: "teaching.md",  title: "Teaching",     url: "/teaching"}
   # - {file: "service.md",   title: "Service",      url: "/service"}
+  # - {file: "events.md",    title: "Events",        url: "/events"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail,     icon: envelope, url: "mailto:ctaveras1999@gmail.com"}

@@ -7,15 +7,18 @@ layout: page
   <img src="/assets/personal_pic3.jpeg" alt="Alt text" style="width: 25%;">
 </div>
 
-Greetings! I'm Carlos, a first-year Ph.D. student in the [Math Department][ricemath] at 
-Rice University (Rice) planning to work on the analysis of Schrödinger Operators,
-though I am now focused on studying for quals.
+Greetings! I'm a first-year Ph.D. student in the [Math Department][ricemath] at 
+Rice University (Rice) planning to work on Ergodic and Schrödinger Operator Theory.
+As for now, I am focused on studying for quals.
 
-Before this, I received B.S./M.S. and M.S. (thesis-based) degrees in 
-Electrical and Computer Engineering (ECE) at Carnegie Mellon University (CMU) 
-('21/'22) and Rice ('25), respectively. At Rice ECE I worked with 
+Before this, I received B.S./M.S. ('21/'22) degrees in Electrical and Computer 
+Engineering (ECE) at Carnegie Mellon University (CMU) and a thesis-based M.S. 
+degree in ECE at Rice University ('25). At Rice ECE I worked with 
 [César A. Uribe][cesar] and [Santiago Segarra][santi] on problems in graph data 
 science using tools from optimal transport and discrete Hodge theory.
+
+Feel free to look through my site and don't hesistate to reach out via email if 
+you have any questions or suggestions!
 
 [santi]:    https://segarra.rice.edu/
 [cesar]:    https://cauribe.rice.edu/
