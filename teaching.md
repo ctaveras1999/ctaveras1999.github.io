@@ -30,10 +30,3 @@ A second course in signal processing further exploring relationships between
 discrete and continuous signal representations and related transforms 
 (Fourier Series, Fourier Transforms, z-transforms, short-time), filter design, 
 time-frequency representations, multi-rate processing, and the Fast Fourier Transform.
-
-[aswin]:    https://users.ece.cmu.edu/~saswin/
-[moura]:    https://users.ece.cmu.edu/~moura/
-[sullivan]: https://www.ece.cmu.edu/directory/bios/sullivan-tom.html
-[rich]:     https://www.ece.cmu.edu/directory/bios/stern-richard.html
-[cesar]:    https://cauribe.rice.edu/
- 

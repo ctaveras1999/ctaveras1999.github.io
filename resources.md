@@ -23,6 +23,8 @@ layout: page
 
 ## Online Learning
 * Stephen Semmes [(Notes)](https://math.rice.edu/~semmes/?C=M;O=D)
+* Chelsea Walton [(Courses)](https://math.rice.edu/~notlaw/teaching.html)
+* Gerald Teschl [(Homepage)](https://www.mat.univie.ac.at/~gerald/index.html)
 * Jacob Shapiro [(Courses)](https://web.math.princeton.edu/~shapiro/teaching.html#16)
 * Keenan Crane [(Courses)](https://www.cs.cmu.edu/~kmcrane/index.html#teaching) & [(YouTube)](https://www.youtube.com/user/keenancrane)
 * Ioannis Gkioulekas [(Courses)](https://imaging.cs.cmu.edu/igkioule/#teaching)
@@ -34,6 +36,7 @@ layout: page
 * Math Doctor Bob [(YouTube)](https://www.youtube.com/user/MathDoctorBob)
 * Professor Leonard [(YouTube)](https://www.youtube.com/@ProfessorLeonard)
 * Matthew McCauley [(Homepage)](https://www.math.clemson.edu/~macaule/) & [(YouTube)](https://www.youtube.com/@ProfessorMacauley)
+* Math with Ming [(Youtube)](https://www.youtube.com/@mathwithming)
 
 ## Sample Math Qualifying Exams
 * Rice University [(Website)](https://mathweb.rice.edu/qualifying-exams-syllabi)
