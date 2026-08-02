@@ -3,6 +3,7 @@
 permalink: "/resources/"
 layout: page
 ---
+
 # Scholarships/Fellowships
 ## Graduate 
 * [National Science Foundation Graduate Research Fellowships Program (NSF GRFP)](https://www.nsfgrfp.org/)

@@ -3,6 +3,7 @@
 permalink: "/academic/"
 layout: page
 ---
+
 # CV
 <embed src="/assets/cv.pdf" type="application/pdf" width="100%" height="600px" />
 Last Updated on May 29th, 2026
