@@ -1,6 +1,6 @@
 ---
-title: "Personal"
-permalink: "/personal/"
+title: "A Bit About Me"
+permalink: "blog/personal/about_me"
 layout: page
 ---
 

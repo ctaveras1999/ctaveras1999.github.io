@@ -18,11 +18,11 @@ minimal: false            # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   # - {file: "index.md",     title: "About",        url: "/"}
-  - {file: "math_tab/math.md",   title: "Math",        url: "/math"}
-  - {file: "academic.md",        title: "Academic",    url: "/academic"}
-  - {file: "teaching.md",        title: "Teaching",    url: "/teaching"}
-  - {file: "resources.md",       title: "Resources",    url: "/resources"}
-  - {file: "blog.md",            title: "Blog",        url: "/blog"}
+  - {file: "tabs/math/math.md",                title: "Math",        url: "/math"}
+  - {file: "tabs/academic/academic.md",        title: "Academic",    url: "/academic"}
+  # - {file: "tabs/academic/teaching.md",        title: "Teaching",    url: "/teaching"}
+  - {file: "tabs/resources/resources.md",      title: "Resources",   url: "/resources"}
+  - {file: "tabs/blog/blog.md",                title: "Blog",        url: "/blog"}
   # - {file: "personal.md",  title: "Personal",      url: "/personal"}
   # - {file: "pubs.md",      title: "Publications", url: "/pubs"}
   # - {file: "service.md",   title: "Service",      url: "/service"}

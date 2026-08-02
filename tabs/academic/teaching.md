@@ -12,7 +12,6 @@ the "Techniques of a Pro Mathematician" program focused on developing some of th
 hard and soft skills needed to succeed in college math and beyond.
 While teaching I learned a bunch, gained some invaluable experience in effective 
 and engaging pedagogy, and grew a deeper appreciation for K-12 teachers. 
-I highly encourage applying to be an instructor in the program if you can!
 
 ## Teaching Assistant Courses
 ### ELEC 330: Random Signals @ Rice (Fall 2023/24/25)

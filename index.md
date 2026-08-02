@@ -1,5 +1,5 @@
 ---
-title: "Homepage"
+# title: "Homepage"
 layout: page
 ---
 <!-- ![pic](/assets/personal_pic3-small.jpeg){:.center-image} -->
@@ -7,9 +7,10 @@ layout: page
   <img src="/assets/personal_pic3.jpeg" alt="Alt text" style="width: 25%;">
 </div>
 
-Greetings! I'm a first-year Ph.D. student in the [Math Department][ricemath] at 
-Rice University (Rice) planning to work on Ergodic and Schrödinger Operator Theory.
-As for now, I am focused on studying for quals.
+## Greetings!
+
+I'm a first-year Ph.D. student in the [Math Department][ricemath] at Rice University (Rice) planning to work on Ergodic Schrödinger Operators. 
+ For now, I am focused on studying for quals.
 
 Before this, I received B.S./M.S. ('21/'22) degrees in Electrical and Computer 
 Engineering (ECE) at Carnegie Mellon University (CMU) and a thesis-based M.S. 
@@ -17,8 +18,15 @@ degree in ECE at Rice University ('25). At Rice ECE I worked with
 [César A. Uribe][cesar] and [Santiago Segarra][santi] on problems in graph data 
 science using tools from optimal transport and discrete Hodge theory.
 
-Feel free to look through my site and don't hesistate to reach out via email if 
+Feel free to look through my site -- don't hesistate to reach out via email if 
 you have any questions or suggestions!
+
+## Recent News
+1. I will be attending the upcoming MFO AG on Anderson Localization (Oct. 4-9,2026). More on that [here]({{ '/blog/events/anderson_ag' | relative_url }}).
+
+2. In what felt like one very long day, my month as an Instructor for [Tapia Camps](https://tapiacenter.rice.edu/tapia-stem-camps) has come to an end. 
+It was a rewarding experience, where I learned much about teaching/planning/engagement and had the opportunity to teach the next generation some math. 
+If you'll be at Rice / in Houston next summer with a month to spare, I highly encourage applying! 
 
 [santi]:    https://segarra.rice.edu/
 [cesar]:    https://cauribe.rice.edu/
