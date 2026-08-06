@@ -38,6 +38,7 @@ layout: page
 * Prof. Robert Donley [aka Math Doctor Bob] (CUNY): [Webpage](https://mathdoctorbob.org/) & [YouTube](https://www.youtube.com/user/MathDoctorBob)
 * Prof. Robert Ghrist (U Penn): [Webpage](https://www2.math.upenn.edu/~ghrist/), [Notes](https://www2.math.upenn.edu/~ghrist/) & [Youtube](https://www.youtube.com/c/ProfGhristMath)
 * Prof. Ioannis Gkioulekas (CMU): [Webpage](https://www.cs.cmu.edu/~igkioule/) & [Courses](https://imaging.cs.cmu.edu/igkioule/#teaching)
+* Prof. Kiran S. Kedlaya (UCSD): [Webpage](https://kskedlaya.org/) & [Courses](https://kskedlaya.org/courses-past.shtml)
 * Prof. Matthew McCauley (Clemson): [Webpage](https://www.math.clemson.edu/~macaule/) & [YouTube](https://www.youtube.com/@ProfessorMacauley)
 * Prof. Liviu Nicolaescu (Notre Dame): [Webpage](https://academicweb.nd.edu/~lnicolae/)
 * Prof. Michael Penn (Randolph): [Webpage](https://www.michael-penn.net/about-me) & [YouTube](https://www.youtube.com/@MichaelPennMath)
