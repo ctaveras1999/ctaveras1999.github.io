@@ -1,21 +1,19 @@
 title: "Carlos A. Taveras"
 author: "Carlos Taveras"
-description: "Last updated on August 5th, 2026" # Update
+description: "Last updated on August 8th, 2026" # Update
 #Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# Layou
-
+# Layout
 show_excerpts: true       # show article excerpts on the home page
 show_frame: true          # adds a gray frame to the site
 show_sidebar: false       # show a sidebar instead of the usual header
 minimal: false            # use a dark header
 
 # Menu
-
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   # - {file: "index.md",     title: "About",        url: "/"}
   - {file: "tabs/math/math.md",                title: "Math",        url: "/math"}
