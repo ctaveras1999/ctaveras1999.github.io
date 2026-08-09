@@ -30,6 +30,7 @@ computer science, and engineering.[^3]
 * Prof. Franz Franchetti (CMU): [Webpage](https://users.ece.cmu.edu/~franzf/) & [Courses](https://users.ece.cmu.edu/~franzf/courses.htm)
 * Prof. Robert Ghrist (U Penn): [Webpage](https://www2.math.upenn.edu/~ghrist/), [Notes](https://www2.math.upenn.edu/~ghrist/) & [Youtube](https://www.youtube.com/c/ProfGhristMath)
 * Prof. Ioannis Gkioulekas (CMU): [Webpage](https://www.cs.cmu.edu/~igkioule/) & [Courses](https://imaging.cs.cmu.edu/igkioule/#teaching)
+* Prof. Anton Gorodetski (UC Irvine): [Webpage](https://www.math.uci.edu/~asgor/index.html) & [Courses](https://www.math.uci.edu/~asgor/classes.html)
 * Prof. Timothy Gowers (Cambridge/Collège de France): [Webpage](https://www.dpmms.cam.ac.uk/~wtg10/) & [YouTube](https://www.youtube.com/@TimothyGowers0)
 * Prof. Anupam Gupta (NYU): [Webpage](https://cs.nyu.edu/~anupamg/)
 * Prof. Larry Guth (MIT): [Webpage](https://math.mit.edu/~lguth/)
