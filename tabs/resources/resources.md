@@ -3,7 +3,11 @@
 permalink: "/resources/"
 layout: page
 ---
+<!-- -->
+<!-- -->
 
+<!--  -->
+<!--  -->
 # Some Folks with Good (Free!) Online Learning Materials
 Below is an ever-growing list of academics that have generously shared materials online 
 including full university courses, lecture notes/recordings, problem sets, textbooks, 
