@@ -50,6 +50,7 @@ computer science, and engineering.[^3]
 * Prof. Jiwen He (UH): [Webpage](https://www.math.uh.edu/~jiwenhe/)
 * Prof. Gordon Heier (UH): [Webpage](https://www.math.uh.edu/~heier/) & [Teaching](https://www.math.uh.edu/~heier/teaching.html)
 * Prof. Marijn J.H. Heule (CMU): [Webpage](https://www.cs.cmu.edu/~mheule/)
+* Prof. Peter Hintz (Penn State): [Webpage](https://sites.psu.edu/phintz/) & [Teaching](https://sites.psu.edu/phintz/teaching/)
 * Prof. Gautam Iyer (CMU): [Webpage](https://www.math.cmu.edu/~gautam/sj/) & [Courses](https://www.math.cmu.edu/~gautam/sj/teaching/)
 * Prof. Kiran S. Kedlaya (UCSD): [Webpage](https://kskedlaya.org/) & [Courses](https://kskedlaya.org/courses-past.shtml)
 * Prof. Pravesh K. Kothari (Princeton): [Webpage](https://www.cs.princeton.edu/~kothari/index.html) & [Teaching](https://www.cs.princeton.edu/~kothari/teaching.html)
