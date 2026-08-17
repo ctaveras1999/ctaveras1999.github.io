@@ -87,6 +87,7 @@ computer science, and engineering.[^3]
 * Prof. Ravi Vakil (Stanford): [Webpage](https://math.stanford.edu/~vakil/)
 * Prof. Chelsea Walton (Rice): [Webpage](https://math.rice.edu/~notlaw/index.html) & [Courses](https://math.rice.edu/~notlaw/teaching.html)
 * Prof. Shmuel Weinberger (UChicago): [Webpage](https://www.math.uchicago.edu/~shmuel/)
+* Prof. Jenny Wilson (U Michigan): [Webpage](https://websites.umich.edu/~jchw//index.html) & [Teaching](https://websites.umich.edu/~jchw//teaching.html)
 * Prof. Lingfu Zhang (Caltech): [Webpage](https://web.lfzhang.com/)
 * Prof. Jun-Yan Zhu (CMU): [Webpage](https://www.cs.cmu.edu/~junyanz/) & [Teaching](https://www.cs.cmu.edu/~junyanz/#sect-teaching)
 
