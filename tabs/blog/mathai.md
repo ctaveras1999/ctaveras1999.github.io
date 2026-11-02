@@ -48,7 +48,7 @@ Coming Soon...
 31. [Steven Strogatz and Grant Sanderson (3Blue1Brown): On the Humanity of Math](https://youtu.be/xUSznTR2cwc?t=1)
 32. [Terence Tao: No More Heroes](https://youtu.be/bAnwMdfcMVw)
 33. [Tristan Buckmaster: Navier-Stokes](https://youtu.be/Mzbtj5nkMXI)
-34. [Learning to Live with AI (with Daniel Litt) - Numberphile Podcast][https://www.youtube.com/watch?v=UTvwV9oPgxk]
+34. [Learning to Live with AI (with Daniel Litt) - Numberphile Podcast](https://www.youtube.com/watch?v=UTvwV9oPgxk)
 
 ### On the Future of Math Education
 1. [ICM 2026 Roundtable: Mathematics Education in the Advent of the AI Era](https://youtu.be/7Vr-6KzcS68)
