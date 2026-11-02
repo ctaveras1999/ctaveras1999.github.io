@@ -31,6 +31,10 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github,   icon: github, url: "https://github.com/ctaveras1999"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ctaveras1999/"}
 
+sass:
+  quiet_deps: true
+  silence_deprecations: [import, global-builtin, color-functions]
+
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
