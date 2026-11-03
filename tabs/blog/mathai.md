@@ -29,9 +29,11 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
     * [Disadvantages of Designating Mathematicians for AI Output Releases - Advisory Group on Mathematics and Artificial Intelligence](https://terrytao.wordpress.com/2026/10/25/disadvantages-of-designating-mathematicians-for-ai-output-releases/#more-18584)
     * [We're going to need a lot more mathematicians - Amit Sahai](https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/)
     * [A Severe Misalignment of AI in Mathematics](https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/)
+* [Xena Project (Kevin Buzzard)](https://xenaproject.wordpress.com/)
+    * [To grieve, or not to grieve](https://xenaproject.wordpress.com/2026/10/01/to-grieve-or-not-to-grieve/)
+    * [How to Formalize All of Mathematics](https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/)
 
 ### Personal Blogs
-* [Xena / Kevin Buzzard](https://xenaproject.wordpress.com/)
 * [DOOMSLIDE (Substack)](https://doomslide.substack.com/)
     * [Mathematics is effectively dead](https://doomslide.substack.com/p/mathematics-is-effectively-dead)
     * [Against Mathematics - DOOMSLIDE](https://doomslide.substack.com/p/against-mathematics)
@@ -40,7 +42,7 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
     * [Why I didn't sign the Field's medallists' letter](https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/)
     * [What sort of maths are LLMs good at?](https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/)
 * [Melanie Mitchell (Substack)](https://aiguide.substack.com/)
-    * [Misleading Metaphors and Real Risks - Melanie Mitchell](https://aiguide.substack.com/p/misleading-metaphors-and-real-risks)
+    * [Misleading Metaphors and Real Risks](https://aiguide.substack.com/p/misleading-metaphors-and-real-risks)
 * [Maxim Raginsky (Substack)](https://substack.com/@mraginsky/posts)
     * [Games Without Frontiers](https://realizable.substack.com/p/games-without-frontiers)
     * [Five Philosophy Papers Everyone (in AI/ML) Should Read](https://realizable.substack.com/p/five-philosophy-papers-everyone-should)
@@ -48,9 +50,9 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
     * [The World is Something We Make](https://www.argmin.net/p/the-world-is-something-we-make)
     * [Galactus the Devourer: On efficient algorithms, the Exponential Time Hypothesis, and losing the plot.](https://www.argmin.net/p/galactus-the-devourer)
     * [Frontiers in Making up People](https://www.argmin.net/p/frontiers-in-making-up-people)
-* [Who Watches The Watchmen? - nihilunbounded (Substack)](https://nihilunbounded.substack.com/p/who-watches-the-watchmen)
-* [Raw Mathematics - Manuel Rivera](https://vislumbres.github.io/#/post/raw-mathematics)
-* [A Vision of the Future of Mathematics - Florian Breuer](https://florianbreuer.github.io/florianbreuer/FutureVision.html)
+* [nihilunbounded (Substack): Who Watches The Watchmen?](https://nihilunbounded.substack.com/p/who-watches-the-watchmen)
+* [Manuel Rivera: Raw Mathematics](https://vislumbres.github.io/#/post/raw-mathematics)
+* [Florian Breuer: A Vision of the Future of Mathematics](https://florianbreuer.github.io/florianbreuer/FutureVision.html)
 
 ### Essays and Reports
 * [Mathematics of the Future - Pavel Etingof and Slava Gerovitch](https://math.mit.edu/~etingof/futuremath.pdf)
