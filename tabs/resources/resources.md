@@ -57,6 +57,7 @@ computer science, and engineering.[^3]
 * Prof. Pravesh K. Kothari (Princeton): [Webpage](https://www.cs.princeton.edu/~kothari/index.html) & [Teaching](https://www.cs.princeton.edu/~kothari/teaching.html)
 * Prof. Demetrio Labate (UH): [Webpage](https://www.math.uh.edu/~dlabate/) & [Past Courses](https://www.math.uh.edu/~dlabate/pastlink.html)
 * Prof. Po-Shen Loh (CMU): [Webpage](https://www.math.cmu.edu/~ploh/cmu.shtml) & [Courses](https://www.math.cmu.edu/~ploh/teaching.shtml)
+* Prof. Álvardo Lozano-Robledo: [Webpage](https://alozanoroble.github.io/) & [Content](https://alozanoroble.github.io/mathandcobb/)
 * Prof. Jacob Lurie (IAS): [Webpage](https://www.math.ias.edu/~lurie/)
 * Prof. Matthew McCauley (Clemson): [Webpage](https://www.math.clemson.edu/~macaule/) & [YouTube](https://www.youtube.com/@ProfessorMacauley)
 * Prof. Gary L. Miller (CMU): [Webpage](https://www.cs.cmu.edu/~glmiller/)
@@ -97,6 +98,7 @@ computer science, and engineering.[^3]
 * [The Online Books Page](https://onlinebooks.library.upenn.edu/)
 
 # Research/Technical Talks
+* ResearchSeminars.org (Extensive International Repository of Math Talks): [Webpage](https://researchseminars.org/)
 * Isaac Newton Institute (INI) for Mathematical Sciences: [Webpage](https://www.newton.ac.uk/) & [YouTube](https://www.youtube.com/@iniseminarroom1)
 * Fields Institute: [YouTube](https://www.youtube.com/@FieldsInstitute)
 * Institute for Pure & Applied Math (IPAM): [YouTube](https://www.youtube.com/@IPAMUCLA)
