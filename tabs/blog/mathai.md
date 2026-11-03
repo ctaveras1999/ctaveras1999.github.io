@@ -6,7 +6,7 @@ layout: page
 ## Why Make This?
 The rapid development of AI and its mathematical capabilities has forced the math community to grapple with many of its long-held traditions and tenets, at both the practical and philosophical level.
 During this unpredictable transitionary period, many in the community have shared their views on the past, present, and future of math.
-Notably, the perspectives and predictions have been quite varied.
+Notably, the perspectives and predictions shared so far have been quite varied.
 
 I thought it might be useful, then, to compile a list of these responses to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
 I'm hoping to update this list with new blog posts and videos as often as I can[^1]. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
@@ -125,7 +125,7 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
 * [ICM 2026 Panel - AI in College Math Education](https://youtu.be/EpyT__Q9wZc)
 
 ### Alvaro Lozano-Robledo's "Human Mathematicians in the Age of AI" Interview Series
-* [Intro to Series](https://youtu.be/9CWepr6yVPw)
+* [Introducing the Series](https://youtu.be/9CWepr6yVPw)
 * [Francesco Fournier-Facio](https://youtu.be/-yymwJ2bGc0)
 * [Jeremy Teitelbaum](https://youtu.be/bqh4ihdanbI)
 * [Bartosz Naskrecki](https://youtu.be/jKcRLlCn2Mg)
