@@ -8,7 +8,7 @@ The rapid development of AI and its mathematical capabilities has forced the mat
 During this unpredictable transitionary period, many in the community have shared their views on the past, present, and future of math.
 Notably, the perspectives and predictions have been quite varied.
 
-I thought it might be useful, then, to compile a list of these responses, both to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
+I thought it might be useful, then, to compile a list of these responses, to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
 I'm hoping to update this list with new blog posts and videos as often as I can[^1]. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
 
 ## Writing
