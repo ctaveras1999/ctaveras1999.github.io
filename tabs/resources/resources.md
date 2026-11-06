@@ -116,6 +116,11 @@ computer science, and engineering.[^3]
 * [ICERM](https://icerm.brown.edu/programs)
 * [Oberwolfach (MFO)](https://www.mfo.de/)
 
+# Recommendations for Math Textbooks and Articles
+* [Books for Beginning Research (Burt Totaro)](https://burttotaro.wordpress.com/2010/10/19/books-for-beginning-research/)
+* [Great Articles and Books (Ravi Vakil)](https://math.stanford.edu/~vakil/greatwriting.html)
+* [Chicago Undergraduate Mathematics Bibliography](https://github.com/ystael/chicago-ug-math-bib/tree/master)
+
 # Misc Math
 * Proofs and Prompts (Math + AI Blog): [Webpage](https://proofsandprompts.com/)
 * Numberphile: [YouTube](https://www.youtube.com/numberphile)
