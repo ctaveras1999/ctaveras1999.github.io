@@ -10,6 +10,4 @@ layout: page
 <!-- Coming Soon...  -->
 # Categories
 ## [Personal]({{ '/blog/personal' | relative_url }})
-## [Academic Events]({{ '/blog/events' | relative_url }})
 ## [Miscellaneous]({{ '/blog/misc' | relative_url }})
-## [Math and AI]({{ '/blog/mathai' | relative_url }})

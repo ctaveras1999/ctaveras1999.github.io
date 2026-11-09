@@ -22,10 +22,10 @@ Feel free to look through my site -- don't hesistate to reach out via email if
 you have any questions or suggestions!
 
 ## Recent News
-1. Check out [this list]({{'/blog/mathai'|relative_url}}) I compiled of some responses from the mathematics community on the advent of AI in mathematics.
+1. I compiled [this list]({{'/math/mathai'|relative_url}}) of responses from the mathematics community on the advent of AI in math, which I plan to update somewhat regularly.
 
 2. I attended the MFO Arbeitsgemeinschaft on Anderson Localization (Oct. 4-9, 2026). 
-More on that [here]({{ '/blog/events/anderson_ag' | relative_url }}).
+More on that [here]({{ '/math/events/anderson_ag' | relative_url }}).
 
 2. In what felt like one very long day, my month as an Instructor for [Tapia Camps](https://tapiacenter.rice.edu/tapia-stem-camps) has come to an end. 
 It was a rewarding experience, where I learned much about teaching/planning/engagement and had the opportunity to teach the next generation some math. 

@@ -1,8 +1,8 @@
 ---
 # title: "Math"
-permalink: "/math"
+permalink: "/math/"
 layout: page
 ---
-$${\Huge \varnothing}$$
 
-Empty... but hopefully not for long.
+## [Events (Conferences, Workshops, etc.)]({{ '/math/events' | relative_url }})
+## [Math and AI]({{ '/math/mathai' | relative_url }})

@@ -1,6 +1,6 @@
 ---
 title: "Math and AI"
-permalink: "/blog/mathai"
+permalink: "/math/mathai"
 layout: page
 ---
 ## Why Make This?
@@ -8,13 +8,10 @@ The rapid development of AI and its mathematical capabilities has forced the mat
 During this unpredictable transitionary period, many in the community have shared their views on the past, present, and future of math.
 Notably, the perspectives and predictions shared so far have been quite varied.
 
-I thought it might be useful, then, to compile a list of these responses to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
-I'm hoping to update this list with new blog posts and videos as often as I can[^1]. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
+I thought it might be useful, then, to compile a list[^1] of these responses to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
+I'm hoping to update this list with new blog posts and videos as often as I can[^2]. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
 
 ## Writing
-### Other Lists of Resources on Math and AI
-* [Thomas Bloom AI Links](https://thomasbloom.org/AIlinks.html)
-
 ### Community-wide Blogs
 * [Proofs and Prompts](https://proofsandprompts.com/)
 * [Advisory Group on Mathematics and Artificial Intelligence](https://agmai.org/)
@@ -164,4 +161,5 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
 * [Hugo Duminil-Copin: The Strip Mining of Mathematical Proofs](https://youtu.be/omuJpoV-Ko4?t=1)
 
 ### Footnotes
-[^1]: The structure of this page is not ideal at the moment -- I'll try to re-format it as soon as I can!
+[^1]: Also check out Thomas Bloom's 'AI Links' for a similar list: [link](https://thomasbloom.org/AIlinks.html).
+[^2]: The structure of this page is not ideal at the moment -- I'll try to re-format it as soon as I can!

@@ -1,6 +1,6 @@
 ---
 title: "Oberwolfach AG on Anderson Localization (Oct. 4th–9th, 2026)"
-permalink: "/blog/events/anderson_ag"
+permalink: "/math/events/anderson_ag"
 layout: page
 ---
 <div style="text-align: center;">
