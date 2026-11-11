@@ -46,6 +46,7 @@ computer science, and engineering.[^3]
 * Prof. Venkatesan Guruswami (UC Berkeley): [Webpage](https://people.eecs.berkeley.edu/~venkatg/) & [Teaching](https://people.eecs.berkeley.edu/~venkatg/#teaching)
 * Prof. Larry Guth (MIT): [Webpage](https://math.mit.edu/~lguth/)
 * Prof. Martin Hairer (EPFL/Imperial): [Webpage](https://hairer.org/index.html) & [Lecture Notes](https://hairer.org/Teaching.html)
+* Prof. Michael Harris (Columbia): [Webpage](https://www.math.columbia.edu/~harris/website/) & [Courses](https://www.math.columbia.edu/~harris/website/courses1)
 * Prof. Alan Haynes (UH): [Webpage](https://www.math.uh.edu/~haynes/) & [Lecture Notes](https://www.math.uh.edu/~haynes/notes.html)
 * Prof. Jiwen He (UH): [Webpage](https://www.math.uh.edu/~jiwenhe/)
 * Prof. Gordon Heier (UH): [Webpage](https://www.math.uh.edu/~heier/) & [Teaching](https://www.math.uh.edu/~heier/teaching.html)

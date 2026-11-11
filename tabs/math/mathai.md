@@ -38,6 +38,9 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
     * [How worried should we be about extinction risk from AI?](https://gowers.wordpress.com/2026/10/16/how-worried-should-we-be-about-extinction-risk-from-ai/)
     * [Why I didn't sign the Field's medallists' letter](https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/)
     * [What sort of maths are LLMs good at?](https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/)
+* [Michael Harris (Substack)](https://siliconreckoner.substack.com/)
+    * [Gamification of mathematics is off the charts](https://siliconreckoner.substack.com/p/gamification-of-mathematics-off-the)
+    * [Now all mathematicians can be Mathematical Turks](https://siliconreckoner.substack.com/p/now-all-mathematicians-can-be-mechanical)
 * [Melanie Mitchell (Substack)](https://aiguide.substack.com/)
     * [Misleading Metaphors and Real Risks](https://aiguide.substack.com/p/misleading-metaphors-and-real-risks)
 * [Maxim Raginsky (Substack)](https://substack.com/@mraginsky/posts)
@@ -118,6 +121,7 @@ I'm hoping to update this list with new blog posts and videos as often as I can[
 * [Akshay Venkatesh: What do we tell our students about AI?](https://youtu.be/STTvEmBM3rg)
 * [Geordie Williamson: AI and Humanity's Long Conversation](https://youtu.be/N3n27a3SeXc)
 * [Stephen Wolfram: What's the Future for Pure Math Research in the Age of AI?](https://www.youtube.com/live/gPrWX8i1htM?si=l4ickG7zZMdec9C7)
+* [Michael Harris: Mathematics as a Gift Economy](https://www.youtube.com/watch?v=ewvVvTLfU4Q)
 
 ### On the Future of Math Education
 * [ICM 2026 Roundtable: Mathematics Education in the Advent of the AI Era](https://youtu.be/7Vr-6KzcS68)
