@@ -2,6 +2,11 @@
 title: "Math and AI"
 permalink: "/math/mathai"
 layout: page
+
+redirect_from:
+  - "/blog/mathai"
+---
+
 ---
 ## Why Make This?
 The rapid development of AI and its mathematical capabilities has forced the math community to grapple with many of its long-held traditions and tenets, at both the practical and philosophical level.
