@@ -27,7 +27,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "4.0"     # matches your local Ruby (vendor/bundle/ruby/4.0.0)
+          ruby-version: .ruby-version  # exact Ruby version, shared with local builds (update both together)
           bundler-cache: true     # runs bundle install and caches gems between runs
 
       - name: Set up Pages
