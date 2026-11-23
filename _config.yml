@@ -45,7 +45,7 @@ plugins:
  - jekyll-feed
  - jekyll-redirect-from
 
- exclude:
+exclude:
   - README.md
   - serve.sh
   - UNLICENSE.txt
