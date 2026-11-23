@@ -47,6 +47,6 @@ Pick a type to narrow things down, search for a person or topic, or sort by type
 
 {% include filterable-list.html data=site.data.mathai id="mathai" limit=10 sort_key="none" topic_order="data" topics_open=true topics_label="Filter by type" placeholder="Search titles, people, topics…" sorts="date:Newest first|original:Grouped by type|name:Title, A–Z|aff:Person, A–Z" %}
 
-[^bloom]: Also check out Thomas Bloom's 'AI Links' for a similar list: [link](https://thomasbloom.org/AIlinks.html).
+[^bloom]: Also check out Thomas Bloom's [AI Links](https://thomasbloom.org/AIlinks.html).
 
 [^remark]: Humorously, titled 'remark.pdf'.
