@@ -1,0 +1,5 @@
+# Written by cv/build.rb: when media/docs/cv.pdf was last generated, its page count, and a
+# version tag for cache-busting links.
+updated: "November 23, 2026"
+pages: 2
+version: "7818c8420d"

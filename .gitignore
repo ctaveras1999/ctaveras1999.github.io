@@ -6,3 +6,4 @@ _site
 *.gem
 vendor/
 serve.sh
+cv/build/

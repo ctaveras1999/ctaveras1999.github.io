@@ -6,7 +6,7 @@
     <span class="pub-authors">{{ p.authors | replace: "C.A. Taveras", "<strong>C.A. Taveras</strong>" }}</span><br>
     <span class="pub-venue">{{ p.venue }}, {{ p.year }}</span>
     {%- for l in p.links %} · <a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
-    {%- if p.presented %}<br><span class="pub-presented">{{ p.presented | join: "; " }}</span>{% endif %}
+    {%- if p.presented %}<br><span class="pub-presented">{% for pr in p.presented %}{{ pr.kind }} at {{ pr.event }}{% unless forloop.last %}; {% endunless %}{% endfor %}</span>{% endif %}
   </li>
 {%- endfor %}
 </ol>

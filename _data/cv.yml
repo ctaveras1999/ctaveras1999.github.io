@@ -1,23 +1,44 @@
-# Sections of the Academic page (tabs/academic/academic.md), each shown in the order listed here.
-# Publications live separately in _data/pubs.yml.
+# Single source for the Academic page (tabs/academic/academic.md) AND the CV PDF (cv/build.rb).
+# Publications and presentations live in _data/pubs.yml.
 #
-# Every entry takes:
+# Website entries take:
 #   what:   The main line, shown in bold (required). Markdown works, e.g. a [link](https://...).
 #   where:  Institution, venue, or company, shown after the bold part (optional)
 #   when:   Date or date range, shown on the right (optional)
 #   desc:   A sentence or two underneath (optional). Markdown works.
 #           Wrap text in quotes if it contains a colon.
+#
+# CV-only fields (ignored by the website):
+#   cv:       Overrides for the PDF, with the same keys plus `bullets` (a list of lines). Use it when
+#             the CV should say something different from the website.
+#   cv: false Leaves the entry out of the PDF.
+# Sections the website doesn't show (profile, employment) are used only by the PDF.
 
+profile:
+  name: "Carlos A. Taveras"
+  webpage: "https://ctaveras1999.github.io/"
+  scholar: "https://scholar.google.com/citations?user=sw4tzEoAAAAJ&hl=en"
+  email: "ctaveras1999@gmail.com"
+  research_interests: ["Schrödinger Operators", "Ergodic Theory", "Spectral Theory"]
+
+# CV layout: **where**, *location* (right: when), then `what`, then `cv: details` lines.
 education:
   - what: "Ph.D. in Mathematics"
     where: "Rice University"
+    location: "Houston, TX"
     when: "2026–present"
   - what: "M.S. in Electrical and Computer Engineering"
     where: "Rice University"
+    location: "Houston, TX"
     when: "2022–2026"
     desc: "Advisors: [César A. Uribe](https://cauribe.rice.edu/) and [Santiago Segarra](https://segarra.rice.edu/). Thesis: [*Efficient Path Planning with Soft Homology Constraints*](https://repository.rice.edu/items/87afda7a-6a85-452e-8954-02b11b7e0c2a)."
+    cv:
+      details:
+        - "Advisors: César A. Uribe and Santiago Segarra"
+        - "Thesis: Efficient Path Planning with Soft Homology Constraints"
   - what: "B.S. & M.S. in Electrical and Computer Engineering"
     where: "Carnegie Mellon University"
+    location: "Pittsburgh, PA"
     when: "2017–2022"
 
 awards:
@@ -30,28 +51,52 @@ awards:
   - what: "Graduate Education for Minorities (GEM) Fellowship"
     when: "2021 & 2022"
 
+# CV layout: **what**, *where* (right: when), then bullets.
 teaching:
   - what: "Instructor, Techniques of a Pro Mathematician"
     where: "[Tapia STEM Camps](https://tapiacenter.rice.edu/tapia-stem-camps), Rice"
     when: "Summer 2026"
     desc: "A summer camp introducing high school students across Texas to various STEM topics. Alongside Prof. Paul Hand (the Tapia Camps director), I co-taught three week-long sessions focused on developing some of the hard and soft skills needed to succeed in college math and beyond. I learned a bunch, gained invaluable experience in effective and engaging pedagogy, and grew a deeper appreciation for K-12 teachers."
+    cv:
+      what: "Instructor"
+      where: "Tapia STEM Camps at Rice University"
+      when: "2026"
+      bullets:
+        - "Led three week-long sessions of [*Techniques of a Pro Mathematician*](https://tapiacenter.rice.edu/tapia-stem-camps) introducing high school students to undergraduate-level mathematical abstraction and problem solving"
   - what: "Tutor"
     where: "SpiderSmart River Oaks Learning Center"
     when: "2026"
     desc: "Tutored primary and secondary school students in various elementary math subjects."
+    cv:
+      bullets: ["Tutored several primary and secondary school students in various elementary math subjects"]
   - what: "TA, ELEC 303: Random Signals"
     where: "Rice"
     when: "Fall 2023, 2024, 2025"
     desc: "A first course in probability and random processes for ECE undergrads: discrete and continuous random variables, laws of large numbers, the central limit theorem, and basic estimation theory."
+    cv:
+      what: "Teaching Assistant and Grader"
+      where: "Rice University"
+      when: "2023–2025"
+      bullets:
+        - "Led recitations, held office hours, and created/graded homework for *Random Signals (ELEC 303)*, a course on probability and statistics for engineers"
   - what: "TA, 18-290: Signals and Systems"
     where: "CMU"
     when: "Fall 2021 & Spring 2022"
     desc: "A first course in signal processing: continuous and discrete signal representations, linear time-invariant systems, convolutions, basic Fourier theory, and sampling."
+    cv:   # both CMU courses are one entry on the CV
+      what: "Teaching Assistant and Grader"
+      where: "Carnegie Mellon University"
+      when: "2021–2022"
+      bullets:
+        - "Led recitations, held office hours, and graded for *Signals and Systems (18-290)*, a course on basic properties of discrete/continuous-time linear and time-invariant systems (operators)"
+        - "Held office hours and graded for *Fundamentals of Signal Processing (18-491/691)*, a course on the basic theory and algorithms of discrete-time signal processing"
   - what: "TA, 18-491/691: Fundamentals of Signal Processing"
     where: "CMU"
     when: "Spring 2021"
     desc: "A second course in signal processing: relationships between continuous and discrete signal representations and related transforms (Fourier series, Fourier transforms, z-transforms, short-time), filter design, time-frequency representations, multi-rate processing, and the Fast Fourier Transform."
+    cv: false   # covered by the CMU entry above
 
+# CV layout: bulleted name (right: year). Locations and links show on the website only.
 events:
   - what: "Oberwolfach AG: [From Trees to Bands: Discrete Localization, Unique Continuation, and Propagation](https://www.mfo.de/www/activity/2641)"
     where: "Oberwolfach, Germany"
@@ -87,9 +132,27 @@ events:
     where: "Houston, TX"
     when: "2023"
 
+# Website: "Other Experience". CV: entries not marked `cv: false` form the "Service" section.
 other:
-  - what: "Mentor, Rice GPS Pathways Program"
+  - what: "Mentor"
+    where: "Rice GPS Pathways Program"
     when: "2023–2024"
   - what: "Industry internships"
     where: "Adobe Research, Lam Research, Goldman Sachs, Intel"
     when: "2019–2022"
+    cv: false   # listed individually under employment
+
+# CV only: "Employment" section (the website summarizes it in the line above).
+employment:
+  - what: "Research Scientist Intern"
+    where: "Adobe Inc."
+    when: "2022"
+  - what: "Data Science Intern"
+    where: "Lam Research Corp."
+    when: "2021"
+  - what: "Summer Technology Analyst"
+    where: "Goldman Sachs Inc."
+    when: "2020"
+  - what: "Undergraduate Validation Intern"
+    where: "Intel Corp."
+    when: "2019"

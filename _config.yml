@@ -43,6 +43,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
+  - cv/          # CV generator (template, script, LaTeX build files); its output is media/docs/cv.pdf
   - README.md
   - serve.sh
   - UNLICENSE.txt

@@ -16,3 +16,14 @@ Started from the [Contrast](https://github.com/niklasbuschmann/contrast) theme.
 - `_data/resources/learning_people.yml`: the searchable list on the Resources page.
 - `_sass/` and `assets/css/index.sass`: styles. Colors and font sizes are in `_sass/variables.sass`.
 - `media/`: images and the CV.
+
+## CV
+
+`media/docs/cv.pdf` is generated from the same data as the Academic page:
+
+    ruby cv/build.rb
+
+- Content: `_data/cv.yml` (education, teaching, awards, events, …) and `_data/pubs.yml` (publications and presentations).
+  Fields under `cv:` apply to the PDF only; `cv: false` leaves an entry off the PDF.
+- Layout: `cv/template.tex.erb` (LaTeX). Needs a LaTeX install with `latexmk` and `pdflatex`.
+- The build also updates the "Last updated" date on the Academic page (`_data/cv_build.yml`).
