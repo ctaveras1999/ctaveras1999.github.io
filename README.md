@@ -39,7 +39,7 @@ committing; speakers usually need `--people`. Run it without arguments to see al
 ## Broken links
 
 A GitHub workflow (`.github/workflows/check-links.yml`) checks every link on the site each Monday
-and keeps an issue labeled `broken-links` up to date (it closes the issue once everything passes).
+and fails (with the broken links listed on the run's summary page) if any are broken; GitHub emails you when it fails.
 Run it any time with `gh workflow run "Check links"`. Links that are fine but fail the check can be
 ignored in `.lychee.toml`.
 

@@ -9,14 +9,19 @@ timeout = 30
 user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
 
 # Many publishers (IEEE, journals, Cloudflare-protected sites) refuse automated requests with
-# 403, and some rate-limit with 429; LinkedIn answers bots with 999. None of these mean the page
-# is gone, so they count as OK. A removed page still shows up as 404 or 410.
-accept = ["200..=299", "403", "429", "999"]
+# 403, and some rate-limit with 429; LinkedIn answers bots with 999; 522/524 are temporary
+# Cloudflare timeouts. None of these mean the page is gone, so they count as OK. A removed page
+# still shows up as 404 or 410.
+accept = ["200..=299", "403", "429", "522", "524", "999"]
 
 exclude = [
   '^mailto:',
   '192\.168\.1\.200',      # intentional joke link in a homepage footnote
   'linkedin\.com',         # blocks all automated checks
+  # YouTube blocks checks of channel and live pages from GitHub's servers (videos on youtu.be are
+  # still checked).
+  '^https://(www\.)?youtube\.com/(@|c/|user/|channel/|live/|numberphile|RyanODonnellTeaching)',
+  'dpmms\.cam\.ac\.uk',    # certificate chain that browsers accept but command-line tools reject
   'fonts\.googleapis\.com',
   'fonts\.gstatic\.com',
 ]

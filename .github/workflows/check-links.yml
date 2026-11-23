@@ -1,7 +1,7 @@
-# Weekly check for broken links. Builds the site, checks every link in it with lychee, and keeps
-# one GitHub issue labeled "broken-links" up to date: opened or updated when links break, closed
-# once everything passes. It never blocks deploys. Run it by hand from the Actions tab
-# ("Check links" > Run workflow) or with:  gh workflow run "Check links"
+# Weekly check for broken links. Builds the site and checks every link in it with lychee.
+# If any link is broken, the run fails (a red X in the Actions tab, and GitHub emails you) and
+# the list of broken links is on the run's summary page. It never blocks deploys. Run it by hand
+# from the Actions tab ("Check links" > Run workflow) or with:  gh workflow run "Check links"
 # Settings (ignored links, accepted status codes) are in .lychee.toml.
 name: Check links
 
@@ -12,7 +12,6 @@ on:
 
 permissions:
   contents: read
-  issues: write
 
 jobs:
   links:
@@ -40,24 +39,5 @@ jobs:
             --config .lychee.toml
             --root-dir "${{ github.workspace }}/_site"
             '_site/**/*.html'
-          output: lychee-report.md
-          fail: false
-
-      - name: Open, update, or close the broken-links issue
-        env:
-          GH_TOKEN: ${{ github.token }}
-          EXIT_CODE: ${{ steps.lychee.outputs.exit_code }}
-        run: |
-          gh label create broken-links --color d93f0b \
-            --description "Found by the weekly link check" --force
-          issue=$(gh issue list --label broken-links --state open --json number --jq '.[0].number // empty')
-          if [ "$EXIT_CODE" != "0" ]; then
-            if [ -n "$issue" ]; then
-              gh issue edit "$issue" --body-file lychee-report.md
-              gh issue comment "$issue" --body "Still failing as of the check on $(date -u +%F)."
-            else
-              gh issue create --title "Broken links" --label broken-links --body-file lychee-report.md
-            fi
-          elif [ -n "$issue" ]; then
-            gh issue close "$issue" --comment "All links passed the check on $(date -u +%F)."
-          fi
+          jobSummary: true   # broken links are listed on the run's summary page
+          fail: true         # a broken link fails the run, which triggers GitHub's email

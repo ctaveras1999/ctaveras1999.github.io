@@ -383,13 +383,13 @@
   links:
     - {label: Webpage, url: "https://www.math.ias.edu/~lurie/"}
 
-- name: Matthew McCauley
-  sort: McCauley
+- name: Matthew Macauley
+  sort: Macauley
   title: Prof.
   affiliation: Clemson
   topics: [Algebra, Linear Algebra]
   links:
-    - {label: Webpage, url: "https://www.math.clemson.edu/~macaule/"}
+    - {label: Webpage, url: "https://www.clemson.edu/science/academics/departments/mathstat/about/profiles/macaule"}
     - {label: YouTube, url: "https://www.youtube.com/@ProfessorMacauley"}
 
 - name: Gary L. Miller
@@ -466,7 +466,7 @@
   affiliation: Yale
   topics: [Probability, Statistics]
   links:
-    - {label: Webpage, url: "https://www.stat.yale.edu/~pollard/"}
+    - {label: Webpage, url: "http://www.stat.yale.edu/~pollard/"}
 
 - name: Fraydoun Rezakhanlou
   sort: Rezakhanlou
@@ -545,7 +545,7 @@
   links:
     - {label: Webpage, url: "https://www.cs.yale.edu/homes/spielman/"}
     - {label: Courses, url: "http://cs-www.cs.yale.edu/homes/spielman/#teach"}
-    - {label: Spectral/Algebraic Graph Theory (Draft), url: Spectral and Algebraic Graph Theory}
+    - {label: Spectral/Algebraic Graph Theory (Draft), url: "https://cs.yale.edu/homes/spielman/sagt/"}
 
 - name: Richard M. Stern
   sort: Stern
@@ -609,7 +609,7 @@
   topics: [Probability, Analysis]
   links:
     - {label: Webpage, url: "https://www.math.cmu.edu/~ttkocz/index.php"}
-    - {label: Teaching, url: "https://www.math.cmu.edu/~ttkocz/teaching_current.php"}
+    - {label: Teaching, url: "https://www.math.cmu.edu/~ttkocz/teaching.php"}
 
 - name: Joel A. Tropp
   sort: Tropp

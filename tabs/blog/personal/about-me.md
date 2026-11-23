@@ -80,7 +80,7 @@ favelas and poor neighborhoods.
 [pr]: https://www.youtube.com/watch?v=9J3lwZjHenA&t=0
 [dr]: https://en.wikipedia.org/wiki/Dominicans_in_New_York_City
 [bx]: https://www.imdb.com/title/tt10720384/
-[hiphop]: https://the50thanniversaryofhip-hop.com/
+[hiphop]: https://en.wikipedia.org/wiki/Hip_Hop_50
 [elbx]: https://es.wikipedia.org/wiki/El_Bronx_(Bogot%C3%A1)
 [dobx]: https://en.wikipedia.org/wiki/Charles_Oliveira
 [desmos]: https://www.desmos.com/calculator/y9ou4xyfy7
