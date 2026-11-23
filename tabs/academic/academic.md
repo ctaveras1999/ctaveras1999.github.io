@@ -8,9 +8,16 @@ layout: page
 
 <!--  -->
 <!--  -->
-# CV
-<embed src="/media/docs/cv.pdf" type="application/pdf" width="80%" height="400px" />
-Last Updated on May 29th, 2026
+## CV
+<div class="cv-actions">
+  <a class="cv-button" href="/media/docs/cv.pdf">View CV (PDF)</a>
+  <a class="cv-button" href="/media/docs/cv.pdf" download="Carlos-Taveras-CV.pdf">Download</a>
+  <span class="cv-updated">Last updated May 29, 2026</span>
+</div>
+<!-- <object class="cv-embed" data="/media/docs/cv.pdf#view=FitH" type="application/pdf">
+  <p>Your browser can't show the PDF here. <a href="/media/docs/cv.pdf">Open the CV</a> instead.</p>
+</object> -->
+<!-- <embed src="/media/docs/cv.pdf" type="application/pdf" width="80%" height="400px" /> -->
 
 <!-- # Publications -->
 <!-- *  -->
@@ -18,7 +25,7 @@ Last Updated on May 29th, 2026
 <!-- # Awards -->
 <!-- *  -->
 
-# Events Attended / Attending
+## Events Attended / Attending
 * Oberwolfach AG "From Trees to Bands: Discrete Localization, Unique Continuation, and Propagation" (Oct. 4-9, 2026)
 
 * NeurIPS 2025 Workshop "New Perspectives in Graph Machine Learning" (Dec. 7, 2025)
@@ -31,8 +38,8 @@ Last Updated on May 29th, 2026
 
 * North American School of Information Theory (NASIT) 2023 (June 19-23, 2023)
 
-# Teaching Experiences
-## College Level
+## Teaching Experiences
+### College
 * **TA for ELEC 330: Random Signals @ Rice (Fall 2023/24/25)**
     * A first course in probability and random processes for ECE undergrads focusing on
       discrete and continuous random variables, laws of large numbers, 
@@ -49,7 +56,7 @@ Last Updated on May 29th, 2026
       (Fourier Series, Fourier Transforms, z-transforms, short-time), filter design, 
       time-frequency representations, multi-rate processing, and the Fast Fourier Transform.
 
-## K-12 Experiences
+### High School
 * **Instructor at Tapia Camps (Summer 2026)**
     * A summer camp introducing high school students across Texas to various STEM topics. 
       Alongside Prof. Paul Hand (the Tapia Camps director), I co-taught the 
