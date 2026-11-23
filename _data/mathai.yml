@@ -326,6 +326,12 @@
   topics: ["Classics"]
 
 # ---------- Talks & Panels ----------
+- name: "Oxford Mathematics in Conversation on AI - Ben Green and James Maynard with Jan Obloj"
+  url: "https://youtu.be/2GsuvsEg28o?t=0"
+  people: "Ben Green and James Maynard"
+  source: "YouTube: Oxford Mathematics"
+  date: "2026-11-09"
+  topics: ["Talks & Panels"]
 - name: "How to Get Scooped by AI"
   url: "https://www.youtube.com/watch?v=OVMmMkR7X6M&t=0"
   people: "Mohammed Abouzaid"
@@ -712,4 +718,20 @@
   url: "https://youtu.be/r_Byrs11ccM?t=0"
   source: "YouTube: Sheafification of G"
   date: "2026-10-23"
+  topics: ["Candid Reactions"]
+
+# ---------- Commentary on Results ----------
+- name: "How did they crack the Riemann Hypothesis?"
+  url: "https://youtu.be/PjGlt3y-Nco?t=0"
+  people: "Jon Keating"
+  source: "YouTube: Numberphile"
+  date: "2026-11-23"
+  topics: ["Commentary on Results"]
+
+# ---------- Talks ----------
+- name: "The Riemann Hypothesis Falls (reaction)"
+  url: "https://youtu.be/sMZMpsHeFKc?t=0"
+  people: "Tony Padilla and Brady Haran"
+  source: "YouTube: Numberphile"
+  date: "2026-11-20"
   topics: ["Candid Reactions"]
