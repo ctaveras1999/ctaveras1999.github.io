@@ -8,13 +8,32 @@ redirect_from:
 ---
 
 ---
-## Why Make This?
+## Purpose
 The rapid development of AI and its mathematical capabilities has forced the math community to grapple with many of its long-held traditions and tenets, at both the practical and philosophical level.
 During this unpredictable transitionary period, many in the community have shared their views on the past, present, and future of math.
 Notably, the perspectives and predictions shared so far have been quite varied.
 
 I thought it might be useful, then, to compile a list[^1] of these responses to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
 I'm hoping to update this list with new blog posts and videos as often as I can[^2]. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
+
+## Timeline of Significant Events
+### 
+
+
+### November 20th, 2026: Riemann Hypothesis and Unforced Navier Stokes Solved?
+Anthropic mathematician [Levent Alpöge](https://alpo.ge/) posts a [modest-looking four-page document](https://alpo.ge/remark.pdf)
+(humorously titled 'remark.pdf') on his website in which he claims to have proved the 
+Generalized Riemann Hypothesis with the help of Claude. 
+As for the proof, he opted to only share links to its Lean formalization and a brief timeline of some significant milestones;
+in his words, 
+
+>It being obviously inappropriate to attempt to post some massive unreadable travesty of "slop", I decided to only present Lean.
+
+accompanied by the foot note
+
+>I of course amused myself, and hit 250,000+ pages. 
+
+I don't have the expertise to describe just how impactful this result (if true) is but it's a wide-held belief among esteemed mathematicians that 
 
 ## Writing
 ### Community-wide Blogs

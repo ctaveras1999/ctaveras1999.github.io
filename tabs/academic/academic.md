@@ -9,8 +9,14 @@ layout: page
 <!--  -->
 <!--  -->
 # CV
-<embed src="/assets/cv.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="/media/docs/cv.pdf" type="application/pdf" width="80%" height="400px" />
 Last Updated on May 29th, 2026
+
+# Publications
+* 
+
+# Awards
+* 
 
 # Events Attended / Attending
 * Oberwolfach AG "From Trees to Bands: Discrete Localization, Unique Continuation, and Propagation" (Oct. 4-9, 2026)
@@ -49,5 +55,5 @@ A summer camp introducing high school students across Texas to various
 STEM topics. Alongside Prof. Paul Hand (the Tapia Camps director), I co-taught 
 the "Techniques of a Pro Mathematician" program focused on developing some of the 
 hard and soft skills needed to succeed in college math and beyond.
-While teaching I learned a bunch, gained some invaluable experience in effective 
+While teaching, I learned a bunch, gained some invaluable experience in effective 
 and engaging pedagogy, and grew a deeper appreciation for K-12 teachers. 

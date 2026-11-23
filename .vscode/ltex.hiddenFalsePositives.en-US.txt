@@ -1,0 +1,1 @@
+{"rule":"EN_UNPAIRED_QUOTES","sentence":"^\\QMy academic odyssey begins in Pittsburgh, PA where I eventually received B.S. & M.S. degrees ('21 & '22) in ECE^2 at CMU.\\E$"}

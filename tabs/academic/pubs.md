@@ -2,6 +2,7 @@
 title: "Publications"
 permalink: "/pubs/"
 layout: page
+published: false
 ---
 
 [3] C.A. Taveras, Gromov-Wasserstein Graph Coarsening

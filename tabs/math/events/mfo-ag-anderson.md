@@ -4,7 +4,7 @@ permalink: "/math/events/anderson_ag"
 layout: page
 ---
 <div style="text-align: center;">
-  <img src="/assets/MFO-Oberwolfach.png" alt="Alt text" style="width: 75%;">
+  <img src="/media/pics/MFO-Oberwolfach.png" alt="Alt text" style="width: 75%;">
 </div>
 
 I am attending the upcoming Oberwolfach Arbeitsgemeinschaft[^1] (AG) 

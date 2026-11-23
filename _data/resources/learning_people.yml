@@ -1,0 +1,689 @@
+# Data for "Some Folks with Good (Free!) Online Learning Materials" (tabs/resources/resources.md).
+# Add a person by copying any entry below. Order doesn't matter: the page sorts by `sort`.
+#
+#   name:        Display name (required)
+#   sort:        Sort key, usually the last name (required)
+#   title:       Prof., Dr., ... (optional)
+#   affiliation: Short institution name (optional)
+#   topics:      Tags shown as filter chips, e.g. [Analysis, Probability] (optional)
+#   description: A sentence or two about what they offer (optional). Markdown works:
+#                *italics*, **bold**, [links](https://...). Longer text is cut to two
+#                lines with a "More" button. Wrap it in quotes if it contains a colon.
+#   links:       One {label, url} per link, shown in the order given
+
+- name: Anil Ada
+  sort: Ada
+  title: Prof.
+  affiliation: CMU
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://www.pandanotes.org/servers/anil/"}
+    - {label: YouTube, url: "https://www.youtube.com/@anil_ada/videos"}
+
+- name: Sanjeev Arora
+  sort: Arora
+  title: Prof.
+  affiliation: Princeton
+  topics: [Theoretical Computer Science, Machine Learning]
+  links:
+    - {label: Webpage, url: "https://profsanjeevarora.github.io/"}
+    - {label: Teaching, url: "https://profsanjeevarora.github.io/teaching.html"}
+
+- name: Sheldon Axler
+  sort: Axler
+  title: Prof.
+  affiliation: SF State
+  topics: [Linear Algebra, Analysis]
+  links:
+    - {label: Webpage, url: "https://www.axler.net/"}
+    - {label: Notes, url: "https://www.axler.net/"}
+    - {label: YouTube, url: "https://www.youtube.com/@sheldonaxler5197"}
+
+- name: Sivaraman Balakrishnan
+  sort: Balakrishnan
+  title: Prof.
+  affiliation: CMU
+  topics: [Statistics, Machine Learning]
+  links:
+    - {label: Webpage, url: "https://www.stat.cmu.edu/~siva/"}
+    - {label: Teaching, url: "https://www.stat.cmu.edu/~siva/teaching/"}
+
+- name: Trefor Bazett
+  sort: Bazett
+  title: Prof.
+  affiliation: U of Victoria
+  topics: [Undergraduate Math]
+  links:
+    - {label: Webpage, url: "https://onlineacademiccommunity.uvic.ca/treforbazett/"}
+    - {label: YouTube, url: "https://www.youtube.com/c/drtreforbazett"}
+
+- name: David Ben-Zvi
+  sort: Ben-Zvi
+  title: Prof.
+  affiliation: UT Austin
+  topics: [Algebraic Geometry, Algebra]
+  links:
+    - {label: Webpage, url: "https://web.ma.utexas.edu/users/benzvi/"}
+
+- name: Richard Borcherds
+  sort: Borcherds
+  title: Prof.
+  affiliation: UC Berkeley
+  topics: [Algebra, Algebraic Geometry, Number Theory]
+  links:
+    - {label: Webpage, url: "https://math.berkeley.edu/~reb/"}
+    - {label: YouTube, url: "https://www.youtube.com/@richarde.borcherds7998"}
+
+- name: Nicolas Boumal
+  sort: Boumal
+  title: Prof.
+  affiliation: EPFL
+  topics: [Optimization, Geometry]
+  description: "Author of *An Introduction to Optimization on Smooth Manifolds* (Cambridge University Press), which is freely available online together with recorded lectures. A good entry point if you want the differential geometry needed for optimization without first working through a full course on manifolds."
+  links:
+    - {label: Webpage, url: "https://www.nicolasboumal.net/#about"}
+    - {label: Teaching, url: "https://www.nicolasboumal.net/#teaching"}
+    - {label: Optimization on Smooth Manifolds Book/Videos, url: "https://www.nicolasboumal.net/book/index.html"}
+
+- name: Steve Brunton
+  sort: Brunton
+  title: Prof.
+  affiliation: U Washington
+  topics: [Dynamical Systems, Machine Learning]
+  links:
+    - {label: Webpage, url: "https://www.eigensteve.com/"}
+    - {label: YouTube, url: "https://www.youtube.com/@Eigensteve"}
+
+- name: Randall Bryant
+  sort: Bryant
+  title: Prof.
+  affiliation: CMU
+  topics: [Computer Systems]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~bryant/"}
+    - {label: Teaching, url: "https://www.cs.cmu.edu/~bryant/teaching.html"}
+    - {label: "CS:APP Web Page", url: "https://csapp.cs.cmu.edu/"}
+
+- name: Bernard Chazelle
+  sort: Chazelle
+  title: Prof.
+  affiliation: Princeton
+  topics: [Theoretical Computer Science, Combinatorics]
+  description: "His book *The Discrepancy Method: Randomness and Complexity* is free on his website."
+  links:
+    - {label: Webpage, url: "https://www.cs.princeton.edu/~chazelle/"}
+    - {label: Discrepancy Book, url: "https://www.cs.princeton.edu/~chazelle/book.html"}
+
+- name: Evan Chen
+  sort: Chen
+  title: Dr.
+  affiliation: ""
+  topics: [Undergraduate Math, Competition Math]
+  description: "Author of *An Infinitely Large Napkin*, a free, informal tour of graduate-level math aimed at strong high school and undergraduate students."
+  links:
+    - {label: Webpage, url: "https://web.evanchen.cc/"}
+    - {label: Napkin Project, url: "https://web.evanchen.cc/napkin.html"}
+
+- name: Sinho Chewi
+  sort: Chewi
+  title: Prof.
+  affiliation: Yale
+  topics: [Probability, Statistics, Optimal Transport]
+  links:
+    - {label: Webpage, url: "https://chewisinho.github.io/"}
+    - {label: Teaching, url: "https://chewisinho.github.io/#teaching"}
+
+- name: Vaughn Climenhaga
+  sort: Climenhaga
+  title: Prof.
+  affiliation: UNC Charlotte
+  topics: [Dynamical Systems, Analysis]
+  links:
+    - {label: Webpage, url: "https://sites.google.com/view/vaughn-climenhaga/"}
+    - {label: Books/Lecture Notes, url: "https://sites.google.com/view/vaughn-climenhaga/books-and-lecture-notes?authuser=0"}
+
+- name: Keenan Crane
+  sort: Crane
+  title: Prof.
+  affiliation: CMU
+  topics: [Geometry, "Computer Graphics & Vision"]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~kmcrane/"}
+    - {label: Courses, url: "https://www.cs.cmu.edu/~kmcrane/index.html#teaching"}
+    - {label: YouTube, url: "https://www.youtube.com/user/keenancrane"}
+
+- name: Daryl DeFord
+  sort: DeFord
+  title: Prof.
+  affiliation: Vassar
+  topics: [Combinatorics, Probability]
+  links:
+    - {label: Webpage, url: "https://drdeford.github.io/"}
+    - {label: Courses, url: "https://drdeford.github.io/Teaching/"}
+    - {label: Math Job Market Notes, url: "https://drdeford.github.io/files/Math_Job_Market_Notes_WSU.pdf"}
+
+- name: "Robert Donley [aka Math Doctor Bob]"
+  sort: Donley
+  title: Prof.
+  affiliation: CUNY
+  topics: [Undergraduate Math]
+  links:
+    - {label: Webpage, url: "https://mathdoctorbob.org/"}
+    - {label: YouTube, url: "https://www.youtube.com/user/MathDoctorBob"}
+
+- name: Alessio Figalli
+  sort: Figalli
+  title: Prof.
+  affiliation: ETH Zürich
+  topics: [Analysis, PDE, Optimal Transport]
+  links:
+    - {label: Webpage, url: "https://people.math.ethz.ch/~afigalli/home"}
+    - {label: Teaching, url: "https://people.math.ethz.ch/~afigalli/teaching"}
+
+- name: Franz Franchetti
+  sort: Franchetti
+  title: Prof.
+  affiliation: CMU
+  topics: [Computer Systems, Signal Processing]
+  links:
+    - {label: Webpage, url: "https://users.ece.cmu.edu/~franzf/"}
+    - {label: Courses, url: "https://users.ece.cmu.edu/~franzf/courses.htm"}
+
+- name: Robert Ghrist
+  sort: Ghrist
+  title: Prof.
+  affiliation: UPenn
+  topics: [Topology, Undergraduate Math]
+  links:
+    - {label: Webpage, url: "https://www2.math.upenn.edu/~ghrist/"}
+    - {label: Notes, url: "https://www2.math.upenn.edu/~ghrist/"}
+    - {label: Youtube, url: "https://www.youtube.com/c/ProfGhristMath"}
+
+- name: Ioannis Gkioulekas
+  sort: Gkioulekas
+  title: Prof.
+  affiliation: CMU
+  topics: ["Computer Graphics & Vision"]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~igkioule/"}
+    - {label: Courses, url: "https://imaging.cs.cmu.edu/igkioule/#teaching"}
+
+- name: Anton Gorodetski
+  sort: Gorodetski
+  title: Prof.
+  affiliation: UC Irvine
+  topics: [Dynamical Systems, Mathematical Physics]
+  links:
+    - {label: Webpage, url: "https://www.math.uci.edu/~asgor/index.html"}
+    - {label: Courses, url: "https://www.math.uci.edu/~asgor/classes.html"}
+
+- name: Timothy Gowers
+  sort: Gowers
+  title: Prof.
+  affiliation: Cambridge/Collège de France
+  topics: [Combinatorics, Analysis]
+  links:
+    - {label: Webpage, url: "https://www.dpmms.cam.ac.uk/~wtg10/"}
+    - {label: YouTube, url: "https://www.youtube.com/@TimothyGowers0"}
+
+- name: Anupam Gupta
+  sort: Gupta
+  title: Prof.
+  affiliation: NYU
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://cs.nyu.edu/~anupamg/"}
+
+- name: Venkatesan Guruswami
+  sort: Guruswami
+  title: Prof.
+  affiliation: UC Berkeley
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://people.eecs.berkeley.edu/~venkatg/"}
+    - {label: Teaching, url: "https://people.eecs.berkeley.edu/~venkatg/#teaching"}
+
+- name: Larry Guth
+  sort: Guth
+  title: Prof.
+  affiliation: MIT
+  topics: [Analysis, Combinatorics, Geometry]
+  links:
+    - {label: Webpage, url: "https://math.mit.edu/~lguth/"}
+
+- name: Martin Hairer
+  sort: Hairer
+  title: Prof.
+  affiliation: EPFL/Imperial
+  topics: [Probability, PDE]
+  links:
+    - {label: Webpage, url: "https://hairer.org/index.html"}
+    - {label: Lecture Notes, url: "https://hairer.org/Teaching.html"}
+
+- name: Michael Harris
+  sort: Harris
+  title: Prof.
+  affiliation: Columbia
+  topics: [Number Theory]
+  links:
+    - {label: Webpage, url: "https://www.math.columbia.edu/~harris/website/"}
+    - {label: Courses, url: "https://www.math.columbia.edu/~harris/website/courses1"}
+
+- name: Alan Haynes
+  sort: Haynes
+  title: Prof.
+  affiliation: UH
+  topics: [Number Theory, Dynamical Systems]
+  links:
+    - {label: Webpage, url: "https://www.math.uh.edu/~haynes/"}
+    - {label: Lecture Notes, url: "https://www.math.uh.edu/~haynes/notes.html"}
+
+- name: Jiwen He
+  sort: He
+  title: Prof.
+  affiliation: UH
+  topics: [Numerical Analysis]
+  links:
+    - {label: Webpage, url: "https://www.math.uh.edu/~jiwenhe/"}
+
+- name: Gordon Heier
+  sort: Heier
+  title: Prof.
+  affiliation: UH
+  topics: [Algebraic Geometry, Geometry]
+  links:
+    - {label: Webpage, url: "https://www.math.uh.edu/~heier/"}
+    - {label: Teaching, url: "https://www.math.uh.edu/~heier/teaching.html"}
+
+- name: Marijn J.H. Heule
+  sort: Heule
+  title: Prof.
+  affiliation: CMU
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~mheule/"}
+
+- name: Peter Hintz
+  sort: Hintz
+  title: Prof.
+  affiliation: Penn State
+  topics: [PDE, Mathematical Physics]
+  links:
+    - {label: Webpage, url: "https://sites.psu.edu/phintz/"}
+    - {label: Teaching, url: "https://sites.psu.edu/phintz/teaching/"}
+
+- name: Michael Hutchings
+  sort: Hutchings
+  title: Prof.
+  affiliation: UC Berkeley
+  topics: [Geometry, Topology]
+  links:
+    - {label: Webpage, url: "https://math.berkeley.edu/~hutching/"}
+    - {label: Teaching, url: "https://math.berkeley.edu/~hutching/teach/past.html"}
+
+- name: Gautam Iyer
+  sort: Iyer
+  title: Prof.
+  affiliation: CMU
+  topics: [PDE, Probability]
+  links:
+    - {label: Webpage, url: "https://www.math.cmu.edu/~gautam/sj/"}
+    - {label: Courses, url: "https://www.math.cmu.edu/~gautam/sj/teaching/"}
+
+- name: Kiran S. Kedlaya
+  sort: Kedlaya
+  title: Prof.
+  affiliation: UCSD
+  topics: [Number Theory, Algebraic Geometry]
+  links:
+    - {label: Webpage, url: "https://kskedlaya.org/"}
+    - {label: Courses, url: "https://kskedlaya.org/courses-past.shtml"}
+
+- name: Pravesh K. Kothari
+  sort: Kothari
+  title: Prof.
+  affiliation: Princeton
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://www.cs.princeton.edu/~kothari/index.html"}
+    - {label: Teaching, url: "https://www.cs.princeton.edu/~kothari/teaching.html"}
+
+- name: Demetrio Labate
+  sort: Labate
+  title: Prof.
+  affiliation: UH
+  topics: [Analysis, Signal Processing]
+  links:
+    - {label: Webpage, url: "https://www.math.uh.edu/~dlabate/"}
+    - {label: Past Courses, url: "https://www.math.uh.edu/~dlabate/pastlink.html"}
+
+- name: Po-Shen Loh
+  sort: Loh
+  title: Prof.
+  affiliation: CMU
+  topics: [Combinatorics, Competition Math]
+  links:
+    - {label: Webpage, url: "https://www.math.cmu.edu/~ploh/cmu.shtml"}
+    - {label: Courses, url: "https://www.math.cmu.edu/~ploh/teaching.shtml"}
+
+- name: Álvardo Lozano-Robledo
+  sort: Lozano-Robledo
+  title: Prof.
+  affiliation: ""
+  topics: [Number Theory]
+  links:
+    - {label: Webpage, url: "https://alozanoroble.github.io/"}
+    - {label: Content, url: "https://alozanoroble.github.io/mathandcobb/"}
+
+- name: Jacob Lurie
+  sort: Lurie
+  title: Prof.
+  affiliation: IAS
+  topics: [Topology, Algebraic Geometry]
+  links:
+    - {label: Webpage, url: "https://www.math.ias.edu/~lurie/"}
+
+- name: Matthew McCauley
+  sort: McCauley
+  title: Prof.
+  affiliation: Clemson
+  topics: [Algebra, Linear Algebra]
+  links:
+    - {label: Webpage, url: "https://www.math.clemson.edu/~macaule/"}
+    - {label: YouTube, url: "https://www.youtube.com/@ProfessorMacauley"}
+
+- name: Gary L. Miller
+  sort: Miller
+  title: Prof.
+  affiliation: CMU
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~glmiller/"}
+
+- name: Vidit Nanda
+  sort: Nanda
+  title: Prof.
+  affiliation: Oxford
+  topics: [Topology]
+  links:
+    - {label: Webpage, url: "https://people.maths.ox.ac.uk/nanda/"}
+
+- name: Jelani Nelson
+  sort: Nelson
+  title: Prof.
+  affiliation: UC Berkeley
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://people.eecs.berkeley.edu/~minilek/"}
+
+- name: Liviu Nicolaescu
+  sort: Nicolaescu
+  title: Prof.
+  affiliation: Notre Dame
+  topics: [Geometry, Topology]
+  links:
+    - {label: Webpage, url: "https://academicweb.nd.edu/~lnicolae/"}
+
+- name: "Ryan O'Donnell"
+  sort: "O'Donnell"
+  title: Prof.
+  affiliation: CMU
+  topics: [Theoretical Computer Science]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~odonnell/"}
+    - {label: YouTube, url: "https://www.youtube.com/RyanODonnellTeaching"}
+
+- name: William Ott
+  sort: Ott
+  title: Prof.
+  affiliation: UH
+  topics: [Dynamical Systems, Probability]
+  links:
+    - {label: Webpage, url: "https://www.math.uh.edu/~ott/Home/"}
+    - {label: Teaching, url: "https://www.math.uh.edu/~ott/Teaching/"}
+
+- name: Michael Penn
+  sort: Penn
+  title: Prof.
+  affiliation: Randolph
+  topics: [Number Theory, Undergraduate Math]
+  links:
+    - {label: Webpage, url: "https://www.michael-penn.net/about-me"}
+    - {label: YouTube, url: "https://www.youtube.com/@MichaelPennMath"}
+
+- name: Gabriel Peyré
+  sort: Peyré
+  title: Prof.
+  affiliation: ENS ULM
+  topics: [Optimal Transport, Machine Learning, Signal Processing]
+  links:
+    - {label: Webpage, url: "https://www.gpeyre.com"}
+    - {label: Books, url: "https://www.gpeyre.com/books/"}
+
+- name: David Pollard
+  sort: Pollard
+  title: Prof.
+  affiliation: Yale
+  topics: [Probability, Statistics]
+  links:
+    - {label: Webpage, url: "https://www.stat.yale.edu/~pollard/"}
+
+- name: Fraydoun Rezakhanlou
+  sort: Rezakhanlou
+  title: Prof.
+  affiliation: UC Berkeley
+  topics: [Probability, PDE]
+  links:
+    - {label: Webpage, url: "https://math.berkeley.edu/~rezakhan/"}
+
+- name: Alessandro Rinaldo
+  sort: Rinaldo
+  title: Prof.
+  affiliation: UT Austin
+  topics: [Statistics]
+  links:
+    - {label: Webpage, url: "https://arinaldo.github.io/"}
+    - {label: Courses, url: "https://arinaldo.github.io/teaching.html"}
+
+- name: Peter Scholze
+  sort: Scholze
+  title: Prof.
+  affiliation: MPI Bonn
+  topics: [Number Theory, Algebraic Geometry]
+  links:
+    - {label: Webpage, url: "https://people.mpim-bonn.mpg.de/scholze/index.html"}
+    - {label: Notes, url: "https://people.mpim-bonn.mpg.de/scholze/papers.html#Notes"}
+
+- name: Richard E. Schwartz
+  sort: Schwartz
+  title: Prof.
+  affiliation: Brown
+  topics: [Geometry, Dynamical Systems]
+  links:
+    - {label: Webpage, url: "https://www.math.brown.edu/reschwar/"}
+
+- name: Stephen Semmes
+  sort: Semmes
+  title: Prof.
+  affiliation: Rice
+  topics: [Analysis]
+  links:
+    - {label: Notes, url: "https://math.rice.edu/~semmes/?C=M;O=D"}
+
+- name: Cosma Shalizi
+  sort: Shalizi
+  title: Prof.
+  affiliation: CMU
+  topics: [Statistics, Machine Learning]
+  links:
+    - {label: Webpage, url: "https://www.stat.cmu.edu/~cshalizi/"}
+
+- name: Jacob Shapiro
+  sort: Shapiro
+  title: Prof.
+  affiliation: Princeton
+  topics: [Mathematical Physics, Analysis]
+  links:
+    - {label: Webpage, url: "https://web.math.princeton.edu/~shapiro/"}
+    - {label: Courses, url: "https://web.math.princeton.edu/~shapiro/teaching.html#16"}
+
+- name: Justin Solomon
+  sort: Solomon
+  title: Prof.
+  affiliation: MIT
+  topics: [Geometry, Optimal Transport, "Computer Graphics & Vision"]
+  links:
+    - {label: Webpage, url: "https://people.csail.mit.edu/jsolomon/"}
+    - {label: Courses, url: "https://groups.csail.mit.edu/gdpgroup/courses.html"}
+    - {label: YouTube, url: "https://www.youtube.com/@justinmsolomon/featured"}
+
+- name: Daniel A. Spielman
+  sort: Spielman
+  title: Prof.
+  affiliation: Yale
+  topics: [Theoretical Computer Science, Combinatorics]
+  links:
+    - {label: Webpage, url: "https://www.cs.yale.edu/homes/spielman/"}
+    - {label: Courses, url: "http://cs-www.cs.yale.edu/homes/spielman/#teach"}
+    - {label: Spectral/Algebraic Graph Theory (Draft), url: Spectral and Algebraic Graph Theory}
+
+- name: Richard M. Stern
+  sort: Stern
+  title: Prof.
+  affiliation: CMU
+  topics: [Signal Processing]
+  links:
+    - {label: Webpage, url: "https://users.ece.cmu.edu/~rms/"}
+    - {label: DSP Course, url: "https://course.ece.cmu.edu/~ece491/"}
+    - {label: Advanced DSP Course, url: "https://course.ece.cmu.edu/~ece792/"}
+
+- name: Bernd Sturmfels
+  sort: Sturmfels
+  title: Prof.
+  affiliation: MPI Leipzig
+  topics: [Algebra, Algebraic Geometry]
+  links:
+    - {label: Webpage, url: "https://math.berkeley.edu/~bernd/"}
+    - {label: Teaching, url: "https://math.berkeley.edu/~bernd/teaching.html"}
+    - {label: Books, url: "https://math.berkeley.edu/~bernd/books.html"}
+
+- name: Terence Tao
+  sort: Tao
+  title: Prof.
+  affiliation: UCLA
+  topics: [Analysis, Number Theory, Combinatorics]
+  links:
+    - {label: Webpage, url: "https://www.math.ucla.edu/~tao/"}
+    - {label: Blog, url: "https://terrytao.wordpress.com/"}
+
+- name: Gerald Teschl
+  sort: Teschl
+  title: Prof.
+  affiliation: U of Vienna
+  topics: [Analysis, Dynamical Systems, Mathematical Physics]
+  links:
+    - {label: Webpage, url: "https://www.mat.univie.ac.at/~gerald/index.html"}
+
+- name: Ryan Tibshirani
+  sort: Tibshirani
+  title: Prof.
+  affiliation: UC Berkeley
+  topics: [Statistics, Machine Learning, Optimization]
+  links:
+    - {label: Webpage, url: "https://www.stat.berkeley.edu/~ryantibs/"}
+    - {label: Teaching, url: "https://www.stat.berkeley.edu/~ryantibs/teaching.html"}
+
+- name: Ian Tice
+  sort: Tice
+  title: Prof.
+  affiliation: CMU
+  topics: [PDE, Analysis]
+  links:
+    - {label: Webpage, url: "https://www.math.cmu.edu/~iantice/"}
+    - {label: Notes, url: "https://www.math.cmu.edu/~iantice/lecture_notes.html"}
+
+- name: Tomasz Tkocz
+  sort: Tkocz
+  title: Prof.
+  affiliation: CMU
+  topics: [Probability, Analysis]
+  links:
+    - {label: Webpage, url: "https://www.math.cmu.edu/~ttkocz/index.php"}
+    - {label: Teaching, url: "https://www.math.cmu.edu/~ttkocz/teaching_current.php"}
+
+- name: Joel A. Tropp
+  sort: Tropp
+  title: Prof.
+  affiliation: Caltech
+  topics: [Probability, Numerical Analysis]
+  links:
+    - {label: Webpage, url: "https://tropp.caltech.edu/index.html"}
+    - {label: Courses, url: "https://tropp.caltech.edu/courses.html"}
+
+- name: Daniel (Dani) Tubbenhauer
+  sort: Tubbenhauer
+  title: Prof.
+  affiliation: U Sydney
+  topics: [Algebra]
+  links:
+    - {label: Webpage, url: "https://www.dtubbenhauer.com/"}
+    - {label: YouTube (VisualMath), url: "https://www.youtube.com/@VisualMath"}
+
+- name: Ravi Vakil
+  sort: Vakil
+  title: Prof.
+  affiliation: Stanford
+  topics: [Algebraic Geometry]
+  links:
+    - {label: Webpage, url: "https://math.stanford.edu/~vakil/"}
+
+- name: Chelsea Walton
+  sort: Walton
+  title: Prof.
+  affiliation: Rice
+  topics: [Algebra]
+  links:
+    - {label: Webpage, url: "https://math.rice.edu/~notlaw/index.html"}
+    - {label: Courses, url: "https://math.rice.edu/~notlaw/teaching.html"}
+
+- name: Shmuel Weinberger
+  sort: Weinberger
+  title: Prof.
+  affiliation: UChicago
+  topics: [Topology]
+  links:
+    - {label: Webpage, url: "https://www.math.uchicago.edu/~shmuel/"}
+
+- name: Jenny Wilson
+  sort: Wilson
+  title: Prof.
+  affiliation: U Michigan
+  topics: [Topology, Algebra]
+  links:
+    - {label: Webpage, url: "https://websites.umich.edu/~jchw//index.html"}
+    - {label: Teaching, url: "https://websites.umich.edu/~jchw//teaching.html"}
+
+- name: Lingfu Zhang
+  sort: Zhang
+  title: Prof.
+  affiliation: Caltech
+  topics: [Probability]
+  links:
+    - {label: Webpage, url: "https://web.lfzhang.com/"}
+
+- name: Jun-Yan Zhu
+  sort: Zhu
+  title: Prof.
+  affiliation: CMU
+  topics: ["Computer Graphics & Vision", Machine Learning]
+  links:
+    - {label: Webpage, url: "https://www.cs.cmu.edu/~junyanz/"}
+    - {label: Teaching, url: "https://www.cs.cmu.edu/~junyanz/#sect-teaching"}
+
+- name: Ilya Kachkovskiy
+  sort: Kachkovskiy
+  title: Prof. 
+  affiliation: Michigan State
+  topics: ["Undergraduate Math", "Analysis"]
+  links: 
+    - {label: Webpage, url: "https://users.math.msu.edu/users/ikachkov/"}

@@ -10,7 +10,7 @@ At two, I (was) moved to the best borough in NYC (The Bronx, yes),
 Naturally, Spanish was my first language. Unfortunately, my mastery of the language peaked (I think) when I was in 
 the [ELL][ell] (english language learners) class in Kindergarten (shout out P.S. 170!) where almost everyone spoke it. 
 
-![pic](/assets/english_spanish.png){:height="300px" width="400px"}
+![pic](/media/pics/english_spanish.png){:height="300px" width="400px"}
 
 *Did I switch from thinking in Spanish to English around eight?*
 

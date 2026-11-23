@@ -2,6 +2,7 @@
 # title: "Math"
 permalink: "/math/"
 layout: page
+mathjax: true
 ---
 <!-- ## Mathematical Interpretations of (Mostly) Rap Lyrics -->
 <!-- Coming Soon... -->

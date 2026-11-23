@@ -1,0 +1,218 @@
+// Styles for _includes/filterable-list.html
+// Uses reduce() and $link-color from variables.sass, so it follows the site's light/dark colors.
+
+.flist [hidden]
+  display: none !important
+
+.flist-controls
+  display: flex
+  flex-wrap: wrap
+  gap: .5em
+  margin: 1em 0 .5em
+
+.flist-search, .flist-sort
+  font: inherit
+  color: inherit
+  background: transparent
+  border: 1px solid reduce(30)
+  border-radius: 4px
+  padding: .45em .7em
+
+.flist-search
+  flex: 1 1 16em
+  min-width: 0
+
+.flist-sort option
+  color: $dark
+
+.flist-search:focus, .flist-sort:focus, .flist-topic:focus-visible
+  outline: 2px solid $link-color
+  outline-offset: 1px
+
+.flist-topics
+  display: flex
+  flex-wrap: wrap
+  gap: .4em
+  margin: .5em 0
+
+.flist-topic
+  font: inherit
+  font-size: .85em
+  color: inherit
+  background: transparent
+  border: 1px solid reduce(30)
+  border-radius: 999px
+  padding: .15em .8em
+  cursor: pointer
+  &[aria-pressed="true"]
+    background: $link-color
+    border-color: $link-color
+    color: #fff
+
+.flist-count
+  font-size: .85em
+  opacity: .7
+  margin: .25em 0 .25em
+  text-align: left
+
+.flist-items
+  list-style: none
+  padding: 0
+  margin: 0
+
+.flist-item
+  display: grid
+  grid-template-columns: minmax(0, 1fr) auto
+  gap: .15em 1.5em
+  align-items: baseline
+  margin: 0
+  padding: .55em 0
+  border-bottom: 1px solid reduce(14)
+
+.flist-title, .flist-aff
+  opacity: .65
+
+.flist-title
+  font-size: .9em
+
+.flist-name
+  font-weight: $font-weight + 200
+
+.flist-aff
+  margin-left: .35em
+
+.flist-links
+  text-align: right
+  a + a::before
+    content: "·"
+    display: inline-block
+    margin: 0 .5em
+    color: reduce(60)
+
+.flist-tags
+  grid-column: 1 / -1
+  display: flex
+  flex-wrap: wrap
+  gap: .35em
+  span
+    font-size: .8em
+    padding: .05em .6em
+    border-radius: 999px
+    background: reduce(10)
+
+.flist-empty
+  opacity: .7
+  font-style: italic
+
+@media (max-width: 40em)
+  .flist-item
+    grid-template-columns: minmax(0, 1fr)
+  .flist-links
+    text-align: left
+
+.flist-toggle
+  font: inherit
+  font-size: .9em
+  color: $link-color
+  background: transparent
+  border: 1.5px solid $link-color
+  border-radius: 4px
+  padding: .4em .9em
+  margin: .9em 0 0
+  cursor: pointer
+  transition: .2s background, .2s color
+  &:hover
+    color: #fff
+    background: $link-color
+  &:focus-visible
+    outline: 2px solid $link-color
+    outline-offset: 2px
+
+// Optional per-person descriptions
+.flist-desc
+  grid-column: 1 / -1
+  font-size: .92em
+  opacity: .85
+  max-width: 75em
+  p
+    margin: .1em 0 0
+    text-align: left
+  p + p
+    margin-top: .4em
+
+// Added by the script only, so without JavaScript the full text shows.
+.flist-desc.is-clamped
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 1
+  line-clamp: 1
+  overflow: hidden
+
+.flist-more
+  grid-column: 1 / -1
+  justify-self: start
+  font: inherit
+  font-size: .85em
+  color: $link-color
+  background: none
+  border: 0
+  padding: 0
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+  &:focus-visible
+    outline: 2px solid $link-color
+    outline-offset: 2px
+
+// "Filter by topic" button and the panel it opens
+.flist-topics-toggle
+  font: inherit
+  color: inherit
+  background: transparent
+  border: 1px solid reduce(30)
+  border-radius: 4px
+  padding: .45em .8em
+  cursor: pointer
+  &:hover
+    border-color: $link-color
+  &[aria-expanded="true"], &.has-active
+    border-color: $link-color
+    color: $link-color
+  &:focus-visible
+    outline: 2px solid $link-color
+    outline-offset: 1px
+
+.flist-topics
+  padding: .6em 0 .2em
+
+.flist-topics-clear
+  font: inherit
+  font-size: .85em
+  color: $link-color
+  background: none
+  border: 0
+  padding: .15em .4em
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+
+// Count line above the list, with a second Show all / Show fewer button
+.flist-status
+  display: flex
+  flex-wrap: wrap
+  align-items: baseline
+  gap: .25em .8em
+  margin: .25em 0
+
+.flist-status .flist-count
+  margin: 0
+
+.flist-toggle.flist-toggle-top
+  font-size: .85em
+  border: 0
+  padding: 0
+  margin: 0
+  &:hover
+    color: $link-color
+    background: none
+    text-decoration: underline

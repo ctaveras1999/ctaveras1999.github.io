@@ -2,8 +2,8 @@
 .bundle
 .jekyll-cache
 .sass-cache
-Gemfile.lock
 _site
 *.gem
 vendor/
 serve.sh
+README.md

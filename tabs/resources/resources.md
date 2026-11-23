@@ -9,91 +9,22 @@ layout: page
 <!--  -->
 <!--  -->
 # Some Folks with Good (Free!) Online Learning Materials
-Below is an ever-growing list of academics that have generously shared materials online 
-including full university courses, lecture notes/recordings, problem sets, textbooks, 
-insights, and much more. 
-Thanks for making these resources freely available to us all![^1]
-If there's anyone that isn't included here that should be, 
-let met know (via email) and I'll fix that.[^2]
+## Summary 
+Below is a growing list of academics who've posted useful resources online 
+including full university courses, notes/recordings, problem sets, textbooks, 
+insights, and more.
+To support them, you should read their work (research) and share it with others, if possible.
 
-A wide range of content can be found here, spanning across pure and applied mathematics, 
-computer science, and engineering.[^3]
+I tried to include a broad range of topics across pure and applied math, 
+computer science and (mostly electrical) engineering.
+Please reach out to me (via email) if you have suggestions on others to add![^1] 
+For those on the list, thank you for making these resources freely accessible to us all![^2]
 
-* Prof. Anil Ada (CMU): [Webpage](https://csapp.cs.cmu.edu/)
-* Prof. Sanjeev Arora (Princeton): [Webpage](https://profsanjeevarora.github.io/) & [Teaching](https://profsanjeevarora.github.io/teaching.html)
-* Prof. Sheldon Axler (SF State): [Webpage](https://www.axler.net/), [Notes](https://www.axler.net/) & [YouTube](https://www.youtube.com/@sheldonaxler5197)
-* Prof. Sivaraman Balakrishnan (CMU): [Webpage](https://www.stat.cmu.edu/~siva/) & [Teaching](https://www.stat.cmu.edu/~siva/teaching/)
-* Prof. Trefor Bazett (U of Victoria): [Webpage](https://onlineacademiccommunity.uvic.ca/treforbazett/) & [YouTube](https://www.youtube.com/c/drtreforbazett)
-* Prof. David Ben-Zvi (UT Austin): [Webpage](https://web.ma.utexas.edu/users/benzvi/)
-* Prof. Richard Borcherds (UC Berkeley): [Webpage](https://math.berkeley.edu/~reb/) & [YouTube](https://www.youtube.com/@richarde.borcherds7998)
-* Prof. Nicolas Boumal (EPFL): [Webpage](https://www.nicolasboumal.net/#about), [Teaching](https://www.nicolasboumal.net/#teaching), & [Optimization on Smooth Manifolds Book/Videos](https://www.nicolasboumal.net/book/index.html)
-* Prof. Steve Brunton (U Washington): [Webpage](https://www.eigensteve.com/) & [YouTube](https://www.youtube.com/@Eigensteve)
-* Prof. Randall Bryant (CMU): [Webpage](https://www.cs.cmu.edu/~bryant/), [Teaching](https://www.cs.cmu.edu/~bryant/teaching.html), & [CS:APP Web Page](https://csapp.cs.cmu.edu/)
-* Prof. Bernard Chazelle (Princeton): [Webpage](https://www.cs.princeton.edu/~chazelle/) & [Discrepancy Book](https://www.cs.princeton.edu/~chazelle/book.html)
-* Dr. Evan Chen: [Webpage](https://web.evanchen.cc/) & [Napkin Project](https://web.evanchen.cc/napkin.html)
-* Prof. Sinho Chewi (Yale): [Webpage](https://chewisinho.github.io/) & [Teaching](https://chewisinho.github.io/#teaching)
-* Prof. Vaughn Climenhaga (UNC Charlotte): [Webpage](https://sites.google.com/view/vaughn-climenhaga/) & [Books/Lecture Notes](https://sites.google.com/view/vaughn-climenhaga/books-and-lecture-notes?authuser=0)
-* Prof. Keenan Crane (CMU): [Webpage](https://www.cs.cmu.edu/~kmcrane/), [Courses](https://www.cs.cmu.edu/~kmcrane/index.html#teaching) & [YouTube](https://www.youtube.com/user/keenancrane)
-* Prof. Daryl DeFord (Vassar): [Webpage](https://drdeford.github.io/), [Courses](https://drdeford.github.io/Teaching/), [Math Job Market Notes](https://drdeford.github.io/files/Math_Job_Market_Notes_WSU.pdf)
-* Prof. Robert Donley [aka Math Doctor Bob] (CUNY): [Webpage](https://mathdoctorbob.org/) & [YouTube](https://www.youtube.com/user/MathDoctorBob)
-* Prof. Alessio Figalli (ETH Zürich): [Webpage](https://people.math.ethz.ch/~afigalli/home) & [Teaching](https://people.math.ethz.ch/~afigalli/teaching)
-* Prof. Franz Franchetti (CMU): [Webpage](https://users.ece.cmu.edu/~franzf/) & [Courses](https://users.ece.cmu.edu/~franzf/courses.htm)
-* Prof. Robert Ghrist (UPenn): [Webpage](https://www2.math.upenn.edu/~ghrist/), [Notes](https://www2.math.upenn.edu/~ghrist/) & [Youtube](https://www.youtube.com/c/ProfGhristMath)
-* Prof. Ioannis Gkioulekas (CMU): [Webpage](https://www.cs.cmu.edu/~igkioule/) & [Courses](https://imaging.cs.cmu.edu/igkioule/#teaching)
-* Prof. Anton Gorodetski (UC Irvine): [Webpage](https://www.math.uci.edu/~asgor/index.html) & [Courses](https://www.math.uci.edu/~asgor/classes.html)
-* Prof. Timothy Gowers (Cambridge/Collège de France): [Webpage](https://www.dpmms.cam.ac.uk/~wtg10/) & [YouTube](https://www.youtube.com/@TimothyGowers0)
-* Prof. Anupam Gupta (NYU): [Webpage](https://cs.nyu.edu/~anupamg/)
-* Prof. Venkatesan Guruswami (UC Berkeley): [Webpage](https://people.eecs.berkeley.edu/~venkatg/) & [Teaching](https://people.eecs.berkeley.edu/~venkatg/#teaching)
-* Prof. Larry Guth (MIT): [Webpage](https://math.mit.edu/~lguth/)
-* Prof. Martin Hairer (EPFL/Imperial): [Webpage](https://hairer.org/index.html) & [Lecture Notes](https://hairer.org/Teaching.html)
-* Prof. Michael Harris (Columbia): [Webpage](https://www.math.columbia.edu/~harris/website/) & [Courses](https://www.math.columbia.edu/~harris/website/courses1)
-* Prof. Alan Haynes (UH): [Webpage](https://www.math.uh.edu/~haynes/) & [Lecture Notes](https://www.math.uh.edu/~haynes/notes.html)
-* Prof. Jiwen He (UH): [Webpage](https://www.math.uh.edu/~jiwenhe/)
-* Prof. Gordon Heier (UH): [Webpage](https://www.math.uh.edu/~heier/) & [Teaching](https://www.math.uh.edu/~heier/teaching.html)
-* Prof. Marijn J.H. Heule (CMU): [Webpage](https://www.cs.cmu.edu/~mheule/)
-* Prof. Peter Hintz (Penn State): [Webpage](https://sites.psu.edu/phintz/) & [Teaching](https://sites.psu.edu/phintz/teaching/)
-* Prof. Michael Hutchings (UC Berkeley): [Webpage](https://math.berkeley.edu/~hutching/) & [Teaching](https://math.berkeley.edu/~hutching/teach/past.html)
-* Prof. Gautam Iyer (CMU): [Webpage](https://www.math.cmu.edu/~gautam/sj/) & [Courses](https://www.math.cmu.edu/~gautam/sj/teaching/)
-* Prof. Kiran S. Kedlaya (UCSD): [Webpage](https://kskedlaya.org/) & [Courses](https://kskedlaya.org/courses-past.shtml)
-* Prof. Pravesh K. Kothari (Princeton): [Webpage](https://www.cs.princeton.edu/~kothari/index.html) & [Teaching](https://www.cs.princeton.edu/~kothari/teaching.html)
-* Prof. Demetrio Labate (UH): [Webpage](https://www.math.uh.edu/~dlabate/) & [Past Courses](https://www.math.uh.edu/~dlabate/pastlink.html)
-* Prof. Po-Shen Loh (CMU): [Webpage](https://www.math.cmu.edu/~ploh/cmu.shtml) & [Courses](https://www.math.cmu.edu/~ploh/teaching.shtml)
-* Prof. Álvardo Lozano-Robledo: [Webpage](https://alozanoroble.github.io/) & [Content](https://alozanoroble.github.io/mathandcobb/)
-* Prof. Jacob Lurie (IAS): [Webpage](https://www.math.ias.edu/~lurie/)
-* Prof. Matthew McCauley (Clemson): [Webpage](https://www.math.clemson.edu/~macaule/) & [YouTube](https://www.youtube.com/@ProfessorMacauley)
-* Prof. Gary L. Miller (CMU): [Webpage](https://www.cs.cmu.edu/~glmiller/)
-* Prof. Vidit Nanda (Oxford): [Webpage](https://people.maths.ox.ac.uk/nanda/)
-* Prof. Jelani Nelson (UC Berkeley): [Webpage](https://people.eecs.berkeley.edu/~minilek/)
-* Prof. Liviu Nicolaescu (Notre Dame): [Webpage](https://academicweb.nd.edu/~lnicolae/)
-* Prof. Ryan O'Donnell (CMU): [Webpage](https://www.cs.cmu.edu/~odonnell/) & [YouTube](https://www.youtube.com/RyanODonnellTeaching)
-* Prof. William Ott (UH): [Webpage](https://www.math.uh.edu/~ott/Home/) & [Teaching](https://www.math.uh.edu/~ott/Teaching/)
-* Prof. Michael Penn (Randolph): [Webpage](https://www.michael-penn.net/about-me) & [YouTube](https://www.youtube.com/@MichaelPennMath)
-* Prof. Gabriel Peyré (ENS ULM): [Webpage](https://www.gpeyre.com) & [Books](https://www.gpeyre.com/books/) 
-* Prof. David Pollard (Yale): [Webpage](https://www.stat.yale.edu/~pollard/)
-* Prof. Fraydoun Rezakhanlou (UC Berkeley): [Webpage](https://math.berkeley.edu/~rezakhan/)
-* Prof. Alessandro Rinaldo (UT Austin): [Webpage](https://arinaldo.github.io/) & [Courses](https://arinaldo.github.io/teaching.html)
-* Prof. Peter Scholze (MPI Bonn): [Webpage](https://people.mpim-bonn.mpg.de/scholze/index.html) & [Notes](https://people.mpim-bonn.mpg.de/scholze/papers.html#Notes)
-* Prof. Richard E. Schwartz (Brown): [Webpage](https://www.math.brown.edu/reschwar/)
-* Prof. Stephen Semmes (Rice): [Notes](https://math.rice.edu/~semmes/?C=M;O=D)
-* Prof. Cosma Shalizi (CMU): [Webpage](https://www.stat.cmu.edu/~cshalizi/)
-* Prof. Jacob Shapiro (Princeton): [Webpage](https://web.math.princeton.edu/~shapiro/) & [Courses](https://web.math.princeton.edu/~shapiro/teaching.html#16)
-* Prof. Justin Solomon (MIT): [Webpage](https://people.csail.mit.edu/jsolomon/), [Courses](https://groups.csail.mit.edu/gdpgroup/courses.html) & [YouTube](https://www.youtube.com/@justinmsolomon/featured)
-* Prof. Daniel A. Spielman (Yale): [Webpage](https://www.cs.yale.edu/homes/spielman/), [Courses](http://cs-www.cs.yale.edu/homes/spielman/#teach) & [Spectral/Algebraic Graph Theory (Draft)](Spectral and Algebraic Graph Theory)
-* Prof. Richard M. Stern (CMU): [Webpage](https://users.ece.cmu.edu/~rms/), [DSP Course](https://course.ece.cmu.edu/~ece491/) & [Advanced DSP Course](https://course.ece.cmu.edu/~ece792/)
-* Prof. Bernd Sturmfels (MPI Leipzig): [Webpage](https://math.berkeley.edu/~bernd/), [Teaching](https://math.berkeley.edu/~bernd/teaching.html), & [Books](https://math.berkeley.edu/~bernd/books.html)
-* Prof. Terence Tao (UCLA): [Webpage](https://www.math.ucla.edu/~tao/) & [Blog](https://terrytao.wordpress.com/)
-* Prof. Gerald Teschl (U of Vienna): [Webpage](https://www.mat.univie.ac.at/~gerald/index.html)
-* Prof. Ryan Tibshirani (UC Berkeley): [Webpage](https://www.stat.berkeley.edu/~ryantibs/) & [Teaching](https://www.stat.berkeley.edu/~ryantibs/teaching.html)
-* Prof. Ian Tice (CMU): [Webpage](https://www.math.cmu.edu/~iantice/) & [Notes](https://www.math.cmu.edu/~iantice/lecture_notes.html)
-* Prof. Tomasz Tkocz (CMU): [Webpage](https://www.math.cmu.edu/~ttkocz/index.php) & [Teaching](https://www.math.cmu.edu/~ttkocz/teaching_current.php)
-* Prof. Joel A. Tropp (Caltech): [Webpage](https://tropp.caltech.edu/index.html) & [Courses](https://tropp.caltech.edu/courses.html)
-* Prof. Daniel (Dani) Tubbenhauer (U Sydney): [Webpage](https://www.dtubbenhauer.com/) & [YouTube (VisualMath)](https://www.youtube.com/@VisualMath)
-* Prof. Ravi Vakil (Stanford): [Webpage](https://math.stanford.edu/~vakil/)
-* Prof. Chelsea Walton (Rice): [Webpage](https://math.rice.edu/~notlaw/index.html) & [Courses](https://math.rice.edu/~notlaw/teaching.html)
-* Prof. Shmuel Weinberger (UChicago): [Webpage](https://www.math.uchicago.edu/~shmuel/)
-* Prof. Jenny Wilson (U Michigan): [Webpage](https://websites.umich.edu/~jchw//index.html) & [Teaching](https://websites.umich.edu/~jchw//teaching.html)
-* Prof. Lingfu Zhang (Caltech): [Webpage](https://web.lfzhang.com/)
-* Prof. Jun-Yan Zhu (CMU): [Webpage](https://www.cs.cmu.edu/~junyanz/) & [Teaching](https://www.cs.cmu.edu/~junyanz/#sect-teaching)
+The list is ordered randomly by default.
+You can choose to sort by last name or affiliation and also search by topic.
+
+## The List
+{% include filterable-list.html data=site.data.resources.learning_people id="learning" limit=5 %}
 
 # General Learning Resources
 * [MIT OCW](https://ocw.mit.edu/)
@@ -151,6 +82,5 @@ computer science, and engineering.[^3]
 * [Questbridge](https://www.questbridge.org/)
 
 ### Footnotes
-[^1]: If you're on this list and don't want to be, please let me know.
-[^2]: Including you, if you have some knowledge to share with the rest of us! 
-[^3]: Unfortunately, these are not categorized by topic right now – I'll fix this soon!
+[^1]: That includes you, if you have something to share with the rest of us :) .
+[^2]: If you're on this list and either don't want to be or you see erroneous information, please let me know! 
