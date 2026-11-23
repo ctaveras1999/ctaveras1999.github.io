@@ -1,18 +1,39 @@
 {%- comment -%}
   Lists every page whose front matter has `section: <include.section>`, newest first.
   Usage:  {% include page-list.html section="blog" %}
-  Each listed page needs `date:`; `category:` and `description:` are optional
+  Each listed page needs `date:`; `category:`, `description:`, and `tags:` are optional
+  (a page with tags shows its tags instead of its category label)
   (`description` is also what search engines and link previews show).
+  Tags: `tags: [Personal, Lists]`. A row of all tags appears above the list; clicking a tag (here
+  or under a post) shows only posts with that tag. The filter is kept in the address
+  (e.g. /blog/?tag=Personal), so post pages can link to it. Script: assets/js/page-list.js
 {%- endcomment -%}
 {%- assign items = site.pages | where: "section", include.section | sort: "date" | reverse -%}
+{%- capture tag_blob -%}{%- for p in items -%}{%- for t in p.tags -%}{{ t }}|{%- endfor -%}{%- endfor -%}{%- endcapture -%}
+{%- assign all_tags = tag_blob | split: "|" | uniq | sort_natural -%}
+<div class="page-list-wrap">
+{%- if all_tags.size > 0 %}
+<div class="page-list-tags-all flist-tags" role="group" aria-label="Filter by tag">
+  <span class="page-list-tags-label">Tags:</span>
+  {%- for t in all_tags %}<button type="button" class="flist-tag" data-tag="{{ t | escape }}" aria-pressed="false">{{ t | escape }}</button>{% endfor %}
+</div>
+<p class="page-list-filter" hidden><span class="page-list-filter-text"></span> · <button type="button" class="page-list-clear">Show all</button></p>
+{%- endif %}
 <ul class="page-list">
 {%- for p in items %}
-  <li>
+  <li data-tags="{{ p.tags | join: '|' | escape }}">
     <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %Y" }}</time>
     <div>
-      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.category and p.category != p.title %} <span class="page-list-cat">{{ p.category }}</span>{% endif %}
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.category and p.category != p.title and p.tags == nil %} <span class="page-list-cat">{{ p.category }}</span>{% endif %}
       {%- if p.description %}<p>{{ p.description }}</p>{% endif %}
+      {%- if p.tags and p.tags.size > 0 %}
+      <div class="flist-tags">{% for t in p.tags %}<button type="button" class="flist-tag" data-tag="{{ t | escape }}" aria-pressed="false" title="Show only posts tagged {{ t | escape }}">{{ t | escape }}</button>{% endfor %}</div>
+      {%- endif %}
     </div>
   </li>
 {%- endfor %}
 </ul>
+</div>
+{%- if all_tags.size > 0 %}
+<script defer src="{{ '/assets/js/page-list.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+{%- endif %}

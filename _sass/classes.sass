@@ -11,7 +11,7 @@
   transition: .2s background, .2s color
 
 .more a:hover
-  color: #fff
+  color: var(--on-link)
   background: $link-color
   text-decoration: inherit
 
@@ -253,3 +253,37 @@ h2[id], h3[id]
   &:focus-visible
     outline: 2px solid $link-color
     outline-offset: 2px
+
+// Tags on the Blog and Math lists (_includes/page-list.html) and on post pages
+.page-list-tags-all
+  align-items: center
+  margin: 0 0 1em
+// Posts hidden by a tag filter (the list items are grids, which would otherwise override [hidden])
+.page-list > li[hidden]
+  display: none
+// "Tags:" is a plain label, not a tag
+.flist-tags .page-list-tags-label
+  font-size: .85em
+  opacity: .7
+  background: none
+  border: 0
+  box-shadow: none
+  padding: 0
+.page-list > li .flist-tags
+  margin-top: .35em
+.page-list-filter
+  font-size: .9em
+  margin: 0 0 1em
+.page-list-clear
+  font: inherit
+  color: $link-color
+  background: none
+  border: 0
+  padding: 0
+  cursor: pointer
+  text-decoration: underline
+.post-tags
+  align-items: center
+  margin: 0 0 1.2em
+  a.flist-tag
+    text-decoration: none

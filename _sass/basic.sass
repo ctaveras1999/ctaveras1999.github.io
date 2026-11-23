@@ -1,15 +1,14 @@
+// Custom properties keep everything after the colon, comments included, so the notes go here:
+// --link is the favicon's purple (8.5:1 on white); --on-link is the text color on link-colored fills;
+// --bg is the background behind pinned bars (the window content).
 :root
-  color-scheme: light dark   // lets built-in controls (dropdowns, scrollbars) follow dark mode too
-  --link: #3b5bdb
-  --bg: #{$light}
-
-@media (prefers-color-scheme: dark)
-  :root
-    --link: #7c9bff
-    --bg: #{$dark}
+  color-scheme: light
+  --link: #692e9d
+  --on-link: #ffffff
+  --bg: #{$window}
 
 body
-  background: $light
+  background: $desktop
   color: $dark
   font-family: $font-family
   font-weight: $font-weight
@@ -20,11 +19,6 @@ body
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
-@media (prefers-color-scheme: dark)
-  body
-    background: $dark
-    color: $light
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight

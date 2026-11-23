@@ -1,6 +1,6 @@
 ---
-title: "Math and AI"
+title: "Math and AI Page Announcement"
 ---
-I created [Math and AI]({{'/math/mathai'|relative_url}}), a page aggregating news on math and AI:
-blog posts, essays, talks, and reactions from across the mathematics community, searchable and sorted newest first.
-I plan to keep it updated regularly.
+Check out [Math and AI]({{'/math/mathai'|relative_url}}) if you're interested in the developing relationship between Math and AI and 
+the conversations being had within the mathematics community.
+I'll try my best to update it regularly.

@@ -9,11 +9,9 @@ description: "Who I am, how I got here, and what you'll find on this site."
   <img src="/media/pics/personal_pic3-small.jpeg" alt="A picture of me near some trees circa 2026" width="400" height="536">
 </figure>
 
-Among other things, I am a first-year Ph.D. student in the [Rice Math Department][ricemath].[^not-me]
-My mathematical interests haven't settled quite yet, but,
-at the moment, I'm most partial to analysis 
+My mathematical interests haven't settled quite yet, but I'm most partial to analysis and spectral theory at the moment,
 and hope to work with [David Damanik](https://www.ruf.rice.edu/~dtd3/)[^damanik] on spectral theory and Schrödinger operators.[^schrodinger] 
-These days, I spend most of my time trying to master enough math to pass my quals.
+These days, I spend most of my time doing homework and trying to master enough math to pass my quals.
 
 My academic [odyssey](https://en.wikipedia.org/wiki/Odyssey) begins in Pittsburgh, PA where I 
 eventually received B.S. & M.S. degrees ('21 & '22) in [ECE][ece][^ece] at [CMU][cmu].

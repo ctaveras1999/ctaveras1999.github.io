@@ -19,19 +19,20 @@ profile:
   webpage: "https://ctaveras1999.github.io/"
   scholar: "https://scholar.google.com/citations?user=sw4tzEoAAAAJ&hl=en"
   email: "ctaveras1999@gmail.com"
-  research_interests: ["Schrödinger Operators", "Ergodic Theory", "Spectral Theory"]
+  research_interests: ["Analysis", "Spectral Theory"]
 
 # CV layout: **where**, *location* (right: when), then `what`, then `cv: details` lines.
 education:
   - what: "Ph.D. in Mathematics"
     where: "Rice University"
     location: "Houston, TX"
-    when: "2026–present"
+    when: "2026-Now"
   - what: "M.S. in Electrical and Computer Engineering"
     where: "Rice University"
     location: "Houston, TX"
-    when: "2022–2026"
-    desc: "Advisors: [César A. Uribe](https://cauribe.rice.edu/) and [Santiago Segarra](https://segarra.rice.edu/). Thesis: [*Efficient Path Planning with Soft Homology Constraints*](https://repository.rice.edu/items/87afda7a-6a85-452e-8954-02b11b7e0c2a)."
+    when: "2022-2026"
+    # Two paragraphs (separated by \n\n) show as two lines
+    desc: "Advisors: [César A. Uribe](https://cauribe.rice.edu/) and [Santiago Segarra](https://segarra.rice.edu/)\n\nThesis: [*Efficient Path Planning with Soft Homology Constraints*](https://repository.rice.edu/items/87afda7a-6a85-452e-8954-02b11b7e0c2a)"
     cv:
       details:
         - "Advisors: César A. Uribe and Santiago Segarra"
@@ -39,7 +40,7 @@ education:
   - what: "B.S. & M.S. in Electrical and Computer Engineering"
     where: "Carnegie Mellon University"
     location: "Pittsburgh, PA"
-    when: "2017–2022"
+    when: "2017-2022"
 
 awards:
   - what: "Raymond L. Johnson Fellowship"
@@ -65,7 +66,7 @@ teaching:
         - "Led three week-long sessions of [*Techniques of a Pro Mathematician*](https://tapiacenter.rice.edu/tapia-stem-camps) introducing high school students to undergraduate-level mathematical abstraction and problem solving"
   - what: "Tutor"
     where: "SpiderSmart River Oaks Learning Center"
-    when: "2026"
+    when: "Summer 2026"
     desc: "Tutored primary and secondary school students in various elementary math subjects."
     cv:
       bullets: ["Tutored several primary and secondary school students in various elementary math subjects"]
@@ -76,7 +77,7 @@ teaching:
     cv:
       what: "Teaching Assistant and Grader"
       where: "Rice University"
-      when: "2023–2025"
+      when: "2023-2025"
       bullets:
         - "Led recitations, held office hours, and created/graded homework for *Random Signals (ELEC 303)*, a course on probability and statistics for engineers"
   - what: "TA, 18-290: Signals and Systems"
@@ -86,7 +87,7 @@ teaching:
     cv:   # both CMU courses are one entry on the CV
       what: "Teaching Assistant and Grader"
       where: "Carnegie Mellon University"
-      when: "2021–2022"
+      when: "2021-2022"
       bullets:
         - "Led recitations, held office hours, and graded for *Signals and Systems (18-290)*, a course on basic properties of discrete/continuous-time linear and time-invariant systems (operators)"
         - "Held office hours and graded for *Fundamentals of Signal Processing (18-491/691)*, a course on the basic theory and algorithms of discrete-time signal processing"
@@ -136,10 +137,10 @@ events:
 other:
   - what: "Mentor"
     where: "Rice GPS Pathways Program"
-    when: "2023–2024"
+    when: "2023-2024"
   - what: "Industry internships"
     where: "Adobe Research, Lam Research, Goldman Sachs, Intel"
-    when: "2019–2022"
+    when: "2019-2022"
     cv: false   # listed individually under employment
 
 # CV only: "Employment" section (the website summarizes it in the line above).

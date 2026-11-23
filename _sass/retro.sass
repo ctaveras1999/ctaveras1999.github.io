@@ -1,0 +1,469 @@
+// Retro Windows look, after the "Retro Windows" Obsidian theme by codeisconfusing (MIT):
+// https://github.com/codeisconfusing/retro-windows-obsidian
+// Pages are windows (purple title bar, gray beveled frame, white sunken content) on a gray
+// desktop; the site header is a menu bar and the footer a status bar. Colors are in
+// variables.sass. Imported last, so these rules override the base styles.
+
+// ---------- 3D bevels (box-shadow values from the Obsidian theme) ----------
+// Raised: buttons, chips
+@mixin raised
+  box-shadow: inset -1px -1px $bevel-dark, inset 1px 1px $bevel-light, inset -2px -2px $bevel-shadow, inset 2px 2px $bevel-mid
+// Raised frame: windows, cards, menu bar
+@mixin raised-frame
+  box-shadow: inset -1px -1px $bevel-dark, inset 1px 1px $bevel-mid, inset -2px -2px $bevel-shadow, inset 2px 2px $bevel-light
+// Pressed: a button being clicked, the current tab, a selected chip
+@mixin pressed
+  box-shadow: inset 1px 1px $bevel-dark, inset -1px -1px $bevel-light, inset 2px 2px $bevel-shadow, inset -2px -2px $bevel-mid
+// Sunken: window content, text fields
+@mixin sunken
+  box-shadow: inset 1px 1px $bevel-shadow, inset -1px -1px $bevel-light, inset 2px 2px $bevel-dark, inset -2px -2px $bevel-mid
+
+// "Lava lamp" title bars: soft blobs of purple drift and merge over the dark purple base. Two
+// layers of blurred radial gradients move on different timings (170s and 110s), so the pattern
+// keeps changing instead of visibly repeating. The brightest blob color (#904ecb) keeps white
+// text at 5.1:1 or better. The blobs hold still for visitors who prefer reduced motion.
+$lava-1: #904ecb
+$lava-2: $titlebar
+$lava-3: #7f37bd
+
+@mixin titlebar-lava
+  position: relative
+  overflow: hidden
+  isolation: isolate
+  background: $titlebar-start
+  &::before, &::after
+    content: ""
+    position: absolute
+    inset: -60% -15%
+    z-index: -1
+    background-repeat: no-repeat
+    filter: blur(5px)
+    pointer-events: none
+  &::before
+    background-image: radial-gradient(closest-side, $lava-2, transparent), radial-gradient(closest-side, $lava-1, transparent), radial-gradient(closest-side, $lava-3, transparent)
+    background-size: 45% 190%, 26% 150%, 38% 170%
+    animation: lava-a 170s ease-in-out infinite alternate
+  &::after
+    background-image: radial-gradient(closest-side, $lava-3, transparent), radial-gradient(closest-side, $lava-2, transparent)
+    background-size: 30% 160%, 50% 200%
+    opacity: .85
+    animation: lava-b 110s ease-in-out infinite alternate
+  @media (prefers-reduced-motion: reduce)
+    &::before, &::after
+      animation: none
+
+@keyframes lava-a
+  0%
+    background-position: 0% 30%, 35% 90%, 85% 20%
+  33%
+    background-position: 30% 80%, 70% 10%, 55% 70%
+  66%
+    background-position: 65% 20%, 20% 40%, 100% 90%
+  100%
+    background-position: 100% 60%, 90% 80%, 10% 30%
+
+@keyframes lava-b
+  0%
+    background-position: 90% 70%, 15% 20%
+  50%
+    background-position: 40% 10%, 75% 90%
+  100%
+    background-position: 5% 50%, 45% 30%
+
+$column: 60em  // window width
+
+// ---------- Basics ----------
+a
+  text-decoration: underline
+  text-underline-offset: 2px
+
+\::selection
+  background: $titlebar
+  color: #fff
+
+:focus-visible
+  outline: 1px dotted #000
+  outline-offset: 2px
+
+hr
+  border: 0
+  border-top: 1px solid $bevel-shadow
+  border-bottom: 1px solid $bevel-light
+
+blockquote
+  background: #f0f0f0
+  border-left: 3px solid $bevel-shadow
+  opacity: 1
+  color: #333
+
+pre
+  background: #f0f0f0
+  color: #0b6e4f
+  border: 1px solid $desktop
+  border-radius: 0
+
+\:not(pre) > code
+  background: #f0f0f0
+  color: #0b6e4f
+  opacity: 1
+  border-radius: 0
+
+// Heading colors: shades of the favicon's purple (hue 272°), darkest for the largest headings.
+// Contrast on white: h1 13.2:1, h2 8.5:1, h3 6.6:1, h4 5.1:1.
+.window-body
+  h1
+    color: #421d63
+  h2
+    color: $titlebar
+  h3
+    color: #7f37bd
+  h4, h5, h6
+    color: #904ecb
+
+// Retro scrollbars
+html
+  scrollbar-color: $face $bevel-mid
+\::-webkit-scrollbar
+  width: 16px
+  height: 16px
+\::-webkit-scrollbar-track
+  background: $bevel-mid
+\::-webkit-scrollbar-thumb
+  background: $face
+  @include raised
+
+// ---------- Menu bar (site header) ----------
+body > header
+  background: $face
+  @include raised-frame
+  padding: .3em max(1em, calc((100% - #{$column}) / 2))
+  .title
+    font-weight: 600
+    text-decoration: none
+  nav
+    margin: 0
+    gap: 2px
+  nav a
+    margin: 0
+    padding: .2em .75em
+    color: #000
+    text-decoration: none
+    &:hover
+      @include raised
+    &.selected
+      color: #000
+      background: $bevel-mid
+      @include pressed
+
+// ---------- Windows ----------
+body > article.window
+  box-sizing: border-box
+  width: calc(100% - 2em)
+  max-width: $column
+  margin: 1.25em auto
+  padding: 4px
+  // The gray frame is painted only around the edges (the last inset shadow, as wide as the
+  // padding), not under the content area, so the see-through layers don't stack up
+  background: none
+  box-shadow: inset -1px -1px $bevel-dark, inset 1px 1px $bevel-mid, inset -2px -2px $bevel-shadow, inset 2px 2px $bevel-light, inset 0 0 0 4px rgba($face, $glass)
+  border: 0
+  // Short pages still reach the footer: the white content area grows, not the gray frame
+  display: flex
+  flex-direction: column
+
+.titlebar
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 1em
+  margin: 0
+  padding: .2em .25em .2em .5em
+  @include titlebar-lava
+  color: #fff
+  h1
+    font-size: 1em
+    margin: 0
+    a
+      color: #fff
+      text-decoration: none
+
+.window-body
+  flex-grow: 1
+  border-top: 4px solid rgba($face, $glass)   // the frame strip between title bar and content
+  padding: 1.25em 1.6em 1.6em
+  background: rgba($window, $glass)
+  @include sunken
+  > :first-child
+    margin-top: 0
+
+@media (max-width: 40em)
+  body > article.window
+    width: calc(100% - 1em)
+    margin: .5em auto
+  .window-body
+    padding: 1em .9em
+
+// The 404 page is a small error dialog
+body > article.window.dialog
+  flex-grow: 0
+  max-width: 34em
+  margin-top: 4em
+  margin-bottom: auto   // keeps the status bar at the bottom of the screen
+.dialog-actions
+  text-align: center
+  margin: 1.5em 0 0
+
+.post-date
+  color: #555
+  margin: 0 0 1em
+
+// ---------- Status bar (site footer) ----------
+body > footer
+  background: $face
+  box-shadow: inset 0 1px $bevel-light, inset 0 2px $bevel-mid
+  border-top: 1px solid $bevel-shadow
+  padding: .35em max(1em, calc((100% - #{$column}) / 2))
+  font-size: .85em
+  opacity: 1
+  > div
+    padding: .15em .7em
+    box-shadow: inset 1px 1px $bevel-shadow, inset -1px -1px $bevel-light
+  nav
+    margin: 0
+    gap: .25em
+  nav a
+    margin: 0
+    padding: .25em .5em
+    &:hover
+      @include raised
+
+// ---------- Buttons, chips, and fields ----------
+.cv-button, .flist-toggle, .flist-topics-toggle, .flist-topic, .flist-topics-clear, .more a
+  display: inline-block
+  background: $face
+  color: #000
+  border: 0
+  border-radius: 0
+  padding: .3em .9em
+  text-decoration: none
+  @include raised
+  &:hover
+    background: $face
+    color: #000
+    text-decoration: none
+  &:active
+    @include pressed
+
+.flist-topic
+  font-size: .85em
+  padding: .2em .7em
+  &[aria-pressed="true"]
+    background: $bevel-mid
+    border: 0
+    color: #000
+    font-weight: 600
+    @include pressed
+
+.flist-topics-toggle
+  &[aria-expanded="true"], &.has-active
+    color: #000
+    @include pressed
+
+// The small "Show all" next to the count is a plain link, not a button
+.flist-toggle.flist-toggle-top
+  background: none
+  box-shadow: none
+  padding: 0
+  color: $link-color
+  text-decoration: underline
+  &:hover, &:active
+    background: none
+    box-shadow: none
+    color: $link-color
+
+.flist-search, .flist-sort
+  background: $window
+  color: #000
+  border: 0
+  border-radius: 0
+  @include sunken
+  padding: .4em .6em
+  &:focus
+    outline: 1px dotted #000
+    outline-offset: -4px
+
+// Tags: small gray labels; the source tag is outlined. Topic tags are small buttons that filter
+// the list: raised, and pressed in while their filter is on.
+.flist-tags span, .page-list-cat
+  background: $face
+  color: #000
+  border-radius: 0
+  border: 1px solid $bevel-shadow
+.flist-tags .flist-tag
+  background: $face
+  color: #000
+  border: 0
+  border-radius: 0
+  padding: .1em .55em
+  @include raised
+  &:hover
+    background: $face
+  &:active
+    @include pressed
+  &[aria-pressed="true"]
+    background: $bevel-mid
+    color: #000
+    font-weight: 600
+    @include pressed
+.flist-tags .flist-source
+  background: $window
+  box-shadow: none
+  border: 1px dashed $bevel-shadow
+
+// Jump links: a toolbar pinned to the top while scrolling
+.toc
+  background: $face
+  border: 0
+  @include raised-frame
+  padding: .35em .7em
+  margin: 0 0 1em
+
+// ---------- Homepage cards: small windows ----------
+.tab-card
+  padding: 3px
+  gap: 0
+  background: none
+  border: 0
+  border-radius: 0
+  color: #000
+  text-decoration: none
+  box-shadow: inset -1px -1px $bevel-dark, inset 1px 1px $bevel-mid, inset -2px -2px $bevel-shadow, inset 2px 2px $bevel-light, inset 0 0 0 3px rgba($face, $glass)
+  strong
+    color: #fff
+    @include titlebar-lava
+    padding: .15em .5em
+    font-size: .95em
+  span
+    flex-grow: 1
+    border-top: 3px solid rgba($face, $glass)
+    padding: .6em .7em
+    background: rgba($window, $glass)
+    opacity: 1
+    @include sunken
+  &:hover
+    transform: none
+    text-decoration: none
+    strong
+      text-decoration: underline
+  &:active
+    @include pressed
+
+// ---------- Pictures in beveled frames ----------
+.intro-photo, .cv-thumb
+  padding: 4px
+  background: $face
+  @include raised-frame
+  img
+    border: 0
+    border-radius: 0
+    box-shadow: none
+.cv-thumb:hover img
+  transform: none
+  box-shadow: none
+
+// Visitor count in the status bar (shown once GoatCounter returns a count)
+body > footer .visit-count[hidden]
+  display: none
+
+
+// ---------- Shooting star (the "Pong ball") ----------
+// A golden shooting star bouncing around the desktop behind the windows: a five-pointed star
+// (light-to-gold gradient, thin dark-goldenrod outline so it stands out on the gray) trailed by
+// ten softly blurred, fading golden dots that blend into a streak. It lives on the page (scrolls
+// with the content), bouncing between the menu bar and the status bar; a script in
+// default.html sets the field (--pong-top, --pong-h), timings (--pong-x-dur, --pong-y-dur), and
+// a random start (--pong-dx, --pong-dy). Turned off by the "Effects" switch, and by default for
+// visitors who prefer reduced motion.
+$pong-size: 22px     // the star
+$pong-tail: 10       // tail pieces (matches the loop in default.html)
+$pong-lag: 32ms      // how far each tail piece trails the one ahead
+$tail-start: #e6b422 // tail color next to the star...
+$tail-end: #f7dc7a   // ...and at its end
+
+body
+  position: relative   // the star's field is measured from the top of the page
+.pong
+  position: absolute
+  left: 0
+  right: 0
+  top: var(--pong-top, 0)
+  height: var(--pong-h, 100%)
+  z-index: 0
+  pointer-events: none
+.pong-ball
+  position: absolute
+  width: $pong-size
+  height: $pong-size
+  border-radius: 50%
+  animation: pong-x var(--pong-x-dur, 9.7s) linear infinite alternate, pong-y var(--pong-y-dur, 6.1s) linear infinite alternate
+  animation-delay: var(--pong-dx, 0s), var(--pong-dy, 0s)
+
+// Head: a smooth five-pointed star, drawn as one small image
+.pong-star
+  border-radius: 0
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%' cy='40%' r='60%'%3E%3Cstop offset='0' stop-color='%23fff4b0'/%3E%3Cstop offset='.55' stop-color='%23f2c230'/%3E%3Cstop offset='1' stop-color='%23d89f12'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cpolygon points='50,6 61.5,37 95,38 68.5,58.5 78,91 50,72 22,91 31.5,58.5 5,38 38.5,37' fill='url(%23g)' stroke='%239a6a00' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .25))
+
+// Tail: round golden pieces, each a little further behind, smaller, lighter, and fainter;
+// a slight blur blends them into one streak
+@for $i from 1 through $pong-tail
+  .pong-trail.t#{$i}
+    animation-delay: calc(var(--pong-dx, 0s) + #{$pong-lag * $i}), calc(var(--pong-dy, 0s) + #{$pong-lag * $i})
+    background: mix($tail-end, $tail-start, $i * 10%)
+    opacity: .8 - $i * .07
+    transform: scale(.62 - $i * .045)
+    filter: blur(.8px)
+
+@keyframes pong-x
+  from
+    left: 0
+  to
+    left: calc(100% - #{$pong-size})
+@keyframes pong-y
+  from
+    top: 0
+  to
+    top: calc(100% - #{$pong-size})
+@media (prefers-reduced-motion: reduce)
+  .pong
+    display: none
+
+// Menu bar, windows, and status bar sit above the ball
+body > header, body > article, body > footer
+  position: relative
+  z-index: 1
+
+// ---------- Effects switch ----------
+// The "Effects" button in the status bar adds .effects-off to <html> (remembered in this
+// browser): the shooting star disappears and the title bars switch from the lava lamp to the
+// standard left-to-right gradient.
+html.effects-off
+  .pong
+    display: none
+  .titlebar, .tab-card strong
+    background: linear-gradient(90deg, $titlebar-start, $titlebar-end)
+  .titlebar::before, .titlebar::after, .tab-card strong::before, .tab-card strong::after
+    display: none
+.effects-toggle
+  font: inherit
+  font-size: 1em
+  color: #000
+  background: $face
+  border: 0
+  padding: .15em .7em
+  cursor: pointer
+  @include raised
+  &:active, &[aria-pressed="false"]
+    @include pressed
+  &[hidden]
+    display: none

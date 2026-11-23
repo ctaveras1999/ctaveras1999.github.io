@@ -4,6 +4,7 @@ permalink: "blog/personal/about_me"
 layout: page
 section: blog
 category: "Personal"
+tags: [Personal, Language, The Bronx, Hip Hop]
 date: 2022-05-28
 description: "Growing up between Spanish and English, from Santo Domingo to the Bronx."
 ---

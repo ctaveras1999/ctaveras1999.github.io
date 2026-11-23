@@ -23,7 +23,8 @@
   min-width: 0
 
 .flist-sort option
-  color: $dark
+  background: $dark
+  color: $light
 
 .flist-search:focus, .flist-sort:focus, .flist-topic:focus-visible
   outline: 2px solid $link-color
@@ -47,7 +48,7 @@
   &[aria-pressed="true"]
     background: $link-color
     border-color: $link-color
-    color: #fff
+    color: var(--on-link)
 
 .flist-count
   font-size: .85em
@@ -94,11 +95,23 @@
   display: flex
   flex-wrap: wrap
   gap: .35em
-  span
+  span, .flist-tag
     font-size: .8em
     padding: .05em .6em
     border-radius: 999px
     background: reduce(10)
+
+// Topic tags are buttons: clicking one filters the list by that topic
+.flist-tag
+  font-family: inherit
+  color: inherit
+  border: 0
+  cursor: pointer
+  &:hover
+    background: reduce(18)
+  &[aria-pressed="true"]
+    background: $link-color
+    color: var(--on-link)
 
 .flist-empty
   opacity: .7
@@ -122,7 +135,7 @@
   cursor: pointer
   transition: .2s background, .2s color
   &:hover
-    color: #fff
+    color: var(--on-link)
     background: $link-color
   &:focus-visible
     outline: 2px solid $link-color

@@ -3,9 +3,27 @@ $font-weight: 400 !default
 $font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace !default
 $heading-weight: 600 !default
 $line-height: 1.6 !default
-$link-color: var(--link) !default  // set per color scheme in basic.sass
-$dark: #212228 !default
-$light: #ffffff !default
+$link-color: var(--link) !default  // set in basic.sass
+// Retro Windows palette (after the "Retro Windows" Obsidian theme by codeisconfusing, MIT):
+// gray desktop and window frames, navy title bars, black text on white window content.
+// Styles for windows, bevels, buttons, and the rest are in retro.sass.
+$desktop: #c0c0c0 !default      // page background and window frames
+$face: #c0c0c0 !default         // buttons, menu bar, status bar
+$titlebar: #692e9d !default     // accent: the favicon's purple (links, title bars, selection)
+$titlebar-start: #150f1e !default // title bars start from the earlier dark purple...
+$titlebar-end: $titlebar !default   // ...and fade into the favicon purple
+$window: #ffffff !default       // window content
+// Windows and homepage cards are slightly see-through so the Pong ball shows behind them.
+// At .85, text over the ball keeps black at 15:1 and links at 6:1.
+$glass: .85 !default
+$bevel-light: #ffffff !default
+$bevel-mid: #dfdfdf !default
+$bevel-shadow: #808080 !default
+$bevel-dark: #0a0a0a !default
+// $dark (text) and $light (content background) are used throughout the older styles;
+// reduce() mixes them into translucent grays for borders and tag backgrounds.
+$dark: #000000 !default
+$light: $window
 
 @function reduce ($percent)
   @return rgba(mix($dark, $light), $percent * 0.01)

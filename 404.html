@@ -5,7 +5,18 @@ layout: default
 sitemap: false
 ---
 
-<article>
-  <header><h1>404</h1></header>
-  <p>Page not found</p>
+<article class="window dialog">
+  <header class="titlebar">
+    <h1>Error</h1>
+  </header>
+  <div class="window-body">
+    <p><strong>404: Page not found.</strong> The page you're looking for doesn't exist or has moved.</p>
+    <p>Try one of these instead:
+      <a href="{{ '/overview/' | relative_url }}">Overview</a> ·
+      <a href="{{ '/math/' | relative_url }}">Math</a> ·
+      <a href="{{ '/academic/' | relative_url }}">Academic</a> ·
+      <a href="{{ '/resources/' | relative_url }}">Resources</a> ·
+      <a href="{{ '/blog/' | relative_url }}">Blog</a></p>
+    <p class="dialog-actions"><a class="cv-button" href="{{ '/' | relative_url }}">OK</a></p>
+  </div>
 </article>

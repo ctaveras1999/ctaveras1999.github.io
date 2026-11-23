@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<article>
-  {% if page.title %}<header><h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1></header>{% endif %}
-  {{ content }}
+<article class="window">
+  <header class="titlebar">
+    <h1><a href="{{ page.url | relative_url }}">{{ page.title | default: site.title }}</a></h1>
+  </header>
+  <div class="window-body">
+    {%- if page.tags and page.tags.size > 0 and page.section %}
+    {%- assign list_url = '/' | append: page.section | append: '/' | relative_url %}
+    <p class="post-tags flist-tags"><span class="page-list-tags-label">Tags:</span>
+      {%- for t in page.tags %} <a class="flist-tag" href="{{ list_url }}?tag={{ t | url_encode }}" title="All posts tagged {{ t | escape }}">{{ t | escape }}</a>{% endfor %}</p>
+    {%- endif %}
+    {{ content }}
+  </div>
 </article>

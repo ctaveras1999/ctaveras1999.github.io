@@ -3,15 +3,6 @@
 
 @import variables, font, basic, layout, classes, filterable-list
 
-body > header
-  box-shadow: 0 0 .6em rgba($dark, 0.04)
-  border-bottom: 1px solid reduce(14)
-
-body > footer
-  box-shadow: 0 0 .6em rgba($dark, 0.04) inset
-  border-top: 1px solid reduce(14)
-  opacity: .9
-
 /* Center Images */
 .center-image
   display: block
@@ -81,7 +72,7 @@ figcaption
   text-decoration: none
   &:hover
     background: $link-color
-    color: #fff
+    color: var(--on-link)
 .cv-updated
   font-size: .85em
   opacity: .7
@@ -129,3 +120,6 @@ figcaption
   .cv-card
     flex-direction: column
     align-items: flex-start
+
+// Retro Windows look: imported last so it overrides the rules above.
+@import retro

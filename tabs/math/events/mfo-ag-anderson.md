@@ -4,6 +4,7 @@ permalink: "/math/events/anderson_ag"
 layout: page
 section: math
 category: "Events"
+tags: [Conferences, Spectral Theory]
 date: 2026-10-04
 description: "Notes from the Oberwolfach Arbeitsgemeinschaft on Anderson localization."
 ---
@@ -13,7 +14,7 @@ description: "Notes from the Oberwolfach Arbeitsgemeinschaft on Anderson localiz
 
 I attended the Oberwolfach Arbeitsgemeinschaft[^arbeitsgemeinschaft] (AG) 
 ["From Trees to Bands: Discrete Localization, Unique Continuation, and Propagation"](https://www.mfo.de/www/activity/2641) 
-focused on the mathematics of [Anderson localization](https://en.wikipedia.org/wiki/Anderson_localization).
+focused on the mathematics of [Anderson localization](https://en.wikipedia.org/wiki/Anderson_localization). 
 In particular, we looked into localization and delocalization phenomena 
 for discrete random Schrödinger operators and related random matrix and graph models.
 We worked through much of [[AW15]](https://pubs.ams.org/ebooks/gsm/168) for foundational material along

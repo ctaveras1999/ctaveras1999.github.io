@@ -47,3 +47,10 @@ ignored in `.lychee.toml`.
 
 Code is MIT-licensed; writing, photos, and the CV are © Carlos A. Taveras, all rights reserved.
 See `LICENSE.md`.
+
+## Post tags
+
+Blog and Math posts (pages with `section: blog` or `section: math`) can have tags in their front
+matter, e.g. `tags: [Personal, Lists]`. The Blog and Math pages show a row of all tags and each
+post's tags; clicking one shows only matching posts, and the filter is kept in the address
+(`/blog/?tag=Lists`). Each post shows its tags at the top, linking to that filtered list.

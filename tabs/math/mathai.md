@@ -4,6 +4,7 @@ permalink: "/math/mathai"
 layout: page
 section: math
 category: "Math and AI"
+tags: [AI, Lists]
 date: 2026-11-02
 description: "A running list of responses from the math community to AI in mathematics."
 
@@ -26,9 +27,8 @@ I'm hoping to update this list with new blog posts and videos as often as I can.
 
 ## Timeline
 ### November 20th, 2026: Riemann Hypothesis and Unforced Navier Stokes Solved?
-Anthropic mathematician [Levent Alpöge](https://alpo.ge/) posts a [modest-looking four-page document](https://alpo.ge/remark.pdf)
-(humorously titled 'remark.pdf') on his website in which he claims to have proved the 
-Generalized Riemann Hypothesis with the help of Claude. 
+Anthropic mathematician [Levent Alpöge](https://alpo.ge/) posts a [modest-looking four-page document](https://alpo.ge/remark.pdf)[^remark] on his website in which he claims to have proved the 
+[Generalized Riemann Hypothesis](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis) with the help of Claude. 
 As for the proof, he opted to only share links to its Lean formalization and a brief timeline of some significant milestones;
 in his words, 
 
@@ -38,7 +38,7 @@ accompanied by the foot note
 
 >I of course amused myself, and hit 250,000+ pages. 
 
-I don't have the expertise to describe just how impactful this result (if true) is but it's a wide-held belief among esteemed mathematicians that 
+**Not done yet... will do soon**
 
 ## The List
 Blog posts, essays, talks, interviews, and more.
@@ -48,3 +48,5 @@ Pick a type to narrow things down, search for a person or topic, or sort by type
 {% include filterable-list.html data=site.data.mathai id="mathai" limit=10 sort_key="none" topic_order="data" topics_open=true topics_label="Filter by type" placeholder="Search titles, people, topics…" sorts="date:Newest first|original:Grouped by type|name:Title, A–Z|aff:Person, A–Z" %}
 
 [^bloom]: Also check out Thomas Bloom's 'AI Links' for a similar list: [link](https://thomasbloom.org/AIlinks.html).
+
+[^remark]: Humorously, titled 'remark.pdf'.

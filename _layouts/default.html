@@ -2,12 +2,30 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Effects switch (button in the status bar): apply the saved choice before the page renders.
+  // Off by default for visitors whose device asks for reduced motion.
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem("effects"); } catch (e) {}
+    var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (saved === "off" || (saved === null && reduce)) document.documentElement.classList.add("effects-off");
+  })();
+</script>
+<meta name="theme-color" content="#c0c0c0">
 {% seo %}
 <link rel="preload" href="{{ '/assets/fonts/ibm-plex-mono-latin-400-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 {% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}{% include math.html %}{% endif %}
 <script defer src="{{ '/assets/js/external-links.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+{%- comment -%}
+  Visitor counts (GoatCounter: no cookies, no personal data). Dashboard: https://ctaveras.goatcounter.com
+  Only on the live site (GitHub builds with JEKYLL_ENV=production), so local previews aren't counted.
+{%- endcomment -%}
+{%- if jekyll.environment == "production" %}
+<script data-goatcounter="https://ctaveras.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{%- endif %}
 
 {% if site.navigation %}
   {% assign pages = site.navigation %}
@@ -15,18 +33,105 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
+{%- comment -%} Decorative shooting star bouncing around the desktop, behind the windows (retro.sass): ten tail pieces, then the star. {%- endcomment %}
+<div class="pong" aria-hidden="true">{% for i in (1..10) reversed %}<div class="pong-ball pong-trail t{{ i }}"></div>{% endfor %}<div class="pong-ball pong-star"></div></div>
+
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
 </header>
+<script>
+  // Pong ball: its playing field is the page itself (it scrolls with the content), from the
+  // bottom of the menu bar to the top of the status bar. Timings scale with the field's size so
+  // the ball moves at the same speed on short and long pages. Recalculated when the page resizes
+  // (e.g. a list is expanded). Without JavaScript the ball uses the whole page at default timings.
+  (function () {
+    var bar = document.querySelector("body > header"), pong = document.querySelector(".pong");
+    if (!bar || !pong) return;
+    var SPEED_X = 140, SPEED_Y = 110; // pixels per second
+    // Random starting point (and direction) for this page view: how far into each back-and-forth
+    // cycle the ball begins, as a fraction of the cycle.
+    var startX = Math.random(), startY = Math.random();
+    var queued = false;
+    function update() {
+      queued = false;
+      var foot = document.querySelector("body > footer");
+      var top = bar.offsetTop + bar.offsetHeight;
+      var bottom = foot ? foot.offsetTop : document.body.scrollHeight;
+      var h = Math.max(bottom - top, 60), w = pong.clientWidth;
+      pong.style.setProperty("--pong-top", top + "px");
+      pong.style.setProperty("--pong-h", h + "px");
+      var durX = w / SPEED_X, durY = h / SPEED_Y;
+      pong.style.setProperty("--pong-x-dur", durX.toFixed(2) + "s");
+      pong.style.setProperty("--pong-y-dur", durY.toFixed(2) + "s");
+      // A negative delay starts an animation partway through; one full cycle is there and back.
+      pong.style.setProperty("--pong-dx", (-startX * 2 * durX).toFixed(2) + "s");
+      pong.style.setProperty("--pong-dy", (-startY * 2 * durY).toFixed(2) + "s");
+    }
+    function queue() { if (!queued) { queued = true; requestAnimationFrame(update); } }
+    // Measure once the whole page (including the status bar) has been read, then again on changes.
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", update);
+    else update();
+    window.addEventListener("load", queue);
+    window.addEventListener("resize", queue);
+    if (window.ResizeObserver) new ResizeObserver(queue).observe(document.body);
+  })();
+</script>
 
 {{ content }}
 
 {% if site.external %}
 <footer>
   <div>© {{ site.time | date: "%Y" }} {{ site.title | escape }} · Last updated {{ site.time | date: "%B %-d, %Y" }}</div>
+  {%- if jekyll.environment == "production" %}
+  <div id="visit-count" class="visit-count" hidden></div>
+  {%- endif %}
+  <button type="button" class="effects-toggle" aria-pressed="true" title="Turn the shooting star and animated title bars on or off" hidden>Effects: On</button>
   {% include menu.html menu=site.external %}
 </footer>
+<script>
+  (function () {
+    var btn = document.querySelector(".effects-toggle"), root = document.documentElement;
+    if (!btn) return;
+    function show() {
+      var on = !root.classList.contains("effects-off");
+      btn.textContent = "Effects: " + (on ? "On" : "Off");
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+    btn.addEventListener("click", function () {
+      root.classList.toggle("effects-off");
+      try { localStorage.setItem("effects", root.classList.contains("effects-off") ? "off" : "on"); } catch (e) {}
+      show();
+    });
+    show();
+    btn.hidden = false; // only shown when JavaScript can make it work
+  })();
+</script>
+{%- if jekyll.environment == "production" %}
+<script>
+  // Shows this page's visitor count from GoatCounter in the footer. Needs "Allow adding visitor
+  // counts on your website" turned on in the GoatCounter settings; until then (or for a page with
+  // no visits yet) the request fails and the counter stays hidden. Counts are cached for up to
+  // four hours on GoatCounter's side.
+  (function () {
+    var el = document.getElementById("visit-count");
+    var tries = 0;
+    var wait = setInterval(function () {
+      if (++tries > 100) return clearInterval(wait); // count.js didn't load (e.g. blocked)
+      if (!(window.goatcounter && window.goatcounter.get_data)) return;
+      clearInterval(wait);
+      var path = window.goatcounter.get_data().p || location.pathname;
+      fetch("https://ctaveras.goatcounter.com/counter/" + encodeURIComponent(path) + ".json")
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function (d) {
+          el.textContent = d.count + (d.count === "1" ? " visitor" : " visitors") + " to this page";
+          el.hidden = false;
+        })
+        .catch(function () {});
+    }, 100);
+  })();
+</script>
+{%- endif %}
 {% endif %}
 
 

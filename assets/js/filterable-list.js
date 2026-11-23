@@ -22,6 +22,8 @@
     // Two "Show all / Show fewer" buttons: one by the count above the list, one below it.
     var toggles = Array.prototype.slice.call(root.querySelectorAll(".flist-toggle"));
     var topicButtons = Array.prototype.slice.call(root.querySelectorAll(".flist-topic"));
+    // The topic tags under each entry filter the list too (same as the chips in the topic panel).
+    var tagButtons = Array.prototype.slice.call(root.querySelectorAll(".flist-tag"));
     var topicsPanel = root.querySelector(".flist-topics");
     var topicsToggle = root.querySelector(".flist-topics-toggle");
     var topicsClear = root.querySelector(".flist-topics-clear");
@@ -156,14 +158,30 @@
       topicsToggle.classList.toggle("has-active", n > 0);
       topicsClear.hidden = n === 0;
     }
+    // Turn a topic filter on or off, and show its state on every chip and tag for that topic.
+    function syncTopicButtons() {
+      topicButtons.concat(tagButtons).forEach(function (b) {
+        b.setAttribute("aria-pressed", activeTopics.indexOf(b.dataset.topic) !== -1 ? "true" : "false");
+      });
+    }
+    function toggleTopic(topic) {
+      var i = activeTopics.indexOf(topic);
+      if (i === -1) activeTopics.push(topic); else activeTopics.splice(i, 1);
+      syncTopicButtons();
+      updateTopicsUI();
+      render();
+    }
     topicButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () { toggleTopic(btn.dataset.topic); });
+    });
+    tagButtons.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var topic = btn.dataset.topic;
-        var i = activeTopics.indexOf(topic);
-        if (i === -1) activeTopics.push(topic); else activeTopics.splice(i, 1);
-        btn.setAttribute("aria-pressed", i === -1 ? "true" : "false");
-        updateTopicsUI();
-        render();
+        toggleTopic(btn.dataset.topic);
+        // Open the topic panel so the active filters (and "Clear topics") are visible.
+        if (topicsPanel && topicsPanel.hidden && activeTopics.length) {
+          topicsPanel.hidden = false;
+          if (topicsToggle) topicsToggle.setAttribute("aria-expanded", "true");
+        }
       });
     });
     if (topicsToggle) {
@@ -174,7 +192,7 @@
       });
       topicsClear.addEventListener("click", function () {
         activeTopics = [];
-        topicButtons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+        syncTopicButtons();
         updateTopicsUI();
         render();
       });

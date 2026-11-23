@@ -57,7 +57,7 @@
 <div class="flist-desc">{{ p.description | markdownify | strip_newlines }}</div>
 {%- endif -%}
 {%- if p.date or p.source or p.topics.size > 0 -%}
-<div class="flist-tags">{%- if p.date -%}<time class="flist-date" datetime="{{ p.date }}">{% assign dstr = p.date | append: "" %}{% if dstr.size == 4 %}{{ dstr }}{% else %}{{ dstr | date: "%b %-d, %Y" }}{% endif %}</time>{%- endif -%}{%- for t in p.topics -%}<span>{{ t | escape }}</span>{%- endfor -%}{%- if p.source -%}<span class="flist-source">{{ p.source | escape }}</span>{%- endif -%}</div>
+<div class="flist-tags">{%- if p.date -%}<time class="flist-date" datetime="{{ p.date }}">{% assign dstr = p.date | append: "" %}{% if dstr.size == 4 %}{{ dstr }}{% else %}{{ dstr | date: "%b %-d, %Y" }}{% endif %}</time>{%- endif -%}{%- for t in p.topics -%}<button type="button" class="flist-tag" data-topic="{{ t | escape }}" aria-pressed="false" title="Show only {{ t | escape }}">{{ t | escape }}</button>{%- endfor -%}{%- if p.source -%}<span class="flist-source">{{ p.source | escape }}</span>{%- endif -%}</div>
 {%- endif -%}
 </li>
 {%- endfor -%}

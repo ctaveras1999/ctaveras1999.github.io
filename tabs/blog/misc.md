@@ -4,6 +4,7 @@ permalink: "/blog/misc"
 layout: page
 section: blog
 category: "Miscellaneous"
+tags: [Humor, Lists]
 date: 2026-08-02
 description: "Who I am not, plus a couple of funny math videos."
 ---
