@@ -24,7 +24,7 @@
 
 {% if site.external %}
 <footer>
-  <div>Last updated {{ site.time | date: "%B %-d, %Y" }}</div>
+  <div>© {{ site.time | date: "%Y" }} {{ site.title | escape }} · Last updated {{ site.time | date: "%B %-d, %Y" }}</div>
   {% include menu.html menu=site.external %}
 </footer>
 {% endif %}

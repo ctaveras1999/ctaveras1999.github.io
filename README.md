@@ -27,3 +27,23 @@ Started from the [Contrast](https://github.com/niklasbuschmann/contrast) theme.
   Fields under `cv:` apply to the PDF only; `cv: false` leaves an entry off the PDF.
 - Layout: `cv/template.tex.erb` (LaTeX). Needs a LaTeX install with `latexmk` and `pdflatex`.
 - The build also updates the "Last updated" date on the Academic page (`_data/cv_build.yml`).
+
+## Adding to the Math and AI list
+
+    ruby scripts/add-link.rb URL --type "Talks & Panels" [--people "A and B"] [--dry-run]
+
+Fetches the title, date, and source (YouTube channel, site, or arXiv, plus authors for papers)
+and adds the entry to `_data/mathai.yml` at the top of its type's group. Check the entry before
+committing; speakers usually need `--people`. Run it without arguments to see all options.
+
+## Broken links
+
+A GitHub workflow (`.github/workflows/check-links.yml`) checks every link on the site each Monday
+and keeps an issue labeled `broken-links` up to date (it closes the issue once everything passes).
+Run it any time with `gh workflow run "Check links"`. Links that are fine but fail the check can be
+ignored in `.lychee.toml`.
+
+## License
+
+Code is MIT-licensed; writing, photos, and the CV are © Carlos A. Taveras, all rights reserved.
+See `LICENSE.md`.

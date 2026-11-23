@@ -29,6 +29,10 @@ external:                  # shows a footer with social links - for available ic
 
 # News items are the posts in _posts/ (file name: YYYY-MM-DD-short-title.md).
 defaults:
+  # Preview image for links shared on Slack, iMessage, LinkedIn, etc. (1200x630). A page can
+  # override it with its own `image:` in front matter.
+  - scope: {path: ""}
+    values: {image: "/media/pics/social-card.jpg"}
   - scope: {path: "", type: posts}
     values: {layout: post, permalink: "/news/:year/:month/:title/"}
 
@@ -46,5 +50,5 @@ exclude:
   - cv/          # CV generator (template, script, LaTeX build files); its output is media/docs/cv.pdf
   - README.md
   - serve.sh
-  - UNLICENSE.txt
+  - LICENSE.md
   - tabs/service/outreach.md

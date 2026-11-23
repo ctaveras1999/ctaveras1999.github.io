@@ -84,7 +84,7 @@
   source: "What's new (Terence Tao's blog)"
   date: "2026-10-31"
   topics: ["Blog Posts"]
-- name: "Report on the Summit of Math Research in the Age of AI"
+- name: "Report of the Summit on Math Research in the Age of AI"
   url: "https://terrytao.wordpress.com/2026/10/30/__trashed/"
   source: "What's new (Terence Tao's blog)"
   date: "2026-10-30"
@@ -213,10 +213,11 @@
   date: "2026-10-24"
   topics: ["Blog Posts"]
 - name: "A Vision of the Future of Mathematics"
-  url: "https://florianbreuer.github.io/florianbreuer/FutureVision.html"
+  url: "https://florianbreuer.github.io/florianbreuer/"
   people: "Florian Breuer"
   source: "Personal website"
   topics: ["Blog Posts"]
+  description: "The original essay page is currently offline; this links to the author's homepage, which lists it."
 - name: "Raw Mathematics"
   url: "https://vislumbres.github.io/#/post/raw-mathematics"
   people: "Manuel Rivera"
