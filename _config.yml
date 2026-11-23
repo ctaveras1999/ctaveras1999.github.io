@@ -4,6 +4,7 @@ author: "Carlos Taveras"
 description: "Ph.D. student in mathematics at Rice University, interested in analysis, spectral theory, and Schrödinger operators."
 permalink: /:title/
 lang: "en"
+timezone: "America/Chicago"  # build dates in Houston time, both locally and on GitHub
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
