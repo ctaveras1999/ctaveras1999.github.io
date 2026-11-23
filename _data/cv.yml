@@ -1,0 +1,82 @@
+# Sections of the Academic page (tabs/academic/academic.md), each shown in the order listed here.
+# Publications live separately in _data/pubs.yml.
+#
+# Every entry takes:
+#   what:   The main line, shown in bold (required). Markdown works, e.g. a [link](https://...).
+#   where:  Institution, venue, or company, shown after the bold part (optional)
+#   when:   Date or date range, shown on the right (optional)
+#   desc:   A sentence or two underneath (optional). Markdown works.
+#           Wrap text in quotes if it contains a colon.
+
+education:
+  - what: "Ph.D. in Mathematics"
+    where: "Rice University"
+    when: "2026–present"
+  - what: "M.S. in Electrical and Computer Engineering"
+    where: "Rice University"
+    when: "2022–2026"
+    desc: "Advisors: [César A. Uribe](https://cauribe.rice.edu/) and [Santiago Segarra](https://segarra.rice.edu/). Thesis: [*Efficient Path Planning with Soft Homology Constraints*](https://repository.rice.edu/items/87afda7a-6a85-452e-8954-02b11b7e0c2a)."
+  - what: "B.S. & M.S. in Electrical and Computer Engineering"
+    where: "Carnegie Mellon University"
+    when: "2017–2022"
+
+awards:
+  - what: "Raymond L. Johnson Fellowship"
+    when: "2026"
+  - what: "Ken Kennedy Institute (KKI) Fellowship"
+    when: "2023"
+  - what: "Rice Dean's and ECE STAR Fellowships"
+    when: "2022"
+  - what: "Graduate Education for Minorities (GEM) Fellowship"
+    when: "2021 & 2022"
+
+teaching:
+  - what: "Instructor, Techniques of a Pro Mathematician"
+    where: "[Tapia STEM Camps](https://tapiacenter.rice.edu/tapia-stem-camps), Rice"
+    when: "Summer 2026"
+    desc: "A summer camp introducing high school students across Texas to various STEM topics. Alongside Prof. Paul Hand (the Tapia Camps director), I co-taught three week-long sessions focused on developing some of the hard and soft skills needed to succeed in college math and beyond. I learned a bunch, gained invaluable experience in effective and engaging pedagogy, and grew a deeper appreciation for K-12 teachers."
+  - what: "Tutor"
+    where: "SpiderSmart River Oaks Learning Center"
+    when: "2026"
+    desc: "Tutored primary and secondary school students in various elementary math subjects."
+  - what: "TA, ELEC 303: Random Signals"
+    where: "Rice"
+    when: "Fall 2023, 2024, 2025"
+    desc: "A first course in probability and random processes for ECE undergrads: discrete and continuous random variables, laws of large numbers, the central limit theorem, and basic estimation theory."
+  - what: "TA, 18-290: Signals and Systems"
+    where: "CMU"
+    when: "Fall 2021 & Spring 2022"
+    desc: "A first course in signal processing: continuous and discrete signal representations, linear time-invariant systems, convolutions, basic Fourier theory, and sampling."
+  - what: "TA, 18-491/691: Fundamentals of Signal Processing"
+    where: "CMU"
+    when: "Spring 2021"
+    desc: "A second course in signal processing: relationships between continuous and discrete signal representations and related transforms (Fourier series, Fourier transforms, z-transforms, short-time), filter design, time-frequency representations, multi-rate processing, and the Fast Fourier Transform."
+
+events:
+  - what: "Oberwolfach AG: [From Trees to Bands: Discrete Localization, Unique Continuation, and Propagation](https://www.mfo.de/www/activity/2641)"
+    when: "Oct. 4–9, 2026"
+  - what: "NeurIPS 2025 Workshop: New Perspectives in Graph Machine Learning"
+    when: "Dec. 7, 2025"
+  - what: "Texas Colloquium on Distributed Learning"
+    when: "2025"
+  - what: "[INFORMS Optimization Society Conference](https://www.informs.org/Meetings-Conferences/INFORMS-Conference-Calendar/2024-INFORMS-Optimization-Society-Conference)"
+    when: "Mar. 22–24, 2024"
+  - what: "[IEEE Conference on Control Technology and Applications (CCTA)](https://ccta2024.ieeecss.org/)"
+    when: "Aug. 21–23, 2024"
+  - what: "[ICERM Workshop on Interacting Particle Systems](https://icerm.brown.edu/topical_workshops/tw-24-ips)"
+    when: "May 6–10, 2024"
+  - what: "[Konstanz School of Collective Behavior](https://www.exc.uni-konstanz.de/kscb/)"
+    when: "July 31 – Aug. 12, 2023"
+  - what: "[North American School of Information Theory (NASIT)](https://nasit.seas.upenn.edu/)"
+    when: "June 19–23, 2023"
+  - what: "INFORMS Optimization Society Conference"
+    when: "2023"
+  - what: "[Texas Colloquium on Distributed Learning](https://sites.google.com/view/tldr2023/home)"
+    when: "2023"
+
+other:
+  - what: "Mentor, Rice GPS Pathways Program"
+    when: "2023–2024"
+  - what: "Industry internships"
+    where: "Adobe Research, Lam Research, Goldman Sachs, Intel"
+    when: "2019–2022"

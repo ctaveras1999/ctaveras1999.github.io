@@ -1,0 +1,41 @@
+# Publications, shown on the Academic page (tabs/academic/academic.md), in the order listed here.
+#
+#   title:    Paper title (required)
+#   authors:  Author list as it should appear (required). "C.A. Taveras" is bolded automatically.
+#   venue:    Where it appeared (required)
+#   year:     (required)
+#   links:    Optional list of {label, url}, e.g. Paper, arXiv, Slides, Code.
+#             Inline form: [{label: Paper, url: "https://..."}]  (keep the braces)
+#   presented: Optional list of where it was presented, e.g. "Talk at IEEE CCTA 2024"
+
+- title: "Gromov-Wasserstein Graph Coarsening"
+  authors: "C.A. Taveras, S. Segarra, C.A. Uribe"
+  venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)"
+  year: 2026
+  links: [{label: Paper, url: "https://arxiv.org/abs/2511.08733"}]
+  presented:
+    - "Poster at ICASSP 2026"
+    - "Talk at the NeurIPS 2025 Workshop on New Perspectives in Graph Machine Learning"
+
+- title: "Identifying Common Backbones of Interactions Underlying Food Webs via Non-Deterministic Alignments"
+  authors: "Y. Xu, C.A. Taveras, L. Beaudrot, C.A. Uribe"
+  venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)"
+  year: 2026
+  links: [{label: Paper, url: "https://ieeexplore.ieee.org/document/11462837"}]
+  presented:
+    - "Poster at ICASSP 2026"
+
+- title: "Efficient Path Planning with Soft Homology Constraints"
+  authors: "C.A. Taveras"
+  venue: "Master's Thesis, Rice University"
+  year: 2025
+  links:
+    - {label: Thesis, url: "https://repository.rice.edu/items/87afda7a-6a85-452e-8954-02b11b7e0c2a"}
+
+- title: "Efficient Path Planning with Soft Homology Constraints"
+  authors: "C.A. Taveras, S. Segarra, C.A. Uribe"
+  venue: "IEEE Conference on Control Technology and Applications (CCTA)"
+  year: 2024
+  links: [{label: Paper, url: "https://ieeexplore.ieee.org/document/10666586"}]
+  presented:
+    - "Talk at IEEE CCTA 2024"

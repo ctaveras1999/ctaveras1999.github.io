@@ -1,13 +1,8 @@
 ---
-# title: "Blog"
+title: "Blog"
 permalink: "/blog/"
 layout: page
+redirect_from:
+  - "/blog/personal"
 ---
-<!-- ## Mathematical Interpretations of (Mostly) Rap Lyrics -->
-<!-- Coming Soon... -->
-
-<!-- ## Random Lists  -->
-<!-- Coming Soon...  -->
-# Categories
-## [Personal]({{ '/blog/personal' | relative_url }})
-## [Miscellaneous]({{ '/blog/misc' | relative_url }})
+{% include page-list.html section="blog" %}

@@ -35,6 +35,7 @@
         text: norm(li.textContent),
         sort: li.dataset.sort || "",
         aff: li.dataset.aff || "",
+        date: li.dataset.date || "",
         topics: (li.dataset.topics || "").split("|").filter(Boolean)
       };
     });
@@ -115,12 +116,23 @@
 
     function sort() {
       var mode = sortSelect.value;
+      if (mode === "original") {
+        ordered = items.slice();
+        ordered.forEach(function (it) { list.appendChild(it.el); });
+        return;
+      }
       if (mode === "random") {
         ordered = shuffle(items.slice());
         ordered.forEach(function (it) { list.appendChild(it.el); });
         return;
       }
       ordered = items.slice().sort(function (a, b) {
+        if (mode === "date") {
+          // Newest first; dates are "YYYY-MM-DD" or "YYYY", so text order is date order. Undated go last,
+          // and ties keep the data file's order (Array.prototype.sort is stable).
+          if (!a.date !== !b.date) return a.date ? -1 : 1;
+          return a.date < b.date ? 1 : a.date > b.date ? -1 : 0;
+        }
         if (mode === "aff") {
           // Entries without an affiliation go last.
           if (!a.aff !== !b.aff) return a.aff ? -1 : 1;
@@ -139,7 +151,8 @@
     function updateTopicsUI() {
       if (!topicsToggle) return;
       var n = activeTopics.length;
-      topicsToggle.textContent = n ? "Filter by topic (" + n + ")" : "Filter by topic";
+      var label = topicsToggle.dataset.label || "Filter by topic";
+      topicsToggle.textContent = n ? label + " (" + n + ")" : label;
       topicsToggle.classList.toggle("has-active", n > 0);
       topicsClear.hidden = n === 0;
     }
@@ -187,9 +200,12 @@
     var q = new URLSearchParams(window.location.search).get("q");
     if (q) search.value = q;
 
-    root.querySelectorAll(".flist-controls, .flist-status").forEach(function (el) {
-      el.hidden = false;
-    });
+    // Simple lists (short ones) keep their controls hidden.
+    if (!root.dataset.simple) {
+      root.querySelectorAll(".flist-controls, .flist-status").forEach(function (el) {
+        el.hidden = false;
+      });
+    }
     sort();
     render();
   }

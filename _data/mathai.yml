@@ -1,0 +1,714 @@
+# Entries for the list on the Math and AI page (tabs/math/mathai.md), shown in this order under "Grouped by type".
+#
+#   name:        Title of the post, paper, or video (required). Shown in bold and linked to `url`.
+#   url:         Where the title links (required)
+#   people:      Authors / speakers / panelists (optional), shown in gray next to the title.
+#                "Person, A–Z" sorts by this.
+#   source:      Where it was published (optional), shown as an outlined tag: the YouTube channel
+#                ("YouTube: Numberphile"), blog ("Gowers's Weblog"), magazine, journal, arXiv, ...
+#   date:        When it was published or uploaded (optional): "YYYY-MM-DD", or just "YYYY".
+#                "Newest first" (the default sort) uses it; undated entries go last.
+#   topics:      One type, shown as a tag and filter chip (required). Reuse an existing one where possible:
+#                Blogs, Blog Posts, Essays & Articles, Declarations & Statements, Classics, Talks & Panels,
+#                Recent Results, Using AI for Research, Education, Interview Series, SAIR, Candid Reactions
+#   description: A short note (optional). Markdown works.
+#   links:       Extra links shown on the right, as {label, url} (optional)
+#
+# Keep entries of the same type together; the filter chips follow the order types first appear here.
+
+
+# ---------- Blogs ----------
+- name: "Proofs and Prompts"
+  url: "https://proofsandprompts.com/"
+  source: "Blog"
+  topics: ["Blogs"]
+- name: "Advisory Group on Mathematics and Artificial Intelligence"
+  url: "https://agmai.org/"
+  source: "Website"
+  topics: ["Blogs"]
+- name: "What's new"
+  url: "https://terrytao.wordpress.com/"
+  people: "Terence Tao"
+  source: "WordPress"
+  topics: ["Blogs"]
+- name: "Xena Project"
+  url: "https://xenaproject.wordpress.com/"
+  people: "Kevin Buzzard"
+  source: "WordPress"
+  topics: ["Blogs"]
+- name: "Gowers's Weblog"
+  url: "https://gowers.wordpress.com/"
+  people: "Timothy Gowers"
+  source: "WordPress"
+  topics: ["Blogs"]
+- name: "Silicon Reckoner"
+  url: "https://siliconreckoner.substack.com/"
+  people: "Michael Harris"
+  source: "Substack"
+  topics: ["Blogs"]
+- name: "arg min"
+  url: "https://www.argmin.net/"
+  people: "Ben Recht"
+  source: "Substack"
+  topics: ["Blogs"]
+- name: "The Art of the Realizable"
+  url: "https://substack.com/@mraginsky/posts"
+  people: "Maxim Raginsky"
+  source: "Substack"
+  topics: ["Blogs"]
+- name: "AI: A Guide for Thinking Humans"
+  url: "https://aiguide.substack.com/"
+  people: "Melanie Mitchell"
+  source: "Substack"
+  topics: ["Blogs"]
+- name: "doomslide"
+  url: "https://doomslide.substack.com/"
+  source: "Substack"
+  topics: ["Blogs"]
+
+# ---------- Blog Posts ----------
+- name: "Egoless Mathematics in the AI Era"
+  url: "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/"
+  people: "Karthik C., Amit Sahai, Jie Xue"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-11-02"
+  topics: ["Blog Posts"]
+- name: "Mathematics Has Changed. Let's Act Like It"
+  url: "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/"
+  people: "Frank Calegari"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-11-01"
+  topics: ["Blog Posts"]
+- name: "The Mathematical Sciences in an AI-enabled World"
+  url: "https://terrytao.wordpress.com/2026/10/31/the-mathematical-sciences-in-an-ai-enabled-world/"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-10-31"
+  topics: ["Blog Posts"]
+- name: "Report on the Summit of Math Research in the Age of AI"
+  url: "https://terrytao.wordpress.com/2026/10/30/__trashed/"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-10-30"
+  topics: ["Blog Posts"]
+- name: "AI, Mathematics, Education, and a Public Goods Problem"
+  url: "https://terrytao.wordpress.com/2026/10/29/ai-mathematics-education-and-a-public-goods-problem/"
+  people: "Gireeja Ranade"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-10-29"
+  topics: ["Blog Posts"]
+- name: "Disadvantages of Designating Mathematicians for AI Output Releases"
+  url: "https://terrytao.wordpress.com/2026/10/25/disadvantages-of-designating-mathematicians-for-ai-output-releases/"
+  people: "Advisory Group on Mathematics and Artificial Intelligence"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-10-25"
+  topics: ["Blog Posts"]
+- name: "Mathematics Is a Subject for the Young"
+  url: "https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/"
+  people: "Tristan Buckmaster"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-10-21"
+  topics: ["Blog Posts"]
+- name: "The Future of Mathematics"
+  url: "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/"
+  people: "Jeremy Avigad"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-10-05"
+  topics: ["Blog Posts"]
+- name: "We're Going to Need a Lot More Mathematicians"
+  url: "https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/"
+  people: "Amit Sahai"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-09-24"
+  topics: ["Blog Posts"]
+- name: "A Severe Misalignment of AI in Mathematics"
+  url: "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/"
+  source: "What's new (Terence Tao's blog)"
+  date: "2026-09-11"
+  topics: ["Blog Posts"]
+- name: "How to Formalize All of Mathematics"
+  url: "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/"
+  people: "Kevin Buzzard"
+  source: "Xena Project"
+  date: "2026-10-16"
+  topics: ["Blog Posts"]
+- name: "To Grieve, or Not to Grieve"
+  url: "https://xenaproject.wordpress.com/2026/10/01/to-grieve-or-not-to-grieve/"
+  people: "Kevin Buzzard"
+  source: "Xena Project"
+  date: "2026-10-01"
+  topics: ["Blog Posts"]
+- name: "How Worried Should We Be About Extinction Risk from AI?"
+  url: "https://gowers.wordpress.com/2026/10/16/how-worried-should-we-be-about-extinction-risk-from-ai/"
+  people: "Timothy Gowers"
+  source: "Gowers's Weblog"
+  date: "2026-10-16"
+  topics: ["Blog Posts"]
+- name: "Why I Didn't Sign the Fields Medallists' Letter"
+  url: "https://gowers.wordpress.com/2026/09/17/why-i-didnt-sign-the-fields-medallists-letter/"
+  people: "Timothy Gowers"
+  source: "Gowers's Weblog"
+  date: "2026-09-17"
+  topics: ["Blog Posts"]
+- name: "What Sort of Maths Are LLMs Good At?"
+  url: "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/"
+  people: "Timothy Gowers"
+  source: "Gowers's Weblog"
+  date: "2026-08-12"
+  topics: ["Blog Posts"]
+- name: "Gamification of Mathematics Is Off the Charts"
+  url: "https://siliconreckoner.substack.com/p/gamification-of-mathematics-off-the"
+  people: "Michael Harris"
+  source: "Silicon Reckoner (Substack)"
+  date: "2026-10-22"
+  topics: ["Blog Posts"]
+- name: "Now All Mathematicians Can Be Mechanical Turks"
+  url: "https://siliconreckoner.substack.com/p/now-all-mathematicians-can-be-mechanical"
+  people: "Michael Harris"
+  source: "Silicon Reckoner (Substack)"
+  date: "2026-10-08"
+  topics: ["Blog Posts"]
+- name: "The World Is Something We Make"
+  url: "https://www.argmin.net/p/the-world-is-something-we-make"
+  people: "Ben Recht"
+  source: "arg min (Substack)"
+  date: "2026-10-26"
+  topics: ["Blog Posts"]
+- name: "Galactus the Devourer: On Efficient Algorithms, the Exponential Time Hypothesis, and Losing the Plot"
+  url: "https://www.argmin.net/p/galactus-the-devourer"
+  people: "Ben Recht"
+  source: "arg min (Substack)"
+  date: "2026-10-30"
+  topics: ["Blog Posts"]
+- name: "Frontiers in Making Up People"
+  url: "https://www.argmin.net/p/frontiers-in-making-up-people"
+  people: "Ben Recht"
+  source: "arg min (Substack)"
+  date: "2026-10-29"
+  topics: ["Blog Posts"]
+- name: "Games Without Frontiers"
+  url: "https://realizable.substack.com/p/games-without-frontiers"
+  people: "Maxim Raginsky"
+  source: "The Art of the Realizable (Substack)"
+  date: "2025-12-26"
+  topics: ["Blog Posts"]
+- name: "Five Philosophy Papers Everyone (in AI/ML) Should Read"
+  url: "https://realizable.substack.com/p/five-philosophy-papers-everyone-should"
+  people: "Maxim Raginsky"
+  source: "The Art of the Realizable (Substack)"
+  date: "2026-07-03"
+  topics: ["Blog Posts"]
+- name: "Misleading Metaphors and Real Risks"
+  url: "https://aiguide.substack.com/p/misleading-metaphors-and-real-risks"
+  people: "Melanie Mitchell"
+  source: "AI: A Guide for Thinking Humans (Substack)"
+  date: "2026-09-10"
+  topics: ["Blog Posts"]
+- name: "Mathematics Is Effectively Dead"
+  url: "https://doomslide.substack.com/p/mathematics-is-effectively-dead"
+  source: "doomslide (Substack)"
+  date: "2026-09-17"
+  topics: ["Blog Posts"]
+- name: "Against Mathematics"
+  url: "https://doomslide.substack.com/p/against-mathematics"
+  source: "doomslide (Substack)"
+  date: "2026-10-24"
+  topics: ["Blog Posts"]
+- name: "A Vision of the Future of Mathematics"
+  url: "https://florianbreuer.github.io/florianbreuer/FutureVision.html"
+  people: "Florian Breuer"
+  source: "Personal website"
+  topics: ["Blog Posts"]
+- name: "Raw Mathematics"
+  url: "https://vislumbres.github.io/#/post/raw-mathematics"
+  people: "Manuel Rivera"
+  source: "Vislumbres"
+  topics: ["Blog Posts"]
+- name: "Who Watches the Watchmen?"
+  url: "https://nihilunbounded.substack.com/p/who-watches-the-watchmen"
+  source: "nihilunbounded (Substack)"
+  date: "2026-10-19"
+  topics: ["Blog Posts"]
+
+# ---------- Essays & Articles ----------
+- name: "A Taxonomy of Omnicidal Futures Involving Artificial Intelligence"
+  url: "https://arxiv.org/abs/2507.09369"
+  people: "Andrew Critch and Jacob Tsimerman"
+  source: "arXiv"
+  date: "2025-07-12"
+  topics: ["Essays & Articles"]
+- name: "Artificial Intelligence"
+  url: "https://faculty.washington.edu/ebender/papers/Bender-AI-2026.pdf"
+  people: "Emily M. Bender"
+  source: "Author's website (PDF)"
+  date: "2026"
+  topics: ["Essays & Articles"]
+  description: "On what \"AI\" even means."
+- name: "Mathematics of the Future"
+  url: "https://math.mit.edu/~etingof/futuremath.pdf"
+  people: "Pavel Etingof and Slava Gerovitch"
+  source: "Author's website (PDF)"
+  topics: ["Essays & Articles"]
+- name: "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?"
+  url: "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/"
+  people: "Konstantin Kakaes"
+  source: "Quanta Magazine"
+  date: "2026-10-19"
+  topics: ["Essays & Articles"]
+- name: "Jagged Intelligence: The Dangerous Unknowns at the Heart of LLMs"
+  url: "https://yalereview.org/article/melanie-mitchell-jagged-intelligence"
+  people: "Melanie Mitchell"
+  source: "The Yale Review"
+  date: "2026-06-08"
+  topics: ["Essays & Articles"]
+- name: "LLMs, Reasoning and Plagiarism"
+  url: "https://arxiv.org/pdf/2601.02380"
+  people: "Elchanan Mossel"
+  source: "arXiv"
+  date: "2025-12-18"
+  topics: ["Essays & Articles"]
+- name: "What Does It Mean for a Mathematician to Understand? A Case Study in the Age of AI"
+  url: "https://math.berkeley.edu/~sjoh/pdfs/understanding-essay.pdf"
+  people: "Sung-Jin Oh"
+  source: "Author's website (PDF)"
+  topics: ["Essays & Articles"]
+- name: "Rogue AI Didn't Breach Hugging Face, Human Decisions Did"
+  url: "https://thebulletin.org/2026/09/rogue-ai-didnt-breach-hugging-face-human-decisions-did/"
+  people: "Eryk Salvaggio"
+  source: "Bulletin of the Atomic Scientists"
+  date: "2026-09-11"
+  topics: ["Essays & Articles"]
+  description: "On OpenAI's Hugging Face breach."
+- name: "On the Present State of Mathematics"
+  url: "https://sites.google.com/ucr.edu/opwaite/personal-essays/on-the-present-state-of-mathematics"
+  people: "Oliver P. Waite"
+  source: "Author's website"
+  topics: ["Essays & Articles"]
+
+# ---------- Declarations & Statements ----------
+- name: "Math and AI"
+  url: "https://mathandai.org/"
+  topics: ["Declarations & Statements"]
+- name: "Leiden Declaration on Artificial Intelligence and Mathematics"
+  url: "https://leidendeclaration.ai/"
+  topics: ["Declarations & Statements"]
+- name: "Give Authors Control: Let Us Decide If AI Bots Can Read Our arXiv Papers"
+  url: "https://math.mit.edu/~elmos/petition.html"
+  topics: ["Declarations & Statements"]
+- name: "Declaration Against the Caltech Marathon Event"
+  url: "https://docs.google.com/document/d/1IL0b2oG2KvvSnxn_DuXsNxuHaCefDJ9hNY1k9BP3kKQ/edit?tab=t.0"
+  source: "Google Docs"
+  topics: ["Declarations & Statements"]
+
+# ---------- Classics ----------
+- name: "On Teaching Mathematics"
+  url: "https://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Arnoldonmaths.pdf"
+  people: "Vladimir I. Arnold"
+  source: "Russian Mathematical Surveys"
+  date: "1998"
+  topics: ["Classics"]
+- name: "A Mathematical Trivium"
+  url: "https://www.physics.montana.edu/avorontsov/teaching/problemoftheweek/documents/Arnold-Trivium-1991.pdf"
+  people: "Vladimir I. Arnold"
+  source: "Russian Mathematical Surveys"
+  date: "1991"
+  topics: ["Classics"]
+- name: "A Mathematician's Apology"
+  url: "https://www.arvindguptatoys.com/arvindgupta/mathsapology-hardy.pdf"
+  people: "G.H. Hardy"
+  source: "Cambridge University Press"
+  date: "1940"
+  topics: ["Classics"]
+- name: "On Proof and Progress in Mathematics"
+  url: "https://www.math.toronto.edu/mccann/199/thurston.pdf"
+  people: "William P. Thurston"
+  source: "Bulletin of the AMS"
+  date: "1994"
+  topics: ["Classics"]
+
+# ---------- Talks & Panels ----------
+- name: "How to Get Scooped by AI"
+  url: "https://www.youtube.com/watch?v=OVMmMkR7X6M&t=0"
+  people: "Mohammed Abouzaid"
+  source: "YouTube: Harvard CMSA"
+  date: "2026-10-27"
+  topics: ["Talks & Panels"]
+- name: "Pedagogy in the Times of AI"
+  url: "https://youtu.be/N2a1J0UPeL4?t=0"
+  people: "Prathosh A.P."
+  source: "YouTube: NPTEL - Indian Institute of Science, Bengaluru"
+  date: "2026-09-11"
+  topics: ["Talks & Panels"]
+- name: "The Mathocalypse, Will Intelligence Matter Anymore"
+  url: "https://youtu.be/ORlscppGGh4?t=0"
+  people: "Scott Aaronson"
+  source: "YouTube: Ryan Peterman"
+  date: "2026-10-12"
+  topics: ["Talks & Panels"]
+- name: "Is Math Research Over?"
+  url: "https://youtu.be/Ve2swBVydiI?t=0"
+  people: "Trefor Bazett"
+  source: "YouTube: Dr. Trefor Bazett"
+  date: "2026-08-20"
+  topics: ["Talks & Panels"]
+- name: "Navier-Stokes"
+  url: "https://youtu.be/Mzbtj5nkMXI?t=0"
+  people: "Tristan Buckmaster"
+  source: "YouTube: Numberphile"
+  date: "2026-09-29"
+  topics: ["Talks & Panels"]
+- name: "AI Just Changed Mathematics Forever"
+  url: "https://youtu.be/PQYFRuZ5phs?t=0"
+  people: "Tristan Buckmaster and Brian Greene"
+  source: "YouTube: World Science Festival"
+  date: "2026-10-02"
+  topics: ["Talks & Panels"]
+- name: "A Deep Blue-Kasparov Moment for Mathematics"
+  url: "https://youtu.be/XcYKzHqJuaw?t=0"
+  people: "Tristan Buckmaster"
+  source: "YouTube: Harvard CMSA"
+  date: "2026-10-29"
+  topics: ["Talks & Panels"]
+- name: "Mathematics in the Age of AI"
+  url: "https://youtu.be/EQe6BV_dimk?t=0"
+  people: "Tristan Buckmaster"
+  source: "YouTube: Ignatius Sancho's Bookkeeping"
+  date: "2026-09-23"
+  topics: ["Talks & Panels"]
+- name: "An AI Perspective on AI for Maths"
+  url: "https://youtu.be/fOf3XE64jiE?t=0"
+  people: "François Charton"
+  source: "YouTube: Seed Seminar"
+  date: "2026-10-27"
+  topics: ["Talks & Panels"]
+- name: "Are We Cooked? CMU Faculty on AI, Careers and Learning"
+  url: "https://youtu.be/U2DDKdUvq6k?t=0"
+  people: "Vincent Conitzer, Daphne Ippolito, Zico Kolter, Po-Shen Loh, Aditi Raghunathan"
+  source: "YouTube: Carnegie AI Safety Initiative"
+  date: "2026-11-03"
+  topics: ["Talks & Panels"]
+- name: "Handwritten Math Will Change Dramatically"
+  url: "https://www.youtube.com/watch?v=KzdYKeAqWhY&t=0"
+  people: "Leonardo de Moura and Ryan Peterman"
+  source: "YouTube: Ryan Peterman"
+  date: "2026-08-10"
+  topics: ["Talks & Panels"]
+- name: "The Rise and Ramifications of Artificial Mathematical Intelligence"
+  url: "https://www.youtube.com/watch?v=PlSHWjg0w5Y&t=0"
+  people: "Tony Feng"
+  source: "YouTube: University of Michigan AI for Math Seminar"
+  date: "2026-10-19"
+  topics: ["Talks & Panels"]
+- name: "Panel Discussion: AI in Mathematical Research"
+  url: "https://youtu.be/H7_d_sgui6o?t=0"
+  people: "Tony Feng, Michael Harris, Peter Scholze, Jacob Tsimerman, Geordie Williamson"
+  source: "YouTube: Heidelberg Laureate Forum"
+  date: "2026-09-16"
+  topics: ["Talks & Panels"]
+- name: "Navier-Stokes, AI, and the Future of Mathematics"
+  url: "https://youtu.be/G8HMa_tgM34?t=0"
+  people: "Martin Hairer"
+  source: "YouTube: Tom Rocks Maths"
+  date: "2026-09-20"
+  topics: ["Talks & Panels"]
+- name: "Mathematics as Gift Economy"
+  url: "https://www.youtube.com/watch?v=ewvVvTLfU4Q&t=0"
+  people: "Michael Harris"
+  source: "YouTube: Institute for Advanced Study"
+  date: "2026-11-09"
+  topics: ["Talks & Panels"]
+- name: "ICM 2026 Panel: AI for Mathematics"
+  url: "https://youtu.be/pGEGiu4BCxY?t=0"
+  source: "YouTube: Simons Foundation"
+  date: "2026-08-25"
+  topics: ["Talks & Panels"]
+- name: "The Shape of Math to Come"
+  url: "https://youtu.be/ZKF6dWzOiPA?t=0"
+  people: "Alex Kontorovich"
+  source: "YouTube: Simons Foundation"
+  date: "2026-08-17"
+  topics: ["Talks & Panels"]
+- name: "When AI Solves Major Open Problems: What Does It Mean for the Future of Mathematics—and Beyond?"
+  url: "https://youtu.be/voDtZqijetw?t=0"
+  people: "Alex Kontorovich, Manjul Bhargava, Ankur Moitra, Stephen Wolfram"
+  source: "YouTube: National Museum of Mathematics"
+  date: "2026-10-07"
+  topics: ["Talks & Panels"]
+- name: "What Is Math for in the Age of AI?"
+  url: "https://youtu.be/IXwrLMtuv4Q?t=0"
+  people: "Alex Kontorovich, Akshay Venkatesh, Ravi Vakil"
+  source: "YouTube: Quanta Magazine"
+  date: "2026-09-04"
+  topics: ["Talks & Panels"]
+- name: "AI Crisis in Math: Navier-Stokes, Riemann Hypothesis and Complexity Theory"
+  url: "https://www.youtube.com/watch?v=ZAzWPE9CItg&t=0"
+  people: "Alex Kontorovich, Steven Brunton, Ankur Moitra"
+  source: "YouTube: Lex Fridman"
+  date: "2026-10-26"
+  topics: ["Talks & Panels"]
+- name: "Mathematics at a Turning Point: AI, Research, and the Next Generation"
+  url: "https://youtu.be/fNgsB_Y4tuQ?t=0"
+  people: "Alex Kontorovich, Ettore Aldrovandi, Javier Gómez-Serrano, Tony Feng, Jeremy Avigad, Rachel Ward, Martin Bauer"
+  source: "YouTube: Florida State University Department of Mathematics"
+  date: "2026-09-30"
+  topics: ["Talks & Panels"]
+- name: "Formalization and the Future of Mathematics"
+  url: "https://youtu.be/xz3cH2eBXYs?t=0"
+  people: "Jared Duker Lichtman"
+  source: "YouTube: Harvard CMSA"
+  date: "2026-09-21"
+  topics: ["Talks & Panels"]
+- name: "What's Left for Mathematicians?"
+  url: "https://youtu.be/imjT_Lq_vBI?t=0"
+  people: "Daniel Litt"
+  source: "YouTube: The Information Bottleneck"
+  date: "2026-10-19"
+  topics: ["Talks & Panels"]
+- name: "Learning to Live with AI"
+  url: "https://www.youtube.com/watch?v=UTvwV9oPgxk&t=0"
+  people: "Daniel Litt"
+  source: "YouTube: Numberphile2"
+  date: "2026-11-02"
+  topics: ["Talks & Panels"]
+- name: "There's Never Been a Better Time to Go into Math"
+  url: "https://youtu.be/LKrwhjOI8Nc?t=0"
+  people: "Grant Sanderson"
+  source: "YouTube: 3Blue1Brown"
+  date: "2026-10-16"
+  topics: ["Talks & Panels"]
+- name: "The Role of Exposition in the Future of Mathematics"
+  url: "https://youtu.be/PtCPLLuMK1o?t=0"
+  people: "Grant Sanderson"
+  source: "YouTube: Institute for Advanced Study"
+  date: "2026-10-19"
+  topics: ["Talks & Panels"]
+- name: "On the Humanity of Math"
+  url: "https://youtu.be/xUSznTR2cwc?t=0"
+  people: "Grant Sanderson and Steven Strogatz"
+  source: "YouTube: Grant Sanderson"
+  date: "2026-10-27"
+  topics: ["Talks & Panels"]
+- name: "No More Heroes"
+  url: "https://youtu.be/bAnwMdfcMVw?t=0"
+  people: "Terence Tao"
+  source: "YouTube: Numberphile"
+  date: "2026-10-15"
+  topics: ["Talks & Panels"]
+- name: "Mathematics in the Age of AI"
+  url: "https://youtu.be/M0--ZH1lOzg?t=0"
+  people: "Terence Tao"
+  source: "YouTube: Simons Foundation"
+  date: "2026-08-13"
+  topics: ["Talks & Panels"]
+- name: "Can AI Prove It? \"Big Math\" and Our Theoretical Future"
+  url: "https://youtu.be/YNH6lwcXw7M?t=0"
+  people: "Terence Tao"
+  source: "YouTube: Futurology"
+  date: "2026-10-18"
+  topics: ["Talks & Panels"]
+- name: "Math 2.0"
+  url: "https://youtu.be/aHpPoNNTOKY?t=0"
+  people: "Terence Tao"
+  source: "YouTube: SAIR"
+  date: "2026-11-02"
+  topics: ["Talks & Panels"]
+- name: "Mathematical Methods and Human Thought in the Age of AI"
+  url: "https://youtu.be/9Kicf4rzCHA?t=0"
+  people: "Terence Tao and Tanya Klowden"
+  source: "YouTube: SAIR"
+  date: "2026-04-07"
+  topics: ["Talks & Panels"]
+- name: "Mathematics, AI, and What Comes Next"
+  url: "https://youtu.be/EolcQ14qe30?t=0"
+  people: "Jacob Tsimerman and David Duvenaud"
+  source: "YouTube: Schwartz Reisman Institute"
+  date: "2026-10-14"
+  topics: ["Talks & Panels"]
+- name: "(Re)imagining Mathematics in a World of Reasoning Machines"
+  url: "https://youtu.be/vYCT7cw0ycw?t=0"
+  people: "Akshay Venkatesh"
+  source: "YouTube: Harvard Mathematics Department"
+  date: "2024-11-26"
+  topics: ["Talks & Panels"]
+- name: "What Do We Tell Our Students About AI?"
+  url: "https://youtu.be/STTvEmBM3rg?t=0"
+  people: "Akshay Venkatesh"
+  source: "YouTube: Mechanization of mathematics"
+  date: "2025-10-01"
+  topics: ["Talks & Panels"]
+- name: "AI and Humanity's Long Conversation"
+  url: "https://youtu.be/N3n27a3SeXc?t=0"
+  people: "Geordie Williamson"
+  source: "YouTube: Simons Foundation"
+  date: "2026-08-12"
+  topics: ["Talks & Panels"]
+- name: "What's the Future for Pure Math Research in the Age of AI?"
+  url: "https://www.youtube.com/live/gPrWX8i1htM?t=0"
+  people: "Stephen Wolfram"
+  source: "YouTube: Wolfram"
+  date: "2026-10-01"
+  topics: ["Talks & Panels"]
+
+# ---------- Recent Results ----------
+- name: "What AI Did During My Summer Holidays"
+  url: "https://www.youtube.com/live/2tdvOgOJpXA?t=0"
+  people: "Timothy Gowers"
+  source: "YouTube: The Archimedeans"
+  date: "2026-10-11"
+  topics: ["Recent Results"]
+- name: "What Is the Quasi-Riemann Hypothesis?"
+  url: "https://youtu.be/8p_wjsKSVwM?t=0"
+  people: "Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-10-11"
+  topics: ["Recent Results"]
+- name: "The Quasi-Riemann Hypothesis"
+  url: "https://youtu.be/kYCOOyYkit8?t=0"
+  people: "Maksym Radziwill"
+  source: "YouTube: NYU Courant Institute School"
+  date: "2026-11-02"
+  topics: ["Recent Results"]
+
+# ---------- Using AI for Research ----------
+- name: "More Math, Less Ego"
+  url: "https://youtu.be/Gdc1yll04qI?t=0"
+  people: "Erik Demaine"
+  source: "YouTube: Erik Demaine"
+  date: "2026-10-28"
+  topics: ["Using AI for Research"]
+  description: "A talk about AI and math."
+- name: "Working with LLMs to Do High-Quality Math"
+  url: "https://youtu.be/0wL8NlhxXcU?t=0"
+  people: "Daniel Litt"
+  source: "YouTube: Harvard CMSA"
+  date: "2026-09-10"
+  topics: ["Using AI for Research"]
+- name: "How Mathematics Can Contribute to AI Safety Research"
+  url: "https://www.youtube.com/watch?v=yVJ7VM6Fqsg&t=0"
+  people: "Jacob Tsimerman"
+  source: "YouTube: University of Michigan AI for Math Seminar"
+  date: "2026-10-25"
+  topics: ["Using AI for Research"]
+
+# ---------- Education ----------
+- name: "ICM 2026 Roundtable: Mathematics Education in the Advent of the AI Era"
+  url: "https://youtu.be/7Vr-6KzcS68?t=0"
+  source: "YouTube: Simons Foundation"
+  date: "2026-08-25"
+  topics: ["Education"]
+- name: "ICM 2026 Panel: AI in College Math Education"
+  url: "https://youtu.be/EpyT__Q9wZc?t=0"
+  source: "YouTube: Simons Foundation"
+  date: "2026-08-25"
+  topics: ["Education"]
+
+# ---------- Interview Series ----------
+- name: "Human Mathematicians in the Age of AI: Introducing the Series"
+  url: "https://youtu.be/9CWepr6yVPw?t=0"
+  people: "Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-08-07"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Francesco Fournier-Facio"
+  url: "https://youtu.be/-yymwJ2bGc0?t=0"
+  people: "Francesco Fournier-Facio and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-09-26"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Jeremy Teitelbaum"
+  url: "https://youtu.be/bqh4ihdanbI?t=0"
+  people: "Jeremy Teitelbaum and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-09-17"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Bartosz Naskrecki"
+  url: "https://youtu.be/jKcRLlCn2Mg?t=0"
+  people: "Bartosz Naskrecki and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-10-13"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Emily Riehl"
+  url: "https://youtu.be/32nNC3q_DdY?t=0"
+  people: "Emily Riehl and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-08-19"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Daniel Litt"
+  url: "https://youtu.be/Ya23XsjcjFc?t=0"
+  people: "Daniel Litt and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-08-07"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Alexey Pozdnyakov"
+  url: "https://youtu.be/EQNq39t0RdA?t=0"
+  people: "Alexey Pozdnyakov and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-09-04"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Abbey Bourdon"
+  url: "https://youtu.be/FV-2dXrmF_U?t=0"
+  people: "Abbey Bourdon and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-10-22"
+  topics: ["Interview Series"]
+- name: "Human Mathematicians in the Age of AI: Lauren Williams"
+  url: "https://youtu.be/sZc03DdxMRU?t=0"
+  people: "Lauren Williams and Alvaro Lozano-Robledo"
+  source: "YouTube: Alvaro Lozano-Robledo"
+  date: "2026-10-29"
+  topics: ["Interview Series"]
+
+# ---------- SAIR ----------
+- name: "Mathematicians in the Time of AI"
+  url: "https://youtu.be/fIjT6d5c19E?t=0"
+  people: "Yu Deng"
+  source: "YouTube: SAIR"
+  date: "2026-11-01"
+  topics: ["SAIR"]
+- name: "Why We Build Open Math Model"
+  url: "https://youtu.be/TjeCcDkuyao?t=0"
+  people: "Terence Tao and Yu Deng"
+  source: "YouTube: SAIR"
+  date: "2026-10-19"
+  topics: ["SAIR"]
+- name: "SAIR's Open Math Model Initiative"
+  url: "https://youtu.be/PZRb6NIki2w?t=0"
+  people: "Terence Tao"
+  source: "YouTube: SAIR"
+  date: "2026-09-18"
+  topics: ["SAIR"]
+
+# ---------- Candid Reactions ----------
+- name: "We Are Losing the SOUL of Maths"
+  url: "https://www.youtube.com/watch?v=o0MjPe7wXs8&t=0"
+  source: "YouTube: Another Roof"
+  date: "2026-10-22"
+  topics: ["Candid Reactions"]
+- name: "The Strip Mining of Mathematical Proofs"
+  url: "https://youtu.be/omuJpoV-Ko4?t=0"
+  people: "Hugo Duminil-Copin"
+  source: "YouTube: Numberphile2"
+  date: "2026-10-14"
+  topics: ["Candid Reactions"]
+- name: "Life after PhD: Math in the Age of AI"
+  url: "https://youtu.be/6mO2vRul4qM?t=0"
+  source: "YouTube: Ming the Mathematician"
+  date: "2026-10-14"
+  topics: ["Candid Reactions"]
+  links:
+    - {label: "A follow-up", url: "https://youtu.be/FZWWzOg2cKE?t=0"}
+- name: "I Am Sad About AI in Maths"
+  url: "https://youtu.be/IoW8bozMzik?t=0"
+  people: "Sophie MacLean"
+  source: "YouTube: Sophie Maclean"
+  date: "2026-10-09"
+  topics: ["Candid Reactions"]
+- name: "You Truly Don't Understand What Just Happened to Mathematics"
+  url: "https://youtu.be/KqiDqJMxg6o?t=0"
+  people: "Giordano Scarciotti"
+  source: "YouTube: Prof Gio | Giordano Scarciotti"
+  date: "2026-10-09"
+  topics: ["Candid Reactions"]
+- name: "I've Never Been a Fan of These Calculators..."
+  url: "https://youtu.be/r_Byrs11ccM?t=0"
+  source: "YouTube: Sheafification of G"
+  date: "2026-10-23"
+  topics: ["Candid Reactions"]

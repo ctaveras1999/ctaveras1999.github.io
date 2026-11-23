@@ -1,30 +1,23 @@
 title: "Carlos A. Taveras"
+url: "https://ctaveras1999.github.io"
 author: "Carlos Taveras"
-description: "Last updated on November 1st, 2026" # Update
-#Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "Ph.D. student in mathematics at Rice University, interested in analysis, spectral theory, and Schrödinger operators."
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
-# Layout
-show_excerpts: true       # show article excerpts on the home page
-show_frame: false          # adds a gray frame to the site
-show_sidebar: false       # show a sidebar instead of the usual header
-minimal: false            # use a dark header
-# show_sidebar: true
-
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   # - {file: "index.md",     title: "About",        url: "/"}
   # - {file: ""}
-  - {file: "tabs/math/math.md",                title: "Math",        url: "/math"}
-  - {file: "tabs/academic/academic.md",        title: "Academic",    url: "/academic"}
+  - {file: "tabs/overview/overview.md",        title: "Overview",    url: "/overview/"}
+  - {file: "tabs/math/math.md",                title: "Math",        url: "/math/"}
+  - {file: "tabs/academic/academic.md",        title: "Academic",    url: "/academic/"}
   # - {file: "tabs/academic/teaching.md",        title: "Teaching",    url: "/teaching"}
-  - {file: "tabs/resources/resources.md",      title: "Resources",   url: "/resources"}
-  - {file: "tabs/blog/blog.md",                title: "Blog",        url: "/blog"}
+  - {file: "tabs/resources/resources.md",      title: "Resources",   url: "/resources/"}
+  - {file: "tabs/blog/blog.md",                title: "Blog",        url: "/blog/"}
   # - {file: "personal.md",  title: "Personal",      url: "/personal"}
-  # - {file: "pubs.md",      title: "Publications", url: "/pubs"}
   # - {file: "service.md",   title: "Service",      url: "/service"}
   # - {file: "events.md",    title: "Events",        url: "/events"}
 
@@ -33,17 +26,20 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github,   icon: github, url: "https://github.com/ctaveras1999"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ctaveras1999/"}
 
+# News items are the posts in _posts/ (file name: YYYY-MM-DD-short-title.md).
+defaults:
+  - scope: {path: "", type: posts}
+    values: {layout: post, permalink: "/news/:year/:month/:title/"}
+
 sass:
   quiet_deps: true
   silence_deprecations: [import, global-builtin, color-functions]
 
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - README.md

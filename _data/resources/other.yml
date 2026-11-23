@@ -1,0 +1,275 @@
+# Data for the sections of the Resources page (tabs/resources/resources.md) other than the list of
+# academics (that one is learning_people.yml). Each section shows its entries in the order of this file.
+#
+#   name:        Display name (required)
+#   section:     Which section of the page it appears in (required):
+#                  learning    "More Places to Learn" (under Learning Materials)
+#                  undergrad   "For Undergraduates"
+#                  grad        "For Graduate Students"
+#                  research    "For Researchers"
+#                  media       "Math Media"
+#   topics:      One type, shown as a tag, e.g. [Quals] (optional)
+#   affiliation: Short institution name, shown in gray (optional)
+#   description: A sentence about it (optional). Markdown works. Quote it if it contains a colon.
+#   links:       One {label, url} per link
+
+# ============ learning: More Places to Learn ============
+- name: MIT OpenCourseWare
+  section: learning
+  affiliation: MIT
+  topics: [Courses]
+  links:
+    - {label: Webpage, url: "https://ocw.mit.edu/"}
+
+- name: Professor Leonard
+  section: learning
+  topics: [Courses]
+  description: "Full-length lectures on calculus, differential equations, and statistics."
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@ProfessorLeonard"}
+
+- name: The Online Books Page
+  section: learning
+  affiliation: UPenn
+  topics: [Books]
+  links:
+    - {label: Webpage, url: "https://onlinebooks.library.upenn.edu/"}
+
+- name: Books for Beginning Research
+  section: learning
+  topics: [Reading Lists]
+  description: "By Burt Totaro."
+  links:
+    - {label: Webpage, url: "https://burttotaro.wordpress.com/2010/10/19/books-for-beginning-research/"}
+
+- name: Great Articles and Books
+  section: learning
+  topics: [Reading Lists]
+  description: "By Ravi Vakil."
+  links:
+    - {label: Webpage, url: "https://math.stanford.edu/~vakil/greatwriting.html"}
+
+- name: Chicago Undergraduate Mathematics Bibliography
+  section: learning
+  topics: [Reading Lists]
+  links:
+    - {label: GitHub, url: "https://github.com/ystael/chicago-ug-math-bib/tree/master"}
+
+# ============ undergrad: For Undergraduates ============
+- name: AMS List of REU Programs
+  section: undergrad
+  topics: [Research Opportunities]
+  description: "Summer math REUs. Most deadlines fall in Feb–Mar."
+  links:
+    - {label: Webpage, url: "https://www.ams.org/reu"}
+
+- name: NSF Mathematical Sciences REU Sites
+  section: undergrad
+  topics: [Research Opportunities]
+  description: "For U.S. citizens and permanent residents; links to NSF's directory."
+  links:
+    - {label: Webpage, url: "https://www.nsf.gov/funding/opportunities/dms-reu-sites-mathematical-sciences-research-experiences-undergraduates"}
+
+- name: Hispanic Scholarship Fund (HSF)
+  section: undergrad
+  topics: [Scholarships]
+  links:
+    - {label: Webpage, url: "https://www.hsf.net/"}
+
+- name: The Posse Foundation
+  section: undergrad
+  topics: [Scholarships]
+  links:
+    - {label: Webpage, url: "https://www.possefoundation.org/"}
+
+- name: QuestBridge
+  section: undergrad
+  topics: [Scholarships]
+  links:
+    - {label: Webpage, url: "https://www.questbridge.org/"}
+
+# ============ grad: For Graduate Students ============
+- name: Rice Math Quals
+  section: grad
+  affiliation: Rice
+  topics: [Quals]
+  links:
+    - {label: Webpage, url: "https://mathweb.rice.edu/qualifying-exams-syllabi"}
+
+- name: Harvard Math Quals
+  section: grad
+  affiliation: Harvard
+  topics: [Quals]
+  links:
+    - {label: Webpage, url: "https://www.math.harvard.edu/graduate/study-the-qualifying-exam/some-old-qualifying-exams/"}
+
+- name: The Written Qual Book
+  section: grad
+  topics: [Quals]
+  description: "By Daryl DeFord & David Freund."
+  links:
+    - {label: PDF, url: "https://drdeford.github.io/files/The_Written_Qual_Book.pdf"}
+
+- name: ICERM
+  section: grad
+  affiliation: Brown
+  topics: [Programs & Workshops]
+  links:
+    - {label: Programs, url: "https://icerm.brown.edu/programs"}
+
+- name: Oberwolfach (MFO)
+  section: grad
+  topics: [Programs & Workshops]
+  links:
+    - {label: Webpage, url: "https://www.mfo.de/"}
+
+- name: NSF Graduate Research Fellowship Program (GRFP)
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://www.nsfgrfp.org/"}
+
+- name: National Defense Science and Engineering Graduate (NDSEG) Fellowship
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://ndseg.sysplus.com/"}
+
+- name: Paul & Daisy Soros Fellowships for New Americans
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://pdsoros.org/"}
+
+- name: GEM Fellowship
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://www.gemfellowship.org/gem-fellowship-program/"}
+
+- name: Hertz Fellowship
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://www.hertzfoundation.org/hertz-fellowship/"}
+
+- name: Two Sigma PhD Fellowship
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://www.twosigma.com/graduate-students/phd-fellowships/"}
+
+- name: Jane Street Graduate Research Fellowship
+  section: grad
+  topics: [Fellowships]
+  links:
+    - {label: Webpage, url: "https://www.janestreet.com/join-jane-street/programs-and-events/graduate-research-fellowship/"}
+
+# ============ research: For Researchers ============
+- name: ResearchSeminars.org
+  section: research
+  topics: [Talks]
+  description: "An extensive international repository of math talks."
+  links:
+    - {label: Webpage, url: "https://researchseminars.org/"}
+
+- name: Isaac Newton Institute (INI) for Mathematical Sciences
+  section: research
+  affiliation: Cambridge
+  topics: [Talks]
+  links:
+    - {label: Webpage, url: "https://www.newton.ac.uk/"}
+    - {label: YouTube, url: "https://www.youtube.com/@iniseminarroom1"}
+
+- name: Fields Institute
+  section: research
+  affiliation: Toronto
+  topics: [Talks]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@FieldsInstitute"}
+
+- name: Institute for Pure & Applied Math (IPAM)
+  section: research
+  affiliation: UCLA
+  topics: [Talks]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@IPAMUCLA"}
+
+- name: Institute for Advanced Study (IAS)
+  section: research
+  affiliation: Princeton
+  topics: [Talks]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@videosfromIAS"}
+
+- name: Simons Foundation
+  section: research
+  topics: [Talks]
+  description: "Check out the \"Science Lives\" playlists, like [this one](https://www.youtube.com/watch?v=VIVscv4TD-8&list=PLWAzLum_3a18oqTbQHpp-ZiDr2nxehPON&t=0) of the late, great [Elias Stein](https://en.wikipedia.org/wiki/Elias_M._Stein)."
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@SimonsFoundation"}
+
+- name: Applied Algebraic Topology Research Network (AATRN)
+  section: research
+  topics: [Talks]
+  links:
+    - {label: Webpage, url: "https://www.aatrn.net/about"}
+    - {label: YouTube, url: "https://www.youtube.com/@aatrn1/videos"}
+
+- name: Copenhagen Centre for Geometry and Topology (GeoTopCPH)
+  section: research
+  affiliation: Copenhagen
+  topics: [Talks]
+  links:
+    - {label: Webpage, url: "https://geotop.math.ku.dk/"}
+    - {label: YouTube, url: "https://www.youtube.com/@geotopcph7923"}
+
+# ============ media: Math Media ============
+- name: 3Blue1Brown
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@3blue1brown"}
+
+- name: Numberphile
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/numberphile"}
+
+- name: Sheafification of G
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@SheafificationOfG"}
+
+- name: K-Theory
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@k-theory8604/videos"}
+
+- name: Math with Ming
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@mathwithming"}
+
+- name: Math-life Balance
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@math-life-balance"}
+
+- name: Timothy Nguyen
+  section: media
+  topics: [Videos]
+  links:
+    - {label: YouTube, url: "https://www.youtube.com/@TimothyNguyen/videos"}
+
+- name: Proofs and Prompts
+  section: media
+  topics: [Blogs]
+  description: "A blog on math and AI."
+  links:
+    - {label: Webpage, url: "https://proofsandprompts.com/"}

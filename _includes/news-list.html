@@ -1,0 +1,16 @@
+{%- comment -%}
+  Lists news items (the posts in _posts/), newest first, with each post's first paragraph.
+  Usage:  {% include news-list.html limit=3 %}   (leave out limit to list everything)
+{%- endcomment -%}
+{%- assign limit = include.limit | default: site.posts.size -%}
+<ul class="page-list news-list">
+{%- for post in site.posts limit: limit %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+    <div>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </div>
+  </li>
+{%- endfor %}
+</ul>

@@ -216,3 +216,25 @@
     color: $link-color
     background: none
     text-decoration: underline
+
+// Short lists without controls sit a little tighter under their heading
+.flist-simple .flist-items
+  margin-top: .5em
+
+// Breathing room between consecutive lists and the text that follows them
+.flist
+  margin-bottom: 2.75em
+
+// Dates (when an entry has one)
+.flist-tags .flist-date
+  font-size: .8em
+  opacity: .65
+  padding: .05em 0
+  margin-right: .2em
+  white-space: nowrap
+
+// Where an entry was published (YouTube channel, blog, journal, ...): outlined, so it reads differently
+// from the filled type tag
+.flist-tags .flist-source
+  background: transparent
+  box-shadow: 0 0 0 1px reduce(25) inset

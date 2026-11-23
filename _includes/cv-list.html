@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders one section of _data/cv.yml: what (bold) and where on the left, when on the right,
+  and an optional description underneath.
+  Usage:  {% include cv-list.html items=site.data.cv.awards %}
+  Keep this file free of blank lines so kramdown leaves the HTML alone.
+{%- endcomment -%}
+<ul class="cv-list">
+{%- for e in include.items %}
+<li>
+<div class="cv-row"><span><strong>{{ e.what | markdownify | remove: "<p>" | remove: "</p>" | strip }}</strong>{% if e.where %}<span class="cv-where">, {{ e.where | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}</span>{% if e.when %}<span class="cv-when">{{ e.when }}</span>{% endif %}</div>
+{%- if e.desc %}<div class="cv-desc">{{ e.desc | markdownify }}</div>{% endif %}
+</li>
+{%- endfor %}
+</ul>

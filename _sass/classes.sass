@@ -15,14 +15,40 @@
   background: $link-color
   text-decoration: inherit
 
-.archive
-  font-size: 1.1em
+// Page lists on Blog and Math (_includes/page-list.html)
+.page-list
+  list-style: none
+  padding: 0
+  li
+    display: grid
+    grid-template-columns: 9ch minmax(0, 1fr)
+    gap: 0 1em
+    margin: 0 0 1.2em
+  time
+    opacity: .65
+  p
+    margin: .2em 0 0
+    opacity: .8
+.page-list-cat
+  font-size: .8em
+  padding: .05em .6em
+  margin-left: .3em
+  border-radius: 999px
+  background: reduce(10)
+  white-space: nowrap
+@media (max-width: 40em)
+  .page-list li
+    grid-template-columns: minmax(0, 1fr)
 
-.archive time
-  display: inline-block
-  min-width: 10ch
-  min-height: 1.75em
-  margin: 0 .2em
+// Publications on Academic (_includes/pubs.html)
+.pubs
+  padding-left: 2em
+  li
+    margin: 0 0 1em
+.pub-title
+  font-weight: $font-weight + 200
+.pub-authors, .pub-venue
+  opacity: .8
 
 .icon
   height: 1em
@@ -134,3 +160,96 @@ a:hover .icon
     color: #f92672
   .gi
     color: #a6e22e
+
+// Academic page sections (_includes/cv-list.html): what/where on the left, when on the right
+.cv-list
+  list-style: none
+  padding: 0
+  margin: .5em 0 1.5em
+  li
+    margin: 0 0 .9em
+.cv-row
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  gap: .2em 1.5em
+.cv-where
+  opacity: .8
+.cv-when
+  flex: none
+  opacity: .65
+  font-size: .9em
+  white-space: nowrap
+.cv-desc
+  font-size: .92em
+  opacity: .85
+  margin-top: .15em
+  p
+    margin: 0
+@media (max-width: 40em)
+  .cv-row
+    flex-direction: column
+    gap: 0
+
+// "On this page" links, pinned to the top of the screen while scrolling the page
+.toc
+  position: sticky
+  top: 0
+  z-index: 1
+  background: var(--bg)
+  display: flex
+  flex-wrap: wrap
+  gap: .3em 1.2em
+  margin: 1.2em 0 .5em
+  padding: .7em 0
+  border-top: 1px solid reduce(14)
+  border-bottom: 1px solid reduce(14)
+  font-size: .9em
+  a
+    margin: 0
+
+// Section links land below the top of the screen, not flush against it
+html
+  scroll-behavior: smooth
+h2[id], h3[id]
+  scroll-margin-top: 4em  // clears the pinned jump links
+.pub-presented
+  font-size: .9em
+  font-style: italic
+  opacity: .7
+
+// Post pages (_layouts/post.html)
+.post-back
+  margin-top: 2.5em
+  font-size: .9em
+
+// Homepage: one card per tab, each a link with a short summary
+.tab-cards
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr))
+  gap: 1em
+  margin: 2em 0 1em
+  clear: both
+.tab-card
+  display: flex
+  flex-direction: column
+  gap: .35em
+  padding: 1em 1.1em
+  border: 1px solid reduce(18)
+  border-radius: 6px
+  color: inherit
+  transition: .15s border-color, .15s transform
+  strong
+    color: $link-color
+    font-size: 1.05em
+  span
+    font-size: .9em
+    opacity: .8
+    line-height: 1.5
+  &:hover
+    text-decoration: none
+    border-color: $link-color
+    transform: translateY(-1px)
+  &:focus-visible
+    outline: 2px solid $link-color
+    outline-offset: 2px

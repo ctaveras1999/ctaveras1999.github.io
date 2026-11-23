@@ -2,6 +2,10 @@
 title: "A Bit About Me"
 permalink: "blog/personal/about_me"
 layout: page
+section: blog
+category: "Personal"
+date: 2022-05-28
+description: "Growing up between Spanish and English, from Santo Domingo to the Bronx."
 ---
 
 I was born in Santo Domingo, the capital of the Dominican Republic, some time ago. 
@@ -10,7 +14,7 @@ At two, I (was) moved to the best borough in NYC (The Bronx, yes),
 Naturally, Spanish was my first language. Unfortunately, my mastery of the language peaked (I think) when I was in 
 the [ELL][ell] (english language learners) class in Kindergarten (shout out P.S. 170!) where almost everyone spoke it. 
 
-![pic](/media/pics/english_spanish.png){:height="300px" width="400px"}
+![A made-up plot of my mastery of Spanish and English by age: Spanish peaks around age six and slowly declines, while English overtakes it around nine and levels off](/media/pics/english_spanish.png){:width="400" height="300" loading="lazy"}
 
 *Did I switch from thinking in Spanish to English around eight?*
 
@@ -73,7 +77,7 @@ favelas and poor neighborhoods.
 [srr]:      https://en.wikipedia.org/wiki/Sugar_Ray_Robinson
 [copw]:     https://www.amazon.com/Castle-Parkway-Extraordinary-Influence-American/dp/188326930X
 [more]:     https://en.wikipedia.org/wiki/DeWitt_Clinton_High_School#Notable_alumni
-[pr]: https://www.youtube.com/watch?v=9J3lwZjHenA
+[pr]: https://www.youtube.com/watch?v=9J3lwZjHenA&t=0
 [dr]: https://en.wikipedia.org/wiki/Dominicans_in_New_York_City
 [bx]: https://www.imdb.com/title/tt10720384/
 [hiphop]: https://the50thanniversaryofhip-hop.com/

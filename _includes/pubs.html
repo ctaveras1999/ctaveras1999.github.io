@@ -1,0 +1,12 @@
+{%- comment -%} Renders _data/pubs.yml. Usage: {% include pubs.html %} {%- endcomment -%}
+<ol class="pubs" reversed>
+{%- for p in site.data.pubs %}
+  <li>
+    <span class="pub-title">{{ p.title }}</span><br>
+    <span class="pub-authors">{{ p.authors | replace: "C.A. Taveras", "<strong>C.A. Taveras</strong>" }}</span><br>
+    <span class="pub-venue">{{ p.venue }}, {{ p.year }}</span>
+    {%- for l in p.links %} · <a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+    {%- if p.presented %}<br><span class="pub-presented">{{ p.presented | join: "; " }}</span>{% endif %}
+  </li>
+{%- endfor %}
+</ol>

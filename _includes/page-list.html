@@ -1,0 +1,18 @@
+{%- comment -%}
+  Lists every page whose front matter has `section: <include.section>`, newest first.
+  Usage:  {% include page-list.html section="blog" %}
+  Each listed page needs `date:`; `category:` and `description:` are optional
+  (`description` is also what search engines and link previews show).
+{%- endcomment -%}
+{%- assign items = site.pages | where: "section", include.section | sort: "date" | reverse -%}
+<ul class="page-list">
+{%- for p in items %}
+  <li>
+    <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %Y" }}</time>
+    <div>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.category and p.category != p.title %} <span class="page-list-cat">{{ p.category }}</span>{% endif %}
+      {%- if p.description %}<p>{{ p.description }}</p>{% endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ul>

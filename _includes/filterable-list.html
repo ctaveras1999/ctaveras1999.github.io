@@ -2,31 +2,46 @@
   Searchable, sortable list rendered from a _data file.
   Usage:  {% include filterable-list.html data=site.data.resources.learning_people id="learning" limit=10 %}
   limit:  how many entries show before the "Show all" button (default 10; 0 shows everything).
+  Optional settings (the defaults suit a list of people):
+    sorts:        Sort menu as "value:Label|value:Label"; the first is the default. Values: random, name,
+                  name-desc, aff, date (newest first), original (the order of the data file).
+    sort_key:     Field used to order the list before JavaScript runs (default "sort"; "none" keeps file order).
+    placeholder:  Search box hint.
+    topics_label: Text of the topic filter button (default "Filter by topic").
+    topics_open:  true shows the topic chips without clicking the button.
+    topic_order:  "data" lists topic chips in the order they first appear in the file (default A–Z).
+    simple:       true shows the list in file order without the search box and sort menu (for short
+                  lists). It still collapses to `limit` entries (default 0: show all), and with
+                  topics_open=true it shows one-click type filters above the list.
   Each entry: name, sort, title (opt), affiliation (opt), topics (opt list), description (opt, Markdown),
-  links (list of {label, url}).
+  links (list of {label, url}), url (opt: makes the name itself a link),
+  date (opt: "YYYY-MM-DD" or "YYYY"; shown on the tag line, and used by the "date" sort),
+  people (opt: shown in gray like an affiliation, e.g. authors), source (opt: where it was published,
+  shown as an outlined tag).
   Without JavaScript the full list still renders, already sorted, and the controls stay hidden.
   Keep this file free of blank lines and indentation so kramdown leaves the HTML alone.
 {%- endcomment -%}
-{%- assign items = include.data | sort: "sort" -%}
+{%- if include.simple -%}{%- assign sort_key = "none" -%}{%- else -%}{%- assign sort_key = include.sort_key | default: "sort" -%}{%- endif -%}
+{%- if sort_key == "none" -%}{%- assign items = include.data -%}{%- else -%}{%- assign items = include.data | sort: sort_key -%}{%- endif -%}
+{%- if include.simple -%}{%- assign sorts = "original:As listed" | split: "|" -%}{%- else -%}{%- assign sorts = include.sorts | default: "random:Random order|name:Last name, A–Z|name-desc:Last name, Z–A|aff:Affiliation, A–Z" | split: "|" -%}{%- endif -%}
+{%- assign topics_label = include.topics_label | default: "Filter by topic" -%}
 {%- assign list_id = include.id | default: "flist" -%}
-{%- assign list_limit = include.limit | default: 10 -%}
+{%- if include.simple -%}{%- assign list_limit = include.limit | default: 0 -%}{%- else -%}{%- assign list_limit = include.limit | default: 10 -%}{%- endif -%}
 {%- capture topic_blob -%}{%- for p in items -%}{%- for t in p.topics -%}{{ t }}|{%- endfor -%}{%- endfor -%}{%- endcapture -%}
-{%- assign topics = topic_blob | split: "|" | uniq | sort -%}
-<div class="flist" id="{{ list_id }}" data-limit="{{ list_limit }}">
+{%- assign topics = topic_blob | split: "|" | uniq -%}
+{%- unless include.topic_order == "data" -%}{%- assign topics = topics | sort -%}{%- endunless -%}
+<div class="flist{% if include.simple %} flist-simple{% endif %}" id="{{ list_id }}" data-limit="{{ list_limit }}"{% if include.simple %} data-simple="1"{% endif %}>
 <div class="flist-controls" hidden>
-<input type="search" class="flist-search" placeholder="Search names, schools, topics…" aria-label="Search this list" aria-controls="{{ list_id }}-items">
+<input type="search" class="flist-search" placeholder="{{ include.placeholder | default: 'Search names, schools, topics…' }}" aria-label="Search this list" aria-controls="{{ list_id }}-items">
 <select class="flist-sort" aria-label="Sort this list">
-<option value="random" selected>Random order</option>
-<option value="name">Last name, A–Z</option>
-<option value="name-desc">Last name, Z–A</option>
-<option value="aff">Affiliation, A–Z</option>
+{%- for s in sorts -%}{%- assign kv = s | split: ":" -%}<option value="{{ kv[0] }}"{% if forloop.first %} selected{% endif %}>{{ kv[1] }}</option>{%- endfor -%}
 </select>
 {%- if topics.size > 0 -%}
-<button type="button" class="flist-topics-toggle" aria-expanded="false" aria-controls="{{ list_id }}-topics">Filter by topic</button>
+<button type="button" class="flist-topics-toggle" aria-expanded="{% if include.topics_open %}true{% else %}false{% endif %}" aria-controls="{{ list_id }}-topics" data-label="{{ topics_label | escape }}">{{ topics_label | escape }}</button>
 {%- endif -%}
 </div>
 {%- if topics.size > 0 -%}
-<div class="flist-topics" id="{{ list_id }}-topics" role="group" aria-label="Filter by topic" hidden>
+<div class="flist-topics" id="{{ list_id }}-topics" role="group" aria-label="{{ topics_label | escape }}"{% unless include.topics_open %} hidden{% endunless %}>
 {%- for t in topics -%}<button type="button" class="flist-topic" aria-pressed="false" data-topic="{{ t | escape }}">{{ t | escape }}</button>{%- endfor -%}
 <button type="button" class="flist-topics-clear" hidden>Clear topics</button>
 </div>
@@ -34,14 +49,15 @@
 <div class="flist-status" hidden><span class="flist-count" aria-live="polite"></span><button type="button" class="flist-toggle flist-toggle-top" aria-controls="{{ list_id }}-items" aria-expanded="false" hidden></button></div>
 <ul class="flist-items" id="{{ list_id }}-items">
 {%- for p in items -%}
-<li class="flist-item" data-sort="{{ p.sort | escape }}" data-aff="{{ p.affiliation | escape }}" data-topics="{{ p.topics | join: '|' | escape }}">
-<div class="flist-who">{%- if p.title -%}<span class="flist-title">{{ p.title | escape }}</span> {% endif -%}<strong class="flist-name">{{ p.name | escape }}</strong>{%- if p.affiliation and p.affiliation != "" %} <span class="flist-aff">{{ p.affiliation | escape }}</span>{%- endif -%}</div>
+{%- assign who = p.people | default: p.affiliation -%}
+<li class="flist-item" data-sort="{{ p.sort | default: p.name | escape }}" data-aff="{{ who | escape }}" data-topics="{{ p.topics | join: '|' | escape }}"{% if p.date %} data-date="{{ p.date }}"{% endif %}>
+<div class="flist-who">{%- if p.title -%}<span class="flist-title">{{ p.title | escape }}</span> {% endif -%}<strong class="flist-name">{% if p.url %}<a href="{{ p.url | escape }}">{{ p.name | escape }}</a>{% else %}{{ p.name | escape }}{% endif %}</strong>{%- if who and who != "" %} <span class="flist-aff">{{ who | escape }}</span>{%- endif -%}</div>
 <div class="flist-links">{%- for l in p.links -%}<a href="{{ l.url | escape }}">{{ l.label | escape }}</a>{%- endfor -%}</div>
 {%- if p.description and p.description != "" -%}
 <div class="flist-desc">{{ p.description | markdownify | strip_newlines }}</div>
 {%- endif -%}
-{%- if p.topics and p.topics.size > 0 -%}
-<div class="flist-tags">{%- for t in p.topics -%}<span>{{ t | escape }}</span>{%- endfor -%}</div>
+{%- if p.date or p.source or p.topics.size > 0 -%}
+<div class="flist-tags">{%- if p.date -%}<time class="flist-date" datetime="{{ p.date }}">{% assign dstr = p.date | append: "" %}{% if dstr.size == 4 %}{{ dstr }}{% else %}{{ dstr | date: "%b %-d, %Y" }}{% endif %}</time>{%- endif -%}{%- for t in p.topics -%}<span>{{ t | escape }}</span>{%- endfor -%}{%- if p.source -%}<span class="flist-source">{{ p.source | escape }}</span>{%- endif -%}</div>
 {%- endif -%}
 </li>
 {%- endfor -%}
@@ -49,4 +65,4 @@
 <p class="flist-empty" hidden>Nothing matches that search.</p>
 <button type="button" class="flist-toggle" aria-controls="{{ list_id }}-items" aria-expanded="false" hidden></button>
 </div>
-<script defer src="{{ '/assets/js/filterable-list.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/filterable-list.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

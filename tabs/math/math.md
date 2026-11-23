@@ -1,14 +1,8 @@
 ---
-# title: "Math"
+title: "Math"
 permalink: "/math/"
 layout: page
-mathjax: true
+redirect_from:
+  - "/math/events"
 ---
-<!-- ## Mathematical Interpretations of (Mostly) Rap Lyrics -->
-<!-- Coming Soon... -->
-
-<!-- ## Random Lists  -->
-<!-- Coming Soon...  -->
-# Math
-## [Events (Conferences, Workshops, etc.)]({{ '/math/events' | relative_url }})
-## [Math and AI]({{ '/math/mathai' | relative_url }})
+{% include page-list.html section="math" %}

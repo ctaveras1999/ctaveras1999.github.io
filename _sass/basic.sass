@@ -1,3 +1,12 @@
+:root
+  --link: #3b5bdb
+  --bg: #{$light}
+
+@media (prefers-color-scheme: dark)
+  :root
+    --link: #7c9bff
+    --bg: #{$dark}
+
 body
   background: $light
   color: $dark
@@ -94,3 +103,20 @@ pre
   border-radius: 2px
   margin: 0 .1em
   padding: .2em .4em
+
+// Footnote markers and other superscripts shouldn't push lines apart
+sup, sub
+  line-height: 0
+
+// Headings written with "#" inside a page sit just below the page title in size
+article h1
+  font-size: 1.6em
+
+// Section headings get clear space above them, so sections read as separate blocks
+article h2
+  margin-top: 2.2em
+article h3
+  margin-top: 1.8em
+// ...but a heading directly under another heading stays close to it
+article h1 + h2, article h2 + h3, article h3 + h4
+  margin-top: 1em
