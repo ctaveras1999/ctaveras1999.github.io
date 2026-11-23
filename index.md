@@ -1,5 +1,6 @@
 ---
 layout: page
+window_title: "Homepage"   # shown in the window's title bar (the browser tab keeps your name)
 ---
 # Greetings!
 
@@ -11,11 +12,11 @@ Among other things, I'm a first-year Ph.D. student in the [Rice Math Department]
 See [Overview]({{ '/overview/' | relative_url }}) for more.
 
 <div class="tab-cards">
-  <a class="tab-card" href="{{ '/overview/' | relative_url }}"><strong>Overview</strong><span>More about me and this site.</span></a>
-  <a class="tab-card" href="{{ '/academic/' | relative_url }}"><strong>Academic</strong><span>The standard fare.</span></a>
-  <a class="tab-card" href="{{ '/math/' | relative_url }}"><strong>Math</strong><span>Math in Many Manifestations.</span></a>
-  <a class="tab-card" href="{{ '/resources/' | relative_url }}"><strong>Resources</strong><span>Potentially useful materials for students and researchers.</span></a>
-  <a class="tab-card" href="{{ '/blog/' | relative_url }}"><strong>Blog</strong><span>Personal posts and miscellany.</span></a>
+  <a class="tab-card" href="{{ '/overview/' | relative_url }}"><strong>Overview</strong><span>More About Me and This Site</span></a>
+  <a class="tab-card" href="{{ '/academic/' | relative_url }}"><strong>Academic</strong><span>The Standard Fare.</span></a>
+  <a class="tab-card" href="{{ '/math/' | relative_url }}"><strong>Math</strong><span>Math in Many Manifestations</span></a>
+  <a class="tab-card" href="{{ '/resources/' | relative_url }}"><strong>Resources</strong><span>A List of Lists</span></a>
+  <a class="tab-card" href="{{ '/blog/' | relative_url }}"><strong>Blog</strong><span>Personal posts and miscellany</span></a>
 </div>
 
 ## Recent News

@@ -3,7 +3,8 @@ layout: default
 ---
 <article class="window">
   <header class="titlebar">
-    <h1><a href="{{ page.url | relative_url }}">{{ page.title | default: site.title }}</a></h1>
+    {%- comment -%} window_title (front matter) sets only the title bar; title also sets the browser tab {%- endcomment %}
+    <h1><a href="{{ page.url | relative_url }}">{{ page.window_title | default: page.title | default: site.title }}</a></h1>
   </header>
   <div class="window-body">
     {%- if page.tags and page.tags.size > 0 and page.section %}
