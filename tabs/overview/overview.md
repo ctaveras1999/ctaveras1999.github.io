@@ -8,7 +8,8 @@ description: "Who I am, how I got here, and what you'll find on this site."
 <figure class="intro-photo">
   <img src="/media/pics/personal_pic3-small.jpeg" alt="A picture of me near some trees circa 2026" width="400" height="536">
 </figure>
-
+As mentioned on the homepage, I am[^not-me] a first-year 
+Math Ph.D. student at Rice University.
 My mathematical interests haven't settled quite yet, but I'm most partial to analysis and spectral theory at the moment,
 and hope to work with [David Damanik](https://www.ruf.rice.edu/~dtd3/)[^damanik] on spectral theory and Schrödinger operators.[^schrodinger] 
 These days, I spend most of my time doing homework and trying to master enough math to pass my quals.
@@ -87,7 +88,7 @@ reflections.
 I use footnotes liberally.[^footnotes]
 This is mostly to make silly comments and sometimes to provide potentially useful context.
 
-[^not-me]: For a list of who I am not [click here]({{'/blog/misc'|relative_url}})
+[^not-me]: For a list of who I am not [click here]({{'/blog/who-i-am-not'|relative_url}})
 [^damanik]: The inimitable renaissance man
 [^schrodinger]: If you don't know what that means, but want to, check out David's [survey paper](https://arxiv.org/abs/1410.2445) on the subject. [Better](https://bookstore.ams.org/GSM/221) [yet](https://bookstore.ams.org/GSM/249), you can buy the definitive [duology](https://www.vocabulary.com/dictionary/duology) on one-dimensional Schrödinger operators (and much more) written by David and [Jake Fillman](https://sites.google.com/site/jakefillman/) as part of the AMS's *Graduate Studies in Mathematics* collection. \[[COI Statment](https://academic.oup.com/aler/pages/conflict_of_interest_statement): I was neither coerced nor compensated to make this advertisement -- it was an act of free will.\]
 [^ece]:  ECE := Electrical and Computer Engineering
