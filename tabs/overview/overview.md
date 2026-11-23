@@ -19,7 +19,7 @@ eventually received B.S. & M.S. degrees ('21 & '22) in [ECE][ece][^ece] at [CMU]
 Next stop is Houston, TX, where I began my graduate studies at the [Rice ECE Department][riceece]
 under the guidance of [César A. Uribe][cesar] and [Santiago Segarra][santi],
 ultimately resulting in a [Master's thesis](https://repository.rice.edu/items/87afda7a-6a85-452e-8954-02b11b7e0c2a) ('25) and a [couple of papers](https://scholar.google.com/citations?user=sw4tzEoAAAAJ&hl=en&authuser=1),
-two of which were led by (the rising star) [Yifan Xu](https://mrhoggboss.github.io/).[^rising-star]
+two of which were led by [Yifan Xu](https://mrhoggboss.github.io/).[^rising-star]
 
 Before that, I spawned[^spawned] in Santo Domingo, Dominican Republic[^carlos] and (was) moved to NYC shortly thereafter, 
 where I had the great privilege of growing up in the city's best borough.[^bronx] 
