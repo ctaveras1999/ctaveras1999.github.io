@@ -3,6 +3,7 @@
 layout: page
 mathjax: true
 ---
+
 # Greetings!
 
 ## Who Am I?
@@ -88,7 +89,7 @@ and
 reflections.
 
 ### Footnotes
-I use footnotes liberally[^15].
+I use footnotes liberally.[^15]
 This is mostly to make silly comments and sometimes to provide potentially useful context.
 
 ## Recent News
