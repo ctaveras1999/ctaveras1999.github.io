@@ -1,6 +1,6 @@
 ---
 layout: page
-window_title: "Homepage"   # shown in the window's title bar (the browser tab keeps your name)
+window_title: "Homepage"  
 ---
 # Greetings!
 

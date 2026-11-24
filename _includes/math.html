@@ -9,7 +9,8 @@
     tex: {
       inlineMath: [["$", "$"], ["\\(", "\\)"]],
       displayMath: [["$$", "$$"], ["\\[", "\\]"]],
-      processEscapes: true
+      processEscapes: true,
+      tags: "ams"   // numbers equation/align environments; \label{...} and \eqref{...} work
     },
     options: {
       skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]

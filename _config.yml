@@ -28,7 +28,16 @@ external:                  # shows a footer with social links - for available ic
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/ctaveras1999/"}
 
 # News items are the posts in _posts/ (file name: YYYY-MM-DD-short-title.md).
+# Math notes (_notes/): published at /math/notes/<file-name>/, with theorem-style blocks and
+# cross-references handled by _plugins/academic_notes.rb. Listed on /math/notes/.
+collections:
+  notes:
+    output: true
+    permalink: /math/notes/:name/
+
 defaults:
+  - scope: {path: "", type: notes}
+    values: {layout: page, mathjax: true}
   # Preview image for links shared on Slack, iMessage, LinkedIn, etc. (1200x630). A page can
   # override it with its own `image:` in front matter.
   - scope: {path: ""}

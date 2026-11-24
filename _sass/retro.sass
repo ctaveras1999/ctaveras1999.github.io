@@ -467,3 +467,229 @@ html.effects-off
     @include pressed
   &[hidden]
     display: none
+
+// ---------- Math notes: theorem-style blocks (_plugins/academic_notes.rb) ----------
+// Theorem-like blocks are framed with an accent bar, definitions get a faint tint, examples a
+// dashed bar, proofs are borderless and end with ∎, and remarks are a soft shaded panel.
+$env-strong: #421d63   // theorems, lemmas, propositions, corollaries, claims
+$env-def: $titlebar    // definitions
+$env-soft: #904ecb     // examples, exercises, solutions, remarks
+$env-other: #7f37bd    // axioms, assumptions, conjectures, hypotheses
+
+.env
+  margin: 1.2em 0
+  padding: .55em .9em .6em
+  border: 1px solid $bevel-mid
+  border-left: 4px solid $env-strong
+  background: rgba(#fff, .7)
+  > p
+    margin: .35em 0
+  > :last-child
+    margin-bottom: 0
+.env-head
+  font-weight: 600
+  color: $env-strong
+  margin-bottom: .2em
+.env-title
+  font-weight: 400
+  color: #000
+
+.env-definition
+  border-left-color: $env-def
+  background: rgba(#f6f0fb, .8)
+  .env-head
+    color: $env-def
+.env-example, .env-exercise, .env-solution
+  border-left: 4px dashed $env-soft
+  .env-head
+    color: $env-soft
+.env-axiom, .env-assumption, .env-conjecture, .env-hypothesis
+  border-left-color: $env-other
+  .env-head
+    color: $env-other
+
+// Proofs: no frame; italic heading; ∎ at the end
+.env-proof
+  border: 0
+  background: none
+  padding: 0 0 0 .2em
+  .env-head
+    display: inline
+    font-style: italic
+    font-weight: 600
+    color: #000
+    &::after
+      content: "."
+  &::after
+    content: "∎"
+    display: block
+    text-align: right
+    line-height: 1
+
+// Remarks: soft shaded panel, italic heading
+.env-remark
+  border: 0
+  background: rgba(#efe6f7, .8)
+  .env-head
+    font-style: italic
+    color: $env-soft
+
+// Collapsible blocks ([!thm]- / [!thm]+)
+details.env > summary
+  cursor: pointer
+  list-style-position: inside
+
+// References to blocks
+a.xref
+  white-space: nowrap
+
+// "Referenced in" line at the end of a labeled block
+.env-backrefs
+  font-size: .82em
+  color: #444
+  margin-top: .5em
+  padding-top: .3em
+  border-top: 1px dotted $bevel-shadow
+  // Long lists (more than 5 places) start collapsed; assets/js/notes.js adds the class
+  &.is-collapsed .backrefs-more
+    display: none
+  .backrefs-toggle
+    background: none
+    border: 0
+    padding: 0
+    font: inherit
+    color: $link-color
+    text-decoration: underline
+    cursor: pointer
+
+// Hover preview of a referenced block (assets/js/notes.js): a small window
+.xref-card
+  position: absolute
+  z-index: 50
+  box-sizing: border-box
+  width: max-content
+  max-width: min(36em, calc(100vw - 16px))
+  padding: 4px
+  background: $face
+  box-shadow: inset -1px -1px $bevel-dark, inset 1px 1px $bevel-mid, inset -2px -2px $bevel-shadow, inset 2px 2px $bevel-light, 2px 3px 10px rgba(0, 0, 0, .25)
+  font-size: .92em
+  .env
+    margin: 0
+    background: $window
+
+// The list of notes on /math/notes/ has no date column
+.notes-list li
+  grid-template-columns: minmax(0, 1fr)
+
+// "Notes › Analysis › Metric Spaces" path at the top of a note
+.breadcrumbs
+  font-size: .85em
+  margin: 0 0 1em
+  color: #444
+
+// Collapsible topics on /math/notes/: each topic and subtopic is a bar with a ▸/▾ marker and
+// a note count
+.topic-controls
+  display: flex
+  gap: .5em
+  margin: 0 0 1em
+  &[hidden]
+    display: none
+.topic-group
+  margin: 0 0 .6em
+  > summary
+    display: flex
+    align-items: baseline
+    gap: .8em
+    cursor: pointer
+    list-style: none
+    padding: .3em .6em
+    background: $face
+    @include raised
+    &::-webkit-details-marker
+      display: none
+    &::before
+      content: "▸"
+      font-size: .9em
+      width: 1em
+    h2, h3
+      margin: 0
+      font-size: 1.15em
+    h3
+      font-size: 1em
+  &[open] > summary
+    @include pressed
+    &::before
+      content: "▾"
+  > .notes-list
+    margin: .7em 0 .4em 1.2em
+.topic-sub
+  margin: .6em 0 .6em 1.2em
+.topic-count
+  font-size: .8em
+  color: #444
+  margin-left: auto
+
+// ---------- Notes Map (/math/notes/graph/) ----------
+.graph-controls
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  gap: .5em 1.2em
+  margin: 0 0 .6em
+  font-size: .9em
+  &[hidden]
+    display: none
+  label
+    display: inline-flex
+    align-items: center
+    gap: .4em
+  select, input[type="search"]
+    font: inherit
+    background: $window
+    color: #000
+    border: 0
+    padding: .25em .4em
+    @include sunken
+.g-statements-only[hidden]
+  display: none
+.g-swatch
+  display: inline-block
+  width: .9em
+  height: .9em
+  border: 1px solid #000
+.graph-canvas
+  height: 70vh
+  min-height: 420px
+  margin: .4em 0
+  background: $window
+  @include sunken
+// Shown instead of the map when the settings would draw too many boxes
+.graph-big
+  margin: .4em 0
+  padding: 2em 1em
+  text-align: center
+  background: $window
+  @include sunken
+  p
+    margin: 0 auto 1em
+    max-width: 36em
+.graph-info
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  gap: .4em 1em
+  padding: .5em .7em
+  margin: .4em 0
+  background: $face
+  @include raised
+  &[hidden]
+    display: none
+  span
+    font-size: .85em
+    color: #444
+.graph-status
+  font-size: .85em
+  color: #444
+  margin: .2em 0 0
+

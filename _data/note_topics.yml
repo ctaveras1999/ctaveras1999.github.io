@@ -1,0 +1,4 @@
+# Display names for topic folders in _notes/ (folder name: display name). Folders not listed
+# here are named automatically: "metric-spaces" -> "Metric Spaces". Examples:
+# pde: PDE
+# odes: ODEs

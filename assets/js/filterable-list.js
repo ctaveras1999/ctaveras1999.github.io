@@ -228,8 +228,51 @@
     render();
   }
 
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  // One entry, with the same markup _includes/filterable-list.html writes
+  function itemHtml(p) {
+    var who = p.people || p.affiliation || "";
+    var topics = p.topics || [];
+    var name = p.url ? '<a href="' + esc(p.url) + '">' + esc(p.name) + "</a>" : esc(p.name);
+    var h = '<li class="flist-item" data-sort="' + esc(p.sort || p.name) + '" data-aff="' + esc(who) +
+      '" data-topics="' + esc(topics.join("|")) + '"' + (p.date ? ' data-date="' + esc(p.date) + '"' : "") + ">" +
+      '<div class="flist-who">' + (p.title ? '<span class="flist-title">' + esc(p.title) + "</span> " : "") +
+      '<strong class="flist-name">' + name + "</strong>" + (who ? ' <span class="flist-aff">' + esc(who) + "</span>" : "") + "</div>" +
+      '<div class="flist-links">' + (p.links || []).map(function (l) {
+        return '<a href="' + esc(l.url) + '">' + esc(l.label) + "</a>";
+      }).join("") + "</div>";
+    if (p.description) h += '<div class="flist-desc"><p>' + esc(p.description) + "</p></div>";
+    if (p.date || p.source || topics.length) {
+      h += '<div class="flist-tags">' + (p.date ? '<time class="flist-date" datetime="' + esc(p.date) + '">' + esc(p.date) + "</time>" : "") +
+        topics.map(function (t) {
+          return '<button type="button" class="flist-tag" data-topic="' + esc(t) + '" aria-pressed="false" title="Show only ' + esc(t) + '">' + esc(t) + "</button>";
+        }).join("") + (p.source ? '<span class="flist-source">' + esc(p.source) + "</span>" : "") + "</div>";
+    }
+    return h + "</li>";
+  }
+
+  // Lists with data-src fetch their entries from a JSON file first
+  function load(root) {
+    if (!root.dataset.src) return init(root);
+    var loading = root.querySelector(".flist-loading");
+    if (loading) loading.hidden = false;
+    fetch(root.dataset.src)
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function (entries) {
+        root.querySelector(".flist-items").innerHTML = entries.map(itemHtml).join("");
+        if (loading) loading.remove();
+        init(root);
+      })
+      .catch(function () { if (loading) loading.textContent = "The list couldn't load."; });
+  }
+
   function initAll() {
-    document.querySelectorAll(".flist").forEach(init);
+    document.querySelectorAll(".flist").forEach(load);
   }
 
   if (document.readyState === "loading") {

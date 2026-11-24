@@ -18,7 +18,11 @@
   date (opt: "YYYY-MM-DD" or "YYYY"; shown on the tag line, and used by the "date" sort),
   people (opt: shown in gray like an affiliation, e.g. authors), source (opt: where it was published,
   shown as an outlined tag).
-  Without JavaScript the full list still renders, already sorted, and the controls stay hidden.
+  src:          URL of a JSON file with the entries (same fields; description is plain text). The
+                entries are then fetched by the browser instead of written into the page, which keeps
+                long lists from weighing the page down; `data` is still needed for the topic chips.
+                Such a list needs JavaScript.
+  Without JavaScript the full list still renders (except with src), already sorted, and the controls stay hidden.
   Keep this file free of blank lines and indentation so kramdown leaves the HTML alone.
 {%- endcomment -%}
 {%- if include.simple -%}{%- assign sort_key = "none" -%}{%- else -%}{%- assign sort_key = include.sort_key | default: "sort" -%}{%- endif -%}
@@ -30,7 +34,7 @@
 {%- capture topic_blob -%}{%- for p in items -%}{%- for t in p.topics -%}{{ t }}|{%- endfor -%}{%- endfor -%}{%- endcapture -%}
 {%- assign topics = topic_blob | split: "|" | uniq -%}
 {%- unless include.topic_order == "data" -%}{%- assign topics = topics | sort -%}{%- endunless -%}
-<div class="flist{% if include.simple %} flist-simple{% endif %}" id="{{ list_id }}" data-limit="{{ list_limit }}"{% if include.simple %} data-simple="1"{% endif %}>
+<div class="flist{% if include.simple %} flist-simple{% endif %}" id="{{ list_id }}" data-limit="{{ list_limit }}"{% if include.src %} data-src="{{ include.src | relative_url }}"{% endif %}{% if include.simple %} data-simple="1"{% endif %}>
 <div class="flist-controls" hidden>
 <input type="search" class="flist-search" placeholder="{{ include.placeholder | default: 'Search names, schools, topics…' }}" aria-label="Search this list" aria-controls="{{ list_id }}-items">
 <select class="flist-sort" aria-label="Sort this list">
@@ -48,6 +52,7 @@
 {%- endif -%}
 <div class="flist-status" hidden><span class="flist-count" aria-live="polite"></span><button type="button" class="flist-toggle flist-toggle-top" aria-controls="{{ list_id }}-items" aria-expanded="false" hidden></button></div>
 <ul class="flist-items" id="{{ list_id }}-items">
+{%- if include.src -%}{%- assign items = "" | split: "" -%}{%- endif -%}
 {%- for p in items -%}
 {%- assign who = p.people | default: p.affiliation -%}
 <li class="flist-item" data-sort="{{ p.sort | default: p.name | escape }}" data-aff="{{ who | escape }}" data-topics="{{ p.topics | join: '|' | escape }}"{% if p.date %} data-date="{{ p.date }}"{% endif %}>
@@ -62,6 +67,7 @@
 </li>
 {%- endfor -%}
 </ul>
+{%- if include.src -%}<p class="flist-loading" hidden>Loading the list…</p><noscript><p>This list needs JavaScript.</p></noscript>{%- endif -%}
 <p class="flist-empty" hidden>Nothing matches that search.</p>
 <button type="button" class="flist-toggle" aria-controls="{{ list_id }}-items" aria-expanded="false" hidden></button>
 </div>

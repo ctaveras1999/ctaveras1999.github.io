@@ -7,6 +7,9 @@ layout: default
     <h1><a href="{{ page.url | relative_url }}">{{ page.window_title | default: page.title | default: site.title }}</a></h1>
   </header>
   <div class="window-body">
+    {%- if page.breadcrumbs %}
+    <nav class="breadcrumbs" aria-label="Topic">{% for c in page.breadcrumbs %}<a href="{{ c.url | relative_url }}">{{ c.name }}</a>{% unless forloop.last %} › {% endunless %}{% endfor %}{% if page.note_key %} · <a href="{{ '/math/notes/graph/' | relative_url }}?focus=note:{{ page.note_key | url_encode }}">Map</a>{% endif %}</nav>
+    {%- endif %}
     {%- if page.tags and page.tags.size > 0 and page.section %}
     {%- assign list_url = '/' | append: page.section | append: '/' | relative_url %}
     <p class="post-tags flist-tags"><span class="page-list-tags-label">Tags:</span>
