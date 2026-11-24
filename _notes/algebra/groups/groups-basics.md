@@ -1,8 +1,8 @@
 ---
-title: "Group Fundamentals"
+title: "Group Basics"
 description: "Groups, their homomorphisms, and basic results."
 ---
-## Metrics
+## Groups
 
 > [!def] Group
 > A **group** is a pair $(G, *)$ comprised of a set $G$ and a binary operation $*: G \times G \to G$ satisfying the following axioms:
@@ -12,5 +12,6 @@ description: "Groups, their homomorphisms, and basic results."
 ^def-group
 
 > [!def] Group Homomorphism
-> A *group homomorphism* between groups $(G, *)$ and $(H,\cdot)$ is a map $\vphi : G \to H$ satisfying
+> A *group homomorphism* is a map of [[#^def-group|groups]] $\vphi: (G,*) \to (H,\cdot)$ satisfying
 > $$\vphi(a * b) = \vphi(a) \cdot \vphi(b) \quad \text{ for all } a, b \in G.$$
+^def-group-hom
