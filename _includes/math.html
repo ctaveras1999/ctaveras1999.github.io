@@ -1,6 +1,7 @@
 {%- comment -%}
-  MathJax, loaded only on pages with `mathjax: true` in their front matter
-  (or on every page if `mathjax: true` is set in _config.yml).
+  MathJax. Loaded on pages with `mathjax: true` in their front matter (all math notes), and on
+  any page whose Markdown uses $$...$$ (see _layouts/default.html).
+  Macros: everything in _latex/preamble.sty (read by _plugins/tex_preamble.rb), on every page.
   Inline math:  $...$  or  \(...\)      Display math:  $$...$$  or  \[...\]
   Write \$ for a literal dollar sign on these pages.
 {%- endcomment -%}
@@ -10,7 +11,8 @@
       inlineMath: [["$", "$"], ["\\(", "\\)"]],
       displayMath: [["$$", "$$"], ["\\[", "\\]"]],
       processEscapes: true,
-      tags: "ams"   // numbers equation/align environments; \label{...} and \eqref{...} work
+      tags: "ams",  // numbers equation/align environments; \label{...} and \eqref{...} work
+      macros: {{ site.data.mathjax_macros | default: empty | jsonify }}
     },
     options: {
       skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]

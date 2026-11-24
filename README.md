@@ -55,6 +55,18 @@ matter, e.g. `tags: [Personal, Lists]`. The Blog and Math pages show a row of al
 post's tags; clicking one shows only matching posts, and the filter is kept in the address
 (`/blog/?tag=Lists`). Each post shows its tags at the top, linking to that filtered list.
 
+## Math and LaTeX macros
+
+Math is typeset by MathJax (`_includes/math.html`). It loads on the math notes (`mathjax: true`)
+and on any page whose Markdown uses `$$...$$`; to use single-`$` inline math on another page,
+add `mathjax: true` to its front matter.
+
+The macros in `_latex/preamble.sty` work on every page with math. It is a plain LaTeX preamble
+(`\newcommand`, `\renewcommand`, `\def`), so paste a new version over it to update the site.
+`_plugins/tex_preamble.rb` reads it at build time and adjusts the few LaTeX-only pieces:
+`\mathds{1}` becomes `\mathbb{1}`, `\xspace` is dropped, and `\"o` becomes `ö`. A malformed
+line (e.g. unbalanced braces) stops the build with a message.
+
 ## Math notes
 
 Notes are Markdown files in topic folders under `_notes/`, listed by topic on `/math/notes/`:

@@ -1,0 +1,279 @@
+% Sets
+\newcommand{\setcond}[2]{\left\{ #1 \; : \; #2 \right\}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\comp}{\mathsf{c}}
+\newcommand{\Tau}{\mathcal{T}}
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\zeroset}{\{0\}}
+
+% Functions
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\pinv}[1]{\left(#1\right)^{-1}}
+\newcommand{\vphi}{\varphi}
+\newcommand{\image}{\text{im}}
+\newcommand{\one}{\mathds{1}}
+
+% Brackets and Parentheses
+\newcommand{\bigparen}[1]{\left(#1\right)}
+\newcommand{\paren}[1]{(#1)}
+\newcommand{\bigbrace}[1]{\left\{#1\right\}}
+\renewcommand{\brace}[1]{\{#1\}}
+\newcommand{\bigbrack}[1]{\left[#1\right]}
+\renewcommand{\brack}[1]{[#1]}
+
+% Topology
+\newcommand{\bd}{\text{bd}}
+\newcommand{\closure}[1]{\overline{#1}}
+\newcommand{\supp}{\text{supp}}
+\newcommand{\Int}{\text{Int}}
+\newcommand{\Ext}{\text{Ext}}
+\newcommand{\fprod}{\mathop{\large \ast}}
+\newcommand{\normgen}[1]{\langle\langle #1 \rangle\rangle}
+\newcommand{\inc}[2]{#1 \hookrightarrow #2}
+\newcommand{\interior}[1]{{\mathring{#1}}}
+
+% Metric Spaces
+\newcommand{\ball}[3]{B_{#1}(#2, #3)}
+\newcommand{\cball}[3]{\overline{B_{#1}}(#2, #3)}
+\newcommand{\ballns}[2]{B_{#1}(#2)}
+\newcommand{\cballns}[3]{\overline{B_{#1}}(#2, #3)}
+\newcommand{\ballorigin}[1]{B_{0}(#1)}
+\newcommand{\cballorigin}[1]{\overline{B_{0}(#1)}}
+\newcommand{\diam}{\text{diam}}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+
+% Functional Analysis
+\newcommand{\vspan}[1]{\text{span}\left(#1\right)}
+\newcommand{\inner}[2]{\left\langle #1, #2 \right\rangle}
+\newcommand{\innerdot}{\langle \cdot, \cdot \rangle}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\norminf}[1]{\left\lVert #1 \right\rVert_\infty}
+\newcommand{\normp}[1]{\left\lVert #1 \right\rVert_p}
+\newcommand{\normtwo}[1]{\left\lVert #1 \right\rVert_2}
+\newcommand{\normone}[1]{\left\lVert #1 \right\rVert_1}
+\newcommand{\normdot}{\lVert \cdot \rVert}
+\newcommand{\Tr}{\text{Tr}}
+\newcommand{\tr}{\text{tr}}
+\newcommand{\id}{\text{id}}
+\newcommand{\proj}[2]{\text{proj}_{#2}\left(#1\right)}
+\newcommand{\prl}{||}                                       % Parallel Component
+\newcommand{\setbasis}[3]{\set{#1_#2}_{#2 \in #3}}
+
+% Function Spaces
+\newcommand{\lone}{\ell^1}
+\newcommand{\linf}{\ell^{\infty}}
+\newcommand{\ltwo}{\ell^{2}}
+\newcommand{\Lone}{L^1}
+\newcommand{\Ltwo}{L^2}
+\newcommand{\lp}{\ell^p}
+\newcommand{\Lp}{L^p}
+
+% Analysis
+\newcommand{\deriv}[3]{\frac{d^{#3} #1}{\partial {#2}^{#3}}}
+\newcommand{\derivp}[3]{\frac{\partial^{#3} #1}{\partial {#2}^{#3}}}
+\newcommand{\limdown}[1]{\lim_{#1 \downarrow 0}}
+\newcommand{\limdownto}[2]{\lim_{#1 \downarrow #2}}
+\newcommand{\limtoinf}[1]{\lim_{#1 \to \infty}}
+\newcommand{\seq}[2]{\left\{{#1}_{#2}\right\}_{#2=1}^{\infty}}
+\newcommand{\cesaro}[2]{\lim_{#1\to\infty} \frac{1}{#1} \int_{0}^{#1} {#2} \ dt}
+
+% Measure Theory
+\newcommand{\esupp}[1]{\text{ess supp}\left( #1 \right)}
+\newcommand{\spec}[1]{\text{spec}\left( #1 \right)}
+
+% Schrodinger Operators
+\newcommand{\Prob}[3]{\text{Prob}_{#1(t)}(#2 \in #3)}
+
+% Algebra
+\newcommand{\gen}[1]{\langle #1 \rangle}
+\newcommand{\gencond}[2]{\langle #1 \ | \ #2 \rangle}
+\newcommand{\normsub}{\unlhd}
+\newcommand{\lcm}[1]{\text{lcm} \left( #1 \right)}
+\newcommand{\stab}[2]{{\text{Stab}_{#1}\left(#2\right)}}
+\newcommand{\aut}[1]{\text{Aut}{\left(#1\right)}}
+\newcommand{\inn}{\rtimes}
+\newcommand{\innl}{\ltimes}
+\newcommand{\syl}[2]{\text{Syl}_{#1}(#2)}
+\newcommand{\idx}[2]{\abs{#1:#2}}
+\newcommand{\cntr}[2]{C_{#1}(#2)}
+\newcommand{\nrml}[2]{N_{#1}(#2)}
+\renewcommand{\mod}[2]{#1 \ (\text{mod } #2)}
+\newcommand{\modeq}[3]{#1 \equiv #2 \ (\text{mod } #3)}
+\newcommand{\im}[1]{\text{im} \ #1}
+\newcommand{\ordlex}{>_{\text{lex}}}
+\newcommand{\ordgrlex}{>_{\text{grlex}}}
+\newcommand{\ordgrevlex}{>_{\text{grevlex}}}
+\newcommand{\multideg}{\text{multideg}}
+\newcommand{\LT}{\text{LT}}
+\newcommand{\LM}{\text{LM}}
+\newcommand{\LC}{\text{LC}}
+\newcommand{\Tor}{\text{Tor}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\End}{\text{End}}
+\newcommand{\Ann}{\text{Ann}}
+
+% Conditionals
+\newcommand{\caseline}[2]{#1 & \text{if }#2}
+\newcommand{\caseelse}[1]{#1 & \text{otherwise}}
+
+% Sets of Numbers / Fields / Blackboard Bold
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\GG}{\mathbb{G}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\JJ}{\mathbb{J}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\MM}{\mathbb{M}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\OO}{\mathbb{O}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\UU}{\mathbb{U}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\XX}{\mathbb{X}}
+\newcommand{\YY}{\mathbb{Y}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\RP}{\mathbb{RP}}
+
+% Probability
+\newcommand{\var}{\text{var}}
+\newcommand{\toip}{\xrightarrow{i.p.}}
+\newcommand{\toas}{\xrightarrow{a.s.}}
+\newcommand{\tonorm}{\xrightarrow{\normdot}}
+\newcommand{\siga}{\sigma-\text{algebra}}
+\renewcommand{\to}{\rightarrow}
+
+% Calligraphic
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+% Gothic
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fB}{\mathfrak{B}}
+\newcommand{\fC}{\mathfrak{C}}
+\newcommand{\fD}{\mathfrak{D}}
+\newcommand{\fE}{\mathfrak{E}}
+\newcommand{\fF}{\mathfrak{F}}
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fH}{\mathfrak{H}}
+\newcommand{\fI}{\mathfrak{I}}
+\newcommand{\fX}{\mathfrak{X}}
+\newcommand{\fZ}{\mathfrak{Z}}
+\newcommand{\fU}{\mathfrak{U}}
+\newcommand{\fW}{\mathfrak{W}}
+\newcommand{\fJ}{\mathfrak{J}}
+\newcommand{\fK}{\mathfrak{K}}
+
+% Script
+\newcommand{\scrA}{\mathscr{A}}
+\newcommand{\scrB}{\mathscr{B}}
+\newcommand{\scrC}{\mathscr{C}}
+\newcommand{\scrD}{\mathscr{D}}
+\newcommand{\scrE}{\mathscr{E}}
+\newcommand{\scrF}{\mathscr{F}}
+\newcommand{\scrG}{\mathscr{G}}
+\newcommand{\scrH}{\mathscr{H}}
+\newcommand{\scrI}{\mathscr{I}}
+\newcommand{\scrL}{\mathscr{L}}
+\newcommand{\scrM}{\mathscr{M}}
+\newcommand{\scrN}{\mathscr{N}}
+\newcommand{\scrO}{\mathscr{O}}
+\newcommand{\scrX}{\mathscr{X}}
+\newcommand{\scrZ}{\mathscr{Z}}
+\newcommand{\scrU}{\mathscr{U}}
+\newcommand{\scrW}{\mathscr{W}}
+\newcommand{\scrJ}{\mathscr{J}}
+\newcommand{\scrK}{\mathscr{K}}
+
+% Boldface Capital
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bN}{\mathbf{N}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bZ}{\mathbf{Z}}
+
+% Complex Numbers
+\newcommand{\real}{\text{ Re}}
+\newcommand{\mi}{\mathrm{i}} %% roman "i" %%
+\renewcommand{\Im}{\text{Im}}
+\renewcommand{\Re}{\text{Re}}
+
+% Editing
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\todo}{\textcolor{red}{TODO}}
+
+% Matrices
+\newcommand{\bpm}{\begin{pmatrix}}
+	\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\bbm}{\begin{pmatrix}}
+	\newcommand{\ebm}{\end{pmatrix}}
+\newcommand{\Ran}{\text{Ran}}
+\newcommand{\Ker}{\text{Ker}}
+
+% Text Shortcuts
+\newcommand{\schrod}{\text{Schr\"odinger}\xspace}
+\newcommand{\ifff}{\space \text{ if and only if } \space}
+\newcommand{\holder}{\text{H\"older}\xspace}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\epss}{\epsilon}
+
+
+% Command Shortcuts
+\renewcommand{\tilde}{\widetilde}
+\newcommand{\andspace}{\quad \text{and} \quad}
+\newcommand{\definedby}{\quad \text{defined by} \quad}
