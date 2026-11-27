@@ -137,6 +137,16 @@ body > header
   background: $face
   @include raised-frame
   padding: .3em max(1em, calc((100% - #{$column}) / 2))
+  // Room for the Effects button in the top right corner when the side margin is narrow
+  padding-right: max(8em, calc((100% - #{$column}) / 2))
+  // Level with the first row (the site title on small screens, where the menu wraps below it)
+  .effects-toggle
+    position: absolute
+    top: .6rem
+    right: .5rem
+    font-size: .8em
+  @media (max-width: 40em)
+    padding-right: 1em
   .title
     font-weight: 600
     text-decoration: none
@@ -444,7 +454,7 @@ body > header, body > article, body > footer
   z-index: 1
 
 // ---------- Effects switch ----------
-// The "Effects" button in the status bar adds .effects-off to <html> (remembered in this
+// The "Effects" button in the top right corner of the menu bar adds .effects-off to <html> (remembered in this
 // browser): the shooting star disappears and the title bars switch from the lava lamp to the
 // standard left-to-right gradient.
 html.effects-off

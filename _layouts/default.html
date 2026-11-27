@@ -3,7 +3,7 @@
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-  // Effects switch (button in the status bar): apply the saved choice before the page renders.
+  // Effects switch (button in the top right corner of the menu bar): apply the saved choice before the page renders.
   // Off by default for visitors whose device asks for reduced motion.
   (function () {
     var saved = null;
@@ -43,7 +43,27 @@
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
+  {%- comment -%} Effects switch, in the top right corner (retro.sass) {%- endcomment %}
+  <button type="button" class="effects-toggle" aria-pressed="true" title="Turn the shooting star and animated title bars on or off" hidden>Effects: On</button>
 </header>
+<script>
+  (function () {
+    var btn = document.querySelector(".effects-toggle"), root = document.documentElement;
+    if (!btn) return;
+    function show() {
+      var on = !root.classList.contains("effects-off");
+      btn.textContent = "Effects: " + (on ? "On" : "Off");
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+    btn.addEventListener("click", function () {
+      root.classList.toggle("effects-off");
+      try { localStorage.setItem("effects", root.classList.contains("effects-off") ? "off" : "on"); } catch (e) {}
+      show();
+    });
+    show();
+    btn.hidden = false; // only shown when JavaScript can make it work
+  })();
+</script>
 <script>
   // Pong ball: its playing field is the page itself (it scrolls with the content), from the
   // bottom of the menu bar to the top of the status bar. Timings scale with the field's size so
@@ -90,27 +110,8 @@
   {%- if jekyll.environment == "production" %}
   <div id="visit-count" class="visit-count" hidden></div>
   {%- endif %}
-  <button type="button" class="effects-toggle" aria-pressed="true" title="Turn the shooting star and animated title bars on or off" hidden>Effects: On</button>
   {% include menu.html menu=site.external %}
 </footer>
-<script>
-  (function () {
-    var btn = document.querySelector(".effects-toggle"), root = document.documentElement;
-    if (!btn) return;
-    function show() {
-      var on = !root.classList.contains("effects-off");
-      btn.textContent = "Effects: " + (on ? "On" : "Off");
-      btn.setAttribute("aria-pressed", on ? "true" : "false");
-    }
-    btn.addEventListener("click", function () {
-      root.classList.toggle("effects-off");
-      try { localStorage.setItem("effects", root.classList.contains("effects-off") ? "off" : "on"); } catch (e) {}
-      show();
-    });
-    show();
-    btn.hidden = false; // only shown when JavaScript can make it work
-  })();
-</script>
 {%- if jekyll.environment == "production" %}
 <script>
   // Shows this page's visitor count from GoatCounter in the footer. Needs "Allow adding visitor
