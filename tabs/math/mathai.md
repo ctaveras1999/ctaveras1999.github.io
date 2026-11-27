@@ -26,19 +26,18 @@ I thought it might be useful, then, to compile a list[^bloom] of these responses
 I'm hoping to update this list with new blog posts and videos as often as I can. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
 
 ## Timeline
-### November 20th, 2026: Riemann Hypothesis and Unforced Navier Stokes Solved?
-Anthropic mathematician [Levent Alpöge](https://alpo.ge/) posts a [modest-looking four-page document](https://alpo.ge/remark.pdf)[^remark] on his website in which he claims to have proved the 
-[Generalized Riemann Hypothesis](https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis) with the help of Claude. 
-As for the proof, he opted to only share links to its Lean formalization and a brief timeline of some significant milestones;
-in his words, 
+Below is my attempt at documenting some of the most impactful AI-related events in math and academia. 
 
->It being obviously inappropriate to attempt to post some massive unreadable travesty of "slop", I decided to only present Lean.
-
-accompanied by the foot note
-
->I of course amused myself, and hit 250,000+ pages. 
-
-**Not done yet... will do soon**
+{%- comment -%} The three newest events from the timeline page (tabs/math/mathai-timeline.md) {%- endcomment %}
+<div class="tl-latest">
+<p class="tl-latest-head">Latest on the timeline</p>
+<ul>
+{%- for e in site.data.timelines.mathai limit: 3 %}
+<li class="{% if e.type %}tl-type-{{ e.type | slugify }}{% endif %}{% if e.follows %} tl-followup{% endif %}"><time datetime="{{ e.date }}">{{ e.date | date: "%b %-d, %Y" }}</time>{% if e.type %} <span class="tl-type">{{ e.type }}</span>{% endif %} <a href="{{ e.url }}">{{ e.title_html }}</a></li>
+{%- endfor %}
+</ul>
+<p><a href="{{ '/math/mathai/timeline/' | relative_url }}">Full timeline →</a></p>
+</div>
 
 ## The List
 Blog posts, essays, talks, interviews, and more.
@@ -49,4 +48,3 @@ Pick a type to narrow things down, search for a person or topic, or sort by type
 
 [^bloom]: Also check out Thomas Bloom's [AI Links](https://thomasbloom.org/AIlinks.html).
 
-[^remark]: Humorously, titled 'remark.pdf'.

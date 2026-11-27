@@ -703,3 +703,220 @@ a.xref
   color: #444
   margin: .2em 0 0
 
+
+// ---------- Timeline (_plugins/timeline.rb; e.g. /math/mathai/timeline/) ----------
+// Wide screens: dates in a column on the left, a grooved line, and a square marker per event.
+// Narrow screens: the line runs down the left edge and the date sits above each title.
+// Follow-ups get a smaller hollow marker. Marker and tag colors follow the event type.
+$tl-date-w: 6.5rem   // rem, so every row (whatever its font size) lines up
+$tl-rail: $bevel-shadow
+=tl-type-color($c)
+  --tl-color: #{$c}
+.timeline
+  --tl-color: #{$titlebar}
+  margin: 1.5em 0 2em
+.tl-type-result
+  +tl-type-color(#421d63)
+.tl-type-statement
+  +tl-type-color(#2b5d8c)
+.tl-type-reaction
+  +tl-type-color(#8a4a1c)
+.tl-type-event
+  +tl-type-color(#1d6b5a)
+.tl-type-release
+  +tl-type-color(#9b2f2f)
+
+.timeline .tl-now, .timeline .tl-year, .tl-event
+  display: grid
+  grid-template-columns: $tl-date-w 1fr
+  margin: 0
+.timeline .tl-now
+  font-size: .85em
+  color: #444
+  align-items: center
+  .tl-now-label
+    justify-self: end
+    margin-right: 1.1em
+    padding: .05em .5em
+    background: $face
+    color: #000
+    font-weight: 600
+    @include raised
+  .tl-now-text
+    border-left: 3px double $tl-rail
+    padding: .2em 0 .6em 1.6em
+.timeline .tl-year
+  font-size: 1em
+  span
+    grid-column: 1
+    justify-self: end
+    align-self: center
+    margin-right: .8em
+    padding: .05em .55em
+    background: $titlebar
+    color: #fff
+    font-size: 1.05em
+  &::before
+    content: ""
+    grid-column: 2
+    grid-row: 1
+    border-left: 3px double $tl-rail
+    min-height: 2.2em
+  margin: 0
+  padding: 0
+  border: 0
+.tl-date
+  text-align: right
+  padding: .15em 1em 0 0
+  font-size: .85em
+  line-height: 1.5
+  a
+    color: #000
+    font-weight: 600
+    text-transform: uppercase
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+.tl-type
+  display: inline-block
+  margin-top: .3em
+  padding: 0 .45em
+  font-size: .8em
+  color: #fff
+  background: var(--tl-color, #{$titlebar})
+.tl-date .tl-type
+  display: table
+  margin-left: auto
+.tl-body
+  position: relative
+  border-left: 3px double $tl-rail
+  padding: 0 0 1.4em 1.4em
+  min-width: 0
+  // the marker, centered on the line
+  &::before
+    content: ""
+    position: absolute
+    left: -9px
+    top: .35em
+    width: 15px
+    height: 15px
+    box-sizing: border-box
+    background: var(--tl-color)
+    box-shadow: inset -1px -1px rgba(0,0,0,.6), inset 1px 1px rgba(255,255,255,.5), 0 0 0 2px $window
+  .tl-title
+    margin: 0 0 .35em
+    font-size: 1.15em
+  > :last-child
+    margin-bottom: 0
+.tl-followup .tl-body::before
+  left: -7px
+  width: 11px
+  height: 11px
+  top: .45em
+  background: $window
+  box-shadow: inset 0 0 0 2px var(--tl-color), 0 0 0 2px $window
+.tl-follows
+  font-size: .85em
+  color: #444
+  margin: -.2em 0 .5em
+.tl-event:target .tl-body
+  background: linear-gradient(90deg, rgba(144, 78, 203, .1), transparent 70%)
+.tl-more
+  margin-top: .6em
+  > summary
+    cursor: pointer
+    display: inline-block
+    font-size: .85em
+    padding: .1em .6em
+    background: $face
+    @include raised
+    list-style: none
+    &::-webkit-details-marker
+      display: none
+    &::after
+      content: " ▸"
+  &[open] > summary
+    @include pressed
+    &::after
+      content: " ▾"
+    margin-bottom: .6em
+
+@media (max-width: 40em)
+  .timeline .tl-now, .timeline .tl-year, .tl-event
+    grid-template-columns: 0 1fr
+  .tl-event
+    position: relative
+  .tl-date
+    grid-column: 2
+    grid-row: 1
+    text-align: left
+    padding: 0 0 .2em 1.4em
+    border-left: 3px double $tl-rail
+    a
+      margin-right: .5em
+  .tl-date .tl-type
+    display: inline-block
+    margin: 0
+  .tl-body
+    grid-column: 2
+    &::before
+      top: -1.45em
+  .tl-followup .tl-body::before
+    top: -1.35em
+  .timeline .tl-year
+    display: block
+    border-left: 3px double $tl-rail
+    padding: .5em 0 .5em 1.4em
+    margin-left: 0
+    &::before
+      display: none
+    span
+      margin: 0
+  .timeline .tl-now
+    display: block
+    .tl-now-label
+      margin-right: .6em
+    .tl-now-text
+      border: 0
+      padding: 0
+
+// "Latest on the timeline" box on the Math and AI page
+.tl-latest
+  background: $window
+  @include sunken
+  padding: .8em 1.1em
+  margin: 0 0 1.5em
+  .tl-latest-head
+    margin: 0 0 .4em
+    font-weight: 600
+  ul
+    list-style: none
+    margin: 0
+    padding: 0 0 0 1em
+    border-left: 3px double $tl-rail
+  li
+    position: relative
+    margin: 0 0 .4em
+    &::before
+      content: ""
+      position: absolute
+      left: calc(-1em - 8px)
+      top: .35em
+      width: 11px
+      height: 11px
+      background: $titlebar
+    &.tl-followup::before
+      background: $window
+      box-shadow: inset 0 0 0 2px $titlebar
+  time
+    font-size: .85em
+    font-weight: 600
+    margin-right: .3em
+  .tl-type
+    margin: 0 .3em 0 0
+  li::before
+    background: var(--tl-color, #{$titlebar})
+  li.tl-followup::before
+    box-shadow: inset 0 0 0 2px var(--tl-color, #{$titlebar})
+  p:last-child
+    margin: .4em 0 0

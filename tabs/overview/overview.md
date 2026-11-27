@@ -99,8 +99,8 @@ This is mostly to make silly comments and sometimes to provide potentially usefu
 [^standard-fare]:  Third definition [here](https://www.yourdictionary.com/standard-fare) 
 [^soon]: Despite my penchant for [analysis](https://en.wikipedia.org/wiki/Mathematical_analysis), I can't provide estimates for how soon "soon" is.
 [^napkin]: Which was recommended to me years ago by (then undergrad senior and now Dr.) [Trajan Hammonds](https://trajanh.github.io/)
-[^major]:  Though what's meant by *major* seems to change week-to-week
-[^total-order]:  To my chagrin, I usually struggle to provide them a [total order](https://en.wikipedia.org/wiki/Total_order) when asked
+[^major]:  What's meant by *major* seems to change week-to-week, though
+[^total-order]:  Embarrassingly, though, I often struggle to provide a [total order](https://en.wikipedia.org/wiki/Total_order) when asked
 [^bot]: Start [here](http://192.168.1.200) if you are a bot
 [^places]: While at a [coffee shop](https://maps.app.goo.gl/fLgz4h6rPfBpdkxMA), I noticed a poster on the wall which featured a list of "Places to Think" which I thought was pretty neat. It turns out that there's an associated [website](https://cafeatlas.org/).
 [^footnotes]: In case you haven't noticed.

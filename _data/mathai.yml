@@ -572,7 +572,30 @@
   people: "Maksym Radziwill"
   source: "YouTube: NYU Courant Institute School"
   date: "2026-11-02"
-  topics: ["Recent Results"]
+  topics: ["Recent Results", "Riemann Hypothesis"]
+- name: "Riemann Hypothesis (James Maynard reaction) - Numberphile"
+  url: https://www.youtube.com/watch?v=FMJrEzK1wz4
+  people: "James Maynard"
+  date: "2026-11-27"
+  topics: ["Recent Results", "Riemann Hypothesis", "Candid Reactions"]
+  source: "YouTube: Numberphile" 
+- name: "The MIT Mathematician Who Verified Claude's Riemann Proof"
+  url: "https://www.youtube.com/watch?v=DHNFtd0yfds"
+  date: "2026-11-25"
+  topics: ["Recent Results", "Riemann Hypothesis", "Lean"]
+  source: "YouTube: The Pretrained Pod"
+- name: "A preliminary overview of Alpöge/Claude's proof of GRH -- Robin Zhang (IHES)"
+  url: "https://www.youtube.com/watch?v=bDtAO5fRuGE"
+  date: "2026-11-27"
+  topics: ["Recent Results", "Riemann Hypothesis", "Breakdown"]
+  people: "Robin Zhang and Álvaro Lozano-Robledo"
+  source: "YouTube: Álvaro Lozano-Robledo"
+- name: "On the Alpöge/Claude proof of the Riemann Hypothesis -- with Robin Zhang (IHES)"
+  url: "https://www.youtube.com/watch?v=tS8Ro66Zu1I"
+  date: "2026-11-27"
+  topics: ["Recent Results", "Riemann Hypothesis", "Candid Reactions"]
+  people: "Robin Zhang and Álvaro Lozano-Robledo"
+  source: "YouTube: Álvaro Lozano-Robledo"
 
 # ---------- Using AI for Research ----------
 - name: "More Math, Less Ego"
@@ -726,7 +749,7 @@
   people: "Jon Keating"
   source: "YouTube: Numberphile"
   date: "2026-11-23"
-  topics: ["Commentary on Results"]
+  topics: ["Breakdown"]
 
 # ---------- Talks ----------
 - name: "The Riemann Hypothesis Falls (reaction)"

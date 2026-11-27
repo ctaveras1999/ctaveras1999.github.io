@@ -36,6 +36,30 @@ Fetches the title, date, and source (YouTube channel, site, or arXiv, plus autho
 and adds the entry to `_data/mathai.yml` at the top of its type's group. Check the entry before
 committing; speakers usually need `--people`. Run it without arguments to see all options.
 
+## Math and AI timeline
+
+`tabs/math/mathai-timeline.md` (`/math/mathai/timeline/`) is drawn as a vertical timeline,
+newest first, with a divider per year; the three newest events also show on the Math and AI
+page. Add an event anywhere in the file:
+
+    ### Title of the event
+    {: date="2026-11-20" type="Result"}
+
+    One or two sentences, always shown.
+
+    <!-- more -->
+    The full write-up (quotes, footnotes, ...), folded under "Read more".
+
+Optional attributes on the `{: ...}` line:
+- `type`: a tag (Result, Statement, Reaction, Event, Release have their own colors in `_sass/retro.sass`).
+- `id="short-name"`: the event's link, `/math/mathai/timeline/#short-name`. Without it the link
+  is the date (`#2026-11-20`), or date plus title when several events share the date, so give
+  same-day events an id if you'll link to them.
+- `follows="short-name"`: a follow-up to an earlier event (hollow marker and a link back).
+- `time="14:30"`: only for ordering. Same-day events show in the order they're written in the
+  file (top = top of the page) unless every one of them has a time (then latest on top).
+Implementation: `_plugins/timeline.rb`; any page can become a timeline with `timeline: <name>`.
+
 ## Broken links
 
 A GitHub workflow (`.github/workflows/check-links.yml`) checks every link on the site each Monday
