@@ -114,25 +114,23 @@
 {%- if jekyll.environment == "production" %}
 <script>
   // Shows this page's visitor count from GoatCounter in the footer. Needs "Allow adding visitor
-  // counts on your website" turned on in the GoatCounter settings; until then (or for a page with
-  // no visits yet) the request fails and the counter stays hidden. Counts are cached for up to
-  // four hours on GoatCounter's side.
+  // counts on your website" turned on in the GoatCounter settings. The count is fetched directly,
+  // without waiting for count.js, so it still shows when a privacy blocker stops count.js (those
+  // visits just aren't counted). A page with no visits yet gets an error and the counter stays
+  // hidden. Counts are cached for up to four hours on GoatCounter's side.
   (function () {
     var el = document.getElementById("visit-count");
-    var tries = 0;
-    var wait = setInterval(function () {
-      if (++tries > 100) return clearInterval(wait); // count.js didn't load (e.g. blocked)
-      if (!(window.goatcounter && window.goatcounter.get_data)) return;
-      clearInterval(wait);
-      var path = window.goatcounter.get_data().p || location.pathname;
-      fetch("https://ctaveras.goatcounter.com/counter/" + encodeURIComponent(path) + ".json")
-        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
-        .then(function (d) {
-          el.textContent = d.count + (d.count === "1" ? " visitor" : " visitors") + " to this page";
-          el.hidden = false;
-        })
-        .catch(function () {});
-    }, 100);
+    // The same path count.js records: the canonical URL's path (from jekyll-seo-tag), else the address
+    var canon = document.querySelector('link[rel="canonical"]');
+    var path = location.pathname;
+    try { if (canon) path = new URL(canon.href, location.href).pathname; } catch (e) {}
+    fetch("https://ctaveras.goatcounter.com/counter/" + encodeURIComponent(path) + ".json")
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function (d) {
+        el.textContent = d.count + (d.count === "1" ? " visitor" : " visitors") + " to this page";
+        el.hidden = false;
+      })
+      .catch(function () {});
   })();
 </script>
 {%- endif %}
