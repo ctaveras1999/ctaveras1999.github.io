@@ -17,6 +17,10 @@ Notable moments as AI and mathematics run into each other, newest first. For blo
 talks, and more, see [the list]({{ '/math/mathai#the-list' | relative_url }}) on the
 [Math and AI]({{ '/math/mathai' | relative_url }}) page.
 
+### *VP* =/= *VNP* Over Every Field
+{: date="2026-11-24" type="Result}
+[Paper](https://github.com/anthropics/formal-math/blob/main/vp-vnp/paper.pdf)
+
 ### Stupid things I did
 {: date="2026-11-23" type="Reaction" follows="alpoge-grh"}
 
@@ -67,9 +71,33 @@ For one, it seems like the proof employs [almost all](https://riemannhypothesiss
 A discussion of the machinery used in the proof can be found in Robin Zhang's [manuscript](https://www.ihes.fr/~rzhang/files/GRH%20note.pdf) accompanied by [his](https://youtu.be/tS8Ro66Zu1I) [discussions](https://youtu.be/bDtAO5fRuGE) with [Álvaro Lozano-Robledo](https://mathandcobb.org/)[^alvaro].
 
 
-In case you want to learn more check out, 
+### The Math-o-pocalypse
+{: date="2026-10-06" type="Result" id="mathopocalypse" time="08:00"}
+[link](https://openai.com/index/building-scientific-understanding-with-academic-communities/)
+
+### The Navier Stokes Conundrum
+{: date="2026-09-08" type="Result" id="navier-stokes-I" time="08:00"}
+[link](https://openai.com/index/navier-stokes-solution/)
+
+### Jacobian Conjecture Disproved
+{: date="2026-07-19" type="Result" id="jacobian" time="08:00"}
+[wiki link](https://en.wikipedia.org/wiki/Jacobian_conjecture)
+[tao link](https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/)
+
+### OpenAI's Hugging Face Incident
+{: date="2026-07-13" type="Result" id="huggingface" time="08:00"}
+[link](https://openai.com/index/navier-stokes-solution/)
+
+### Erdős Unit Distance Problem Solved
+{: date="2026-05-20" type="Result" id="erdosunit" time="08:00"}
+[link](https://openai.com/index/model-disproves-discrete-geometry-conjecture/)
+
+### Google DeepMind's AI Gets IMO Silver
+{: date="2024-07-25"}
+[link](https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/)
+
 
 [^remark]: Humorously, titled **remark.pdf**.
 [^troll]: An exaggeration, as he later explained; see [the follow-up](#2026-11-23).
 [^usda]: Not to be confused with [USDA certification](https://en.wikipedia.org/wiki/Organic_certification).
-[^alvaro]: If you want to stay up to date with all news math and AI **from the perspective of a mathematician**, please check out Álvaro's work. His website is linked above, and you can find his YouTube [here](https://www.youtube.com/@mathandcobb/videos).
+[^alvaro]: If you want to stay up to date with all news math and AI **from the perspective of a mathematician**, please check out Álvaro's work. His website is [here](https://mathandcobb.org/) and you can find his YouTube [here](https://www.youtube.com/@mathandcobb/videos).

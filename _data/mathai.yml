@@ -253,7 +253,7 @@
   people: "Konstantin Kakaes"
   source: "Quanta Magazine"
   date: "2026-10-19"
-  topics: ["Essays & Articles"]
+  topics: ["Essays & Articles", "Riemann Hypothesis"]
 - name: "Jagged Intelligence: The Dangerous Unknowns at the Heart of LLMs"
   url: "https://yalereview.org/article/melanie-mitchell-jagged-intelligence"
   people: "Melanie Mitchell"
@@ -450,7 +450,7 @@
   people: "Alex Kontorovich, Steven Brunton, Ankur Moitra"
   source: "YouTube: Lex Fridman"
   date: "2026-10-26"
-  topics: ["Talks & Panels"]
+  topics: ["Talks & Panels", "Riemann Hypothesis"]
 - name: "Mathematics at a Turning Point: AI, Research, and the Next Generation"
   url: "https://youtu.be/fNgsB_Y4tuQ?t=0"
   people: "Alex Kontorovich, Ettore Aldrovandi, Javier Gómez-Serrano, Tony Feng, Jeremy Avigad, Rachel Ward, Martin Bauer"
@@ -566,7 +566,7 @@
   people: "Alvaro Lozano-Robledo"
   source: "YouTube: Alvaro Lozano-Robledo"
   date: "2026-10-11"
-  topics: ["Recent Results"]
+  topics: ["Recent Results", "Riemann Hypothesis"]
 - name: "The Quasi-Riemann Hypothesis"
   url: "https://youtu.be/kYCOOyYkit8?t=0"
   people: "Maksym Radziwill"
@@ -749,7 +749,7 @@
   people: "Jon Keating"
   source: "YouTube: Numberphile"
   date: "2026-11-23"
-  topics: ["Breakdown"]
+  topics: ["Breakdown", "Riemann Hypothesis"]
 
 # ---------- Talks ----------
 - name: "The Riemann Hypothesis Falls (reaction)"
@@ -757,4 +757,4 @@
   people: "Tony Padilla and Brady Haran"
   source: "YouTube: Numberphile"
   date: "2026-11-20"
-  topics: ["Candid Reactions"]
+  topics: ["Candid Reactions", "Riemann Hypothesis"]

@@ -22,11 +22,11 @@ The rapid development of AI and its mathematical capabilities has forced the mat
 During this unpredictable transitionary period, many in the community have shared their views on the past, present, and future of math.
 Notably, the perspectives and predictions shared so far have been quite varied.
 
-I thought it might be useful, then, to compile a list[^bloom] of these responses to (hopefully) help early-career academics get a sense for what's ahead and to document this evolution as it happens.
-I'm hoping to update this list with new blog posts and videos as often as I can. If you have any suggestions on things to include in this list, don't hesitate to reach out (via email)!
+I thought it might be useful, then, to compile a list[^bloom] of these responses to (hopefully) help early-career academics get a sense for what's ahead and to document events as they happen.
+I plan to update this page as frequently as possible. If you have any suggestions on things to include, please reach out (via email)!
 
 ## Timeline
-Below is my attempt at documenting some of the most impactful AI-related events in math and academia. 
+Here's my attempt at documenting events relating AI to math, academia, and society.
 
 {%- comment -%} The three newest events from the timeline page (tabs/math/mathai-timeline.md) {%- endcomment %}
 <div class="tl-latest">
